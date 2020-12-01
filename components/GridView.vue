@@ -2,7 +2,6 @@
         <HorizontalScroll>
     <div class="grid-container">
         <div class="grid-element"><img src="~/assets/1.png" /></div>
-        <div class="grid-element"><img src="~/assets/robots.gif" /></div>
         <div class="grid-element"><img src="~/assets/2.png" /></div>
         <div class="grid-element"><img src="~/assets/3.png" /></div>
         <div class="grid-element"><img src="~/assets/4.png" /></div>
