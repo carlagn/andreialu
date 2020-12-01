@@ -1,7 +1,7 @@
 <template>
     <div class="body-wrapper" @wheel="scrollHorizontal">
-        <Sidebar />
-        <GridView />
+        <Sidebar :class="sidebarWidth"/>
+        <GridView @grid="getGrid"/>
     </div>
 </template>
 
@@ -11,9 +11,27 @@ import Sidebar from '~/components/Sidebar.vue'
 import GridView from '~/components/GridView.vue'
 export default Vue.extend({
     components: { Sidebar, GridView },
+    data() {
+        return {
+            sidebarWidth: "",
+            grid: null
+        }
+    },
+    computed: {
+        getScreenWidth() {
+            return window.screen.width;
+        }
+    },
     methods: {
         scrollHorizontal(element, event) {
-            console.log(element);
+            if(this.grid) {
+                if (this.grid.getBoundingClientRect().x < 100)
+                    this.sidebarWidth = 'open-grid';
+                else this.sidebarWidth = '';
+            }
+        },
+        getGrid(gridEl) {
+            this.grid = gridEl;
         }
     }
 })

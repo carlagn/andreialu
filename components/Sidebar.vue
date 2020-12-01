@@ -33,6 +33,20 @@ export default Vue.extend({
     width: 500px;
     font-family: 'Castoro', serif;
 
+    &.open-grid {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        .intro-box, .link-box, .hotlinks{
+            display: none;
+        }
+
+        img {
+            margin-top: 0;
+            max-width: 100px;
+        }
+    }
+
     .label {
         font-size: 12px;
         margin-top: -25px;
