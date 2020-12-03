@@ -1,8 +1,10 @@
 <template>
     <div class="sidebar-wrapper">
         <div class="sidebar-box">
-            <img src="~/assets/logo.png" />
-            <span class="label">copywriter.</span>
+            <div @click="backToTop()" class="logo-box">
+                <img src="~/assets/logo.png" />
+                <span class="label">copywriter.</span>
+            </div>
             <div class="intro-box">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Aenean sed orci convallis, ultrices elit at, lacinia ante.
@@ -22,16 +24,34 @@
 <script>
 import Vue from 'vue';
 export default Vue.extend({
-
+  watch: {
+    $route(to, from) {
+      console.log(to, from);
+    }
+  },
+  methods: {
+      backToTop() {
+        this.$store.commit("setSidebar", "");
+        const scroll = setInterval(() => {
+            document.querySelector('.grid-wrapper').scrollLeft -=20;
+            if (document.querySelector('.grid-wrapper').scrollLeft === 0) clearInterval(scroll);
+        }, 1);
+      }
+  }
 })
 </script>
 
 <style lang="scss" scoped>
 .sidebar-wrapper {
-    position: relative;
+    position: absolute;
     height: 100vh;
+    background-color: white;
     width: 500px;
     font-family: 'Castoro', serif;
+
+    .logo-box {
+        cursor: pointer;
+    }
 
     &.open-grid {
         width: 100px;
@@ -61,15 +81,6 @@ export default Vue.extend({
         margin: 30% auto 0 auto;
         display: block;
         max-width: 150px;
-    }
-    &::before {
-        content: "";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0.7;
     }
     &.open {
         &::after {

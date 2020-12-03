@@ -12,7 +12,8 @@
     "nuxt": "^2.14.8",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
-    "vue-horizontal-scroll": "^0.2.4"
+    "vue-horizontal-scroll": "^0.2.4",
+    "vuex": "^3.6.0"
   },
   "devDependencies": {
     "push-dir": "^0.4.1"

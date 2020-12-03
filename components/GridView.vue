@@ -1,5 +1,5 @@
 <template>
-        <HorizontalScroll>
+        <HorizontalScroll class="grid-wrapper" :class="sidebarClass">
     <div class="grid-container" ref="grid">
         <div class="grid-element"><img src="~/assets/1.png" /></div>
         <div class="grid-element"><img src="~/assets/2.png" /></div>
@@ -30,13 +30,20 @@ export default Vue.extend({
     },
     mounted() {
         this.$emit("grid", this.$refs.grid); 
+    },
+    computed: {
+        sidebarClass () {
+            return this.$store.state.sidebar;
+        }
     }
-    
 })
 </script>
 
 <style lang="scss" scoped>
+.grid-wrapper {
+}
 .grid-container {
+    margin-left: 500px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -1,5 +1,12 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/carla/Projects/andreialu/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_e4841e72"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/carla/Projects/andreialu/pages/index.vue",
