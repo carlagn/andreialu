@@ -16,9 +16,6 @@ export default{
     computed: {
         sidebarClass () {
             return this.$store.state.sidebar;
-        },
-        getScreenWidth() {
-            return window.screen.width;
         }
     },
     methods: {

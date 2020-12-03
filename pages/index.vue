@@ -19,7 +19,9 @@ export default Vue.extend({
 
 <style lang="scss">
 html {
-    overflow: hidden;
+    @media (min-width: 768px) {
+        overflow: hidden;
+    }
 }
 body {
     margin: 0;

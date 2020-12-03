@@ -44,13 +44,23 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .sidebar-wrapper {
     position: absolute;
-    height: 100vh;
     background-color: white;
-    width: 500px;
     font-family: 'Castoro', serif;
+    height: auto;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 500px;
+        height: 100vh;
+    }
 
     .logo-box {
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        @media (min-width: 768px) {
+            display: block;
+        }
     }
 
     &.open-grid {
@@ -69,18 +79,22 @@ export default Vue.extend({
 
     .label {
         font-size: 12px;
-        margin-top: -25px;
         display: block;
-        text-align: center;
-        margin-bottom: 24px;
         text-decoration: underline;
+        @media (min-width: 768px) {
+            margin-top: -25px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
     }
 
     img {
-        margin-top: 30%;
-        margin: 30% auto 0 auto;
         display: block;
-        max-width: 150px;
+        max-width: 100px;
+        @media (min-width: 768px) {
+            max-width: 150px;
+            margin: 30% auto 0 auto;
+        }
     }
     &.open {
         &::after {
@@ -90,6 +104,10 @@ export default Vue.extend({
 
     .intro-box, .hotlinks, .link-box {
         padding: 10px 30px;
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+        }
     }
 }
 </style>

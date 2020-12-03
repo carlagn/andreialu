@@ -1,5 +1,5 @@
 <template>
-        <HorizontalScroll class="grid-wrapper" :class="sidebarClass">
+        <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
     <div class="grid-container" ref="grid">
         <div class="grid-element"><img src="~/assets/1.png" /></div>
         <div class="grid-element"><img src="~/assets/2.png" /></div>
@@ -17,7 +17,7 @@
         <div class="grid-element"><img src="~/assets/5.png" /></div>
         <div class="grid-element"><img src="~/assets/3.png" /></div>
     </div>
-        </HorizontalScroll>
+        </component>
 </template>
 
 <script>
@@ -28,27 +28,35 @@ export default Vue.extend({
     components: {
         HorizontalScroll
     },
+    data() {
+        return {
+            mobile: false
+        }
+    },
     mounted() {
         this.$emit("grid", this.$refs.grid); 
+        this.mobile = document.querySelector("html").offsetWidth <= 768;
     },
     computed: {
         sidebarClass () {
             return this.$store.state.sidebar;
+        },
+        isMobile() {
+            return this.mobile
         }
     }
 })
 </script>
 
 <style lang="scss" scoped>
-.grid-wrapper {
-}
 .grid-container {
-    margin-left: 500px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
-
+    @media (min-width: 768px) {
+        flex-direction: column;
+        height: 100vh;
+        margin-left: 500px;
+    }
     .grid-element {
         width: 300px;
         height: calc(100vh / 3);

@@ -3,14 +3,12 @@
     "name": "about",
     "path": "/about",
     "component": "/Users/carla/Projects/andreialu/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_e4841e72"
+    "chunkName": "pages/about"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/carla/Projects/andreialu/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_a51468e8"
+    "chunkName": "pages/index"
   }
 ]
