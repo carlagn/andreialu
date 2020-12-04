@@ -42,29 +42,50 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@media (min-width: 768px) {
+    .sidebar-wrapper {
+        width: 500px;
+        height: 100vh;
+
+        .logo-box {
+            display: block;
+        }
+
+        .label {
+            margin-top: -25px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 150px;
+            margin: 30% auto 0 auto;
+        }
+        .intro-box, .hotlinks, .link-box {
+            display: block;
+        }
+
+        &.open-grid {
+            width: 100px;
+        }
+    }
+}
 .sidebar-wrapper {
+
     position: absolute;
     background-color: white;
     font-family: 'Castoro', serif;
     height: auto;
     width: 100%;
 
-    @media (min-width: 768px) {
-        width: 500px;
-        height: 100vh;
-    }
-
     .logo-box {
         cursor: pointer;
         display: flex;
         align-items: center;
-        @media (min-width: 768px) {
-            display: block;
-        }
     }
 
     &.open-grid {
-        width: 100px;
+        width: 100%;
         display: flex;
         align-items: center;
         .intro-box, .link-box, .hotlinks{
@@ -81,20 +102,11 @@ export default Vue.extend({
         font-size: 12px;
         display: block;
         text-decoration: underline;
-        @media (min-width: 768px) {
-            margin-top: -25px;
-            margin-bottom: 24px;
-            text-align: center;
-        }
     }
 
     img {
         display: block;
         max-width: 100px;
-        @media (min-width: 768px) {
-            max-width: 150px;
-            margin: 30% auto 0 auto;
-        }
     }
     &.open {
         &::after {
@@ -105,9 +117,6 @@ export default Vue.extend({
     .intro-box, .hotlinks, .link-box {
         padding: 10px 30px;
         display: none;
-        @media (min-width: 768px) {
-            display: block;
-        }
     }
 }
 </style>

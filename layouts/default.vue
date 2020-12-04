@@ -18,6 +18,8 @@ export default{
             return this.$store.state.sidebar;
         }
     },
+    mounted() {
+    },
     methods: {
         ...mapMutations([ 'setSideBar' ]),
         scrollHorizontal(element, event) {
@@ -30,7 +32,9 @@ export default{
                 }
             }
         },
-        
+        checkIfMobile() {
+            return document.querySelector('.grid-container').getBoundingClientRect() >= 768;
+        }
     }
 }
 </script>

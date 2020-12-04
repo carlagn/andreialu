@@ -35,7 +35,8 @@ export default Vue.extend({
     },
     mounted() {
         this.$emit("grid", this.$refs.grid); 
-        this.mobile = document.querySelector("html").offsetWidth <= 768;
+        this.mobile = window.screen.width <= 768;
+
     },
     computed: {
         sidebarClass () {
@@ -49,30 +50,45 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
+    .grid-container {
         flex-direction: column;
         height: 100vh;
         margin-left: 500px;
+
+        .grid-element {
+            width: 300px;
+            height: calc(100vh / 3);
+
+            &.xv {
+                height: calc(200vh / 3);
+            }
+
+            &.xh {
+                width: 600px;
+            }
+        }
     }
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    height: auto;
+    flex-direction: row;
     .grid-element {
-        width: 300px;
-        height: calc(100vh / 3);
-
-        &.xv {
-            height: calc(200vh / 3);
-        }
-
-        &.xh {
-            width: 600px;
-        }
+        width: 50%;
+        height: 500px;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        &.xv, &.xh {
+            width: 50%;
+            height: 500px;
         }
     }
 }
