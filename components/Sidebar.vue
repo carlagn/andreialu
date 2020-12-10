@@ -42,36 +42,11 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 768px) {
-    .sidebar-wrapper {
+.sidebar-wrapper {
+    @media (min-device-width: 769px) {
         width: 500px;
         height: 100vh;
-
-        .logo-box {
-            display: block;
-        }
-
-        .label {
-            margin-top: -25px;
-            margin-bottom: 24px;
-            text-align: center;
-        }
-
-        img {
-            max-width: 150px;
-            margin: 30% auto 0 auto;
-        }
-        .intro-box, .hotlinks, .link-box {
-            display: block;
-        }
-
-        &.open-grid {
-            width: 100px;
-        }
     }
-}
-.sidebar-wrapper {
-
     position: absolute;
     background-color: white;
     font-family: 'Castoro', serif;
@@ -79,12 +54,18 @@ export default Vue.extend({
     width: 100%;
 
     .logo-box {
+        @media (min-device-width: 769px) {
+            display: block;
+        }
         cursor: pointer;
         display: flex;
         align-items: center;
     }
 
     &.open-grid {
+        @media (min-device-width: 769px) {
+            width: 100px;
+        }
         width: 100%;
         display: flex;
         align-items: center;
@@ -99,12 +80,21 @@ export default Vue.extend({
     }
 
     .label {
+        @media (min-device-width: 769px) {
+            margin-top: -25px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
         font-size: 12px;
         display: block;
         text-decoration: underline;
     }
 
     img {
+        @media (min-device-width: 769px) {
+            max-width: 150px;
+            margin: 30% auto 0 auto;
+        }
         display: block;
         max-width: 100px;
     }
@@ -115,6 +105,9 @@ export default Vue.extend({
     }
 
     .intro-box, .hotlinks, .link-box {
+        @media (min-device-width: 769px) {
+            display: block;
+        }
         padding: 10px 30px;
         display: none;
     }

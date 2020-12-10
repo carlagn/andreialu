@@ -18,12 +18,10 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@media (min-width: 768px) {
-    html {
+html {
+    @media (min-device-width: 769px) { 
         overflow: hidden;
     }
-}
-html {
     overflow: auto;
 }
 body {

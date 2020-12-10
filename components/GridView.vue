@@ -50,16 +50,21 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 768px) {
-    .grid-container {
+.grid-container {
+    @media (min-device-width: 769px) {
         flex-direction: column;
         height: 100vh;
         margin-left: 500px;
-
-        .grid-element {
+    }
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    height: auto;
+    flex-direction: row;
+    .grid-element {
+        @media (min-device-width: 769px) {
             width: 300px;
             height: calc(100vh / 3);
-
             &.xv {
                 height: calc(200vh / 3);
             }
@@ -68,15 +73,6 @@ export default Vue.extend({
                 width: 600px;
             }
         }
-    }
-}
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
-    height: auto;
-    flex-direction: row;
-    .grid-element {
         width: 50%;
         height: 500px;
 
