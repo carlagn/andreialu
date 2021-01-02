@@ -78,6 +78,9 @@ export default Vue.extend({
     height: auto;
     width: 100%;
 
+    a {
+        pointer-events: auto;
+    }
     .sidebar-box {
         width: auto;
         padding: 0 24px;
