@@ -52,6 +52,10 @@ export default Vue.extend({
         justify-content: space-between;
         max-width: 500px;
         margin: 0 auto;
+
+        a {
+            font-weight: lighter;
+        }
     }
 }
 </style>

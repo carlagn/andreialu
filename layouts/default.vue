@@ -116,5 +116,14 @@ body {
         line-height: 16pt;
     }
 
+    a {
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
 }
 </style>
