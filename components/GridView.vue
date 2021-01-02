@@ -2,20 +2,28 @@
         <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
     <div class="grid-container" ref="grid">
         <nuxt-link to="/work/ProjectExample">
-            <div class="grid-element xv"><img src="~/assets/CAPAS/pedras.gif" /></div>
+            <div class="grid-element xv">
+                <video autoplay muted loop><source src="~/assets/CAPAS/pedras.webm" /></video>
+            </div>
         </nuxt-link>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_BB.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X300_CHATPAY.gif" /></div>
+        <div class="grid-element">
+            <video autoplay muted loop><source src="~/assets/CAPAS/chatpay.webm" /></video>
+        </div>
         <div class="grid-element"><img src="~/assets/CAPAS/600X600_OB.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_HE.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/600X600_WINONA1.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X300_MB.gif" /></div>
+        <div class="grid-element">
+            <video autoplay muted loop><source src="~/assets/CAPAS/mb.webm" /></video>
+        </div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X600_PUBLICO.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_SMART.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_TOFA.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X600_CAO.jpg" /></div>
         <nuxt-link to="/work/reprogramar-a-manha">
-            <div class="grid-element"><img src="~/assets/CAPAS/robot.gif" /></div>
+            <div class="grid-element">
+                <video autoplay muted loop><source src="~/assets/CAPAS/robot.webm" /></video>
+            </div>
         </nuxt-link>
         <div class="grid-element xv"><img src="~/assets/CAPAS/600X300_SANDEMAN.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/600X600BE_BEAUTY.jpg" /></div>
@@ -84,7 +92,7 @@ export default Vue.extend({
             width: 600px;
         }
 
-        img {
+        img, video {
             width: 100%;
             height: 100%;
             object-fit: cover;
