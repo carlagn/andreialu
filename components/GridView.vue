@@ -1,21 +1,24 @@
 <template>
         <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
     <div class="grid-container" ref="grid">
-        <div class="grid-element"><img src="~/assets/1.png" /></div>
-        <div class="grid-element"><img src="~/assets/2.png" /></div>
-        <div class="grid-element xh"><img src="~/assets/5.png" /></div>
-        <div class="grid-element"><img src="~/assets/4.png" /></div>
-        <div class="grid-element"><img src="~/assets/7.png" /></div>
-        <div class="grid-element xv"><img src="~/assets/7.png" /></div>
-        <div class="grid-element"><img src="~/assets/8.png" /></div>
-        <div class="grid-element"><img src="~/assets/3.png" /></div>
-        <div class="grid-element xv xh"><img src="~/assets/2.png" /></div>
-        <div class="grid-element"><img src="~/assets/4.png" /></div>
-        <div class="grid-element xh"><img src="~/assets/3.png" /></div>
-        <div class="grid-element xv"><img src="~/assets/1.png" /></div>
-        <div class="grid-element"><img src="~/assets/4.png" /></div>
-        <div class="grid-element"><img src="~/assets/5.png" /></div>
-        <div class="grid-element"><img src="~/assets/3.png" /></div>
+        <nuxt-link to="/work/ProjectExample">
+            <div class="grid-element xv"><img src="~/assets/CAPAS/pedras.gif" /></div>
+        </nuxt-link>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X300_BB.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X300_CHATPAY.gif" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/600X600_OB.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X300_HE.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/600X600_WINONA1.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X300_MB.gif" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X600_PUBLICO.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X300_SMART.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X300_TOFA.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/300X600_CAO.jpg" /></div>
+        <nuxt-link to="/work/reprogramar-a-manha">
+            <div class="grid-element"><img src="~/assets/CAPAS/robot.gif" /></div>
+        </nuxt-link>
+        <div class="grid-element xv"><img src="~/assets/CAPAS/600X300_SANDEMAN.jpg" /></div>
+        <div class="grid-element"><img src="~/assets/CAPAS/600X600BE_BEAUTY.jpg" /></div>
     </div>
         </component>
 </template>
@@ -23,6 +26,7 @@
 <script>
 import Vue from 'vue';
 import HorizontalScroll from 'vue-horizontal-scroll'
+import { mapMutations } from 'vuex'
 import 'vue-horizontal-scroll/dist/vue-horizontal-scroll.css'
 export default Vue.extend({
     components: {
@@ -34,9 +38,13 @@ export default Vue.extend({
         }
     },
     mounted() {
+        this.$store.commit("setSidebar", "");
         this.$emit("grid", this.$refs.grid); 
         this.mobile = window.screen.width <= 768;
 
+    },
+    methods: {
+        ...mapMutations([ 'setSideBar' ])
     },
     computed: {
         sidebarClass () {
@@ -65,26 +73,21 @@ export default Vue.extend({
         @media (min-device-width: 769px) {
             width: 300px;
             height: calc(100vh / 3);
-            &.xv {
-                height: calc(200vh / 3);
-            }
-
-            &.xh {
-                width: 600px;
-            }
         }
-        width: 50%;
-        height: 500px;
+        width: 30vw;
+        height: calc(100vh / 3);
+
+        &.xv {
+            height: calc(200vh /3);
+        }
+        &.xh {
+            width: 600px;
+        }
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        &.xv, &.xh {
-            width: 50%;
-            height: 500px;
         }
     }
 }

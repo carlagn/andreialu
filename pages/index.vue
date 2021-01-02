@@ -23,8 +23,8 @@ html {
         overflow: hidden;
     }
     overflow: auto;
-}
-body {
-    margin: 0;
+    body {
+        background-color: #f8f8ff;
+    }
 }
 </style>
