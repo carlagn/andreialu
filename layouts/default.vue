@@ -1,5 +1,5 @@
 <template>
-    <div @wheel="scrollHorizontal">
+    <div>
         <Sidebar :class="sidebarClass"/>
         <Nuxt :sidebar="sidebarClass"/>
     </div>
@@ -22,16 +22,6 @@ export default{
     },
     methods: {
         ...mapMutations([ 'setSideBar' ]),
-        scrollHorizontal(element, event) {
-            if(document.querySelector('.grid-container')){
-                if (document.querySelector('.grid-container').getBoundingClientRect().x < 100){
-                    this.$store.commit("setSidebar", 'open-grid');
-                    }
-                else{
-                    this.$store.commit("setSidebar", "");
-                }
-            }
-        },
         checkIfMobile() {
             return document.querySelector('.grid-container').getBoundingClientRect() >= 768;
         }
@@ -49,7 +39,7 @@ body {
     position: fixed;
     left: 16px;
     max-width: 20%;
-    top: 175px;
+    top: 225px;
 
     .title, .subtitle {
         padding-left: 16px;
@@ -111,10 +101,6 @@ body {
         margin: 4px 0;
     }
 
-    p {
-        margin: 32px 0;
-        line-height: 16pt;
-    }
 
     a {
         font-weight: bold;
@@ -125,5 +111,9 @@ body {
         }
     }
 
+}
+p {
+    margin: 32px 0;
+    line-height: 16pt;
 }
 </style>

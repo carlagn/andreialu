@@ -1,11 +1,13 @@
 <template>
         <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
     <div class="grid-container" ref="grid">
+            <div class="grid-element"></div>
         <nuxt-link to="/work/ProjectExample">
             <div class="grid-element xv">
                 <video autoplay muted loop><source src="~/assets/CAPAS/pedras.webm" /></video>
             </div>
         </nuxt-link>
+            <div class="grid-element"></div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_BB.jpg" /></div>
         <div class="grid-element">
             <video autoplay muted loop><source src="~/assets/CAPAS/chatpay.webm" /></video>
@@ -49,10 +51,10 @@ export default Vue.extend({
         this.$store.commit("setSidebar", "");
         this.$emit("grid", this.$refs.grid); 
         this.mobile = window.screen.width <= 768;
-
+        this.$store.commit("setActivePage", "work");
     },
     methods: {
-        ...mapMutations([ 'setSideBar' ])
+        ...mapMutations([ 'setSideBar', 'setActivePage' ])
     },
     computed: {
         sidebarClass () {
@@ -70,7 +72,6 @@ export default Vue.extend({
     @media (min-device-width: 769px) {
         flex-direction: column;
         height: 100vh;
-        margin-left: 500px;
     }
     display: flex;
     flex-wrap: wrap;

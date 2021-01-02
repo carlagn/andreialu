@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fandreialu\u002F_nuxt\u002Fstatic\u002F1609622614",layout:"default",error:null,state:{sidebar:a,title:a,activePage:"work"},serverRendered:true,routePath:"\u002Fwork\u002FProjectExample",config:{}}}(""));

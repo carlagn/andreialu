@@ -1,6 +1,7 @@
 export const state = () => ({
   sidebar: "",
-  title: ""
+  title: "",
+  activePage: "work"
 })
 
 export const mutations = {
@@ -9,6 +10,9 @@ export const mutations = {
   },
   setProjTitle(state, payload) {
     state.title = payload
+  },
+  setActivePage(state, payload) {
+    state.activePage = payload
   }
 }
 

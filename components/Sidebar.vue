@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper" :class="{'active': getSidebarState}">
         <div class="sidebar-box">
             <div class="logo-box">
                 <div
@@ -10,23 +10,8 @@
                     <span class="label">copywriter.</span>
                 </div>
                 <div class="menu">
-                    <nuxt-link to="/contacts">Contacts</nuxt-link>
-                    <nuxt-link to="/resume">Experience</nuxt-link>
-                </div>
-            </div>
-            <div class="intro-box">
-                <b>Andreia nunca gostou de escrever na terceira pessoa.</b>
-                <br>
-                <br>Posto isto… Olá. 
-                <br>Sou Andreia para uns, Luísa para outros. Copywriter para uns, veterinária para outros. Depende da fase da vida em que me apanhaste, mas digamos que estou a gostar muito desta fase. Não que seja só uma fase.
-                <br>
-                <br>Falamos?
-                <br><a href="mailto:hello@andreia.lu">hello@andreia.lu</a>
-            </div>
-            <div class="hotlinks">
-                Encontra-me em:
-                <div class="link-box">
-                    [lo][lo][lo]
+                    <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Work</nuxt-link>
+                    <nuxt-link to="/about" :class="{'active': getActivePage === 'about'}">About</nuxt-link>
                 </div>
             </div>
         </div>
@@ -37,13 +22,27 @@
 import Vue from 'vue';
 import { mapMutations, mapGetters } from 'vuex';
 export default Vue.extend({
+  data() {
+      return {
+          active: "work"
+      }
+  },
   computed: {
       getCurrentRoute() {
           return this.$router.path;
+      },
+      getActivePage() {
+          return this.$store.state.activePage;
+      },
+      getSidebarState() {
+          return this.$store.state.sidebar;
       }
   },
   methods: {
-      ...mapMutations(["setSideBar", "setProjTitle"]),
+      ...mapMutations(["setSideBar", "setProjTitle", "setActivePage"]),
+      toggleAbout() {
+          this.displayAbout = !this.displayAbout;
+      },
       backToTop() {
         if(this.$route.path === "/") {
             this.$store.commit("setSidebar", "");
@@ -64,8 +63,8 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .sidebar-wrapper {
     @media (min-device-width: 769px) {
-        width: 500px;
-        height: 100vh;
+        width: auto;
+        height: calc(100vh / 3);
     }
     transition: 0.2s, 0.1s ease-in;
     transition-property: height, width;
@@ -78,12 +77,20 @@ export default Vue.extend({
     height: auto;
     width: 100%;
 
+    &.active {
+        height: 100vh;
+    }
+
     a {
         pointer-events: auto;
+        &.active {
+            text-decoration: underline;
+        }
     }
     .sidebar-box {
         width: auto;
-        padding: 0 24px;
+        margin: 46px 0;
+        padding: 0 32px 0 24px;
     }
 
     .logo-box {
@@ -110,27 +117,14 @@ export default Vue.extend({
             transition-property: opacity;
             transition-delay: 0.4s;
 
-            a {
+            a, div {
+                display: inline-block;
                 margin-right: 8px;
                 text-decoration: none;
                 position: relative;
                 color: black;
-
-                &:after {
-                    width: 0;
-                    height: 1px;
-                    background-color: black;
-                    content: "";
-                    position: absolute;
-                    bottom: 0px;
-                    left: 0;
-                    transition: width 0.1s ease-in;
-                }
-
-                &:hover {
-                    &:after {
-                        width: 100%;
-                    }
+                &.active {
+                    text-decoration: underline;
                 }
             }
         }
@@ -207,8 +201,14 @@ export default Vue.extend({
     }
 
     .hotlinks {
-        position: absolute;
         bottom: 0;
+    }
+
+    .about{
+        display: none;
+        &.active {
+            display: block;
+        }
     }
 }
 </style>
