@@ -47,9 +47,9 @@ body {
 .title-section {
     font-family: 'Merriweather', serif;
     position: fixed;
-    left: 0;
+    left: 16px;
     max-width: 20%;
-    top: 20%;
+    top: 175px;
 
     .title, .subtitle {
         padding-left: 16px;
@@ -71,6 +71,11 @@ body {
     overflow: auto;
     font-weight: 300;
     position: relative;
+
+    iframe, video {
+        width: 100%;
+    }
+
     .media {
         margin: 32px auto;
         display: block;
