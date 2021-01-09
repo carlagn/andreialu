@@ -3,6 +3,7 @@ export default {
   router: {
     base: '/andreialu/'
   },
+  css: ['~/assets/main.scss'],
   head: {
     link: [
       {
@@ -11,7 +12,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;&family=Roboto:wght@300;400;700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Fraunces:wght@300&Roboto+Mono:wght@300;400;600;&family=Roboto:wght@300;400;700&display=swap'
       }
     ]
   }

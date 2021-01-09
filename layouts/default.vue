@@ -1,7 +1,12 @@
 <template>
     <div>
         <Sidebar :class="sidebarClass"/>
-        <Nuxt :sidebar="sidebarClass"/>
+        <transition
+            name="fade"
+            mode="out-in"
+        >
+            <Nuxt :sidebar="sidebarClass"/>
+        </transition>
     </div>
 </template>
 
@@ -10,6 +15,10 @@ import Sidebar from '../components/Sidebar.vue'
 import { mapMutations } from 'vuex'
 
 export default{
+  transition: {
+    name: 'test',
+    mode: 'out-in'
+  },
     components: {
         Sidebar
     },
@@ -35,7 +44,7 @@ body {
         margin: 0;
 }
 .title-section {
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Mono', monospace;
     position: fixed;
     left: 16px;
     max-width: 20%;

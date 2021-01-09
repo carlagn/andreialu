@@ -1,13 +1,14 @@
 <template>
         <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
     <div class="grid-container" ref="grid">
-            <div class="grid-element"></div>
+        <div class="grid-element empty"></div>
+        <!-- Capa Pedras -->
         <nuxt-link to="/work/ProjectExample">
             <div class="grid-element xv">
                 <video autoplay muted loop><source src="~/assets/CAPAS/pedras.webm" /></video>
             </div>
         </nuxt-link>
-            <div class="grid-element"></div>
+        <div class="grid-element empty">Hello :)</div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_BB.jpg" /></div>
         <div class="grid-element">
             <video autoplay muted loop><source src="~/assets/CAPAS/chatpay.webm" /></video>
@@ -97,6 +98,13 @@ export default Vue.extend({
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        &.empty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Fraunces', serif;
+            font-weight: lighter;
         }
     }
 }
