@@ -13,7 +13,9 @@
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266584215?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
                 <p>McDonald’s “The Robots” is like “Groundhog Day”– only this time with robots. Caught in a time loop, doing the same things over and over again, not being able to break out of the circle until the McDonald’s breakfast menu offers a helping hand, adding variety to the daily grind.</p>
                 <p>We had this served it with some radios on the side. Sunny side up.
-                    <br>Rádios -  <a href="https://soundcloud.com/ndyuu/sets/reprogramar-a-manha-radios">https://soundcloud.com/ndyuu/sets/reprogramar-a-manha-radios</a>
+                    <h3>Rádios</h3>
+                    <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1188396859&color=%231c1c30&auto_play=false&hide_related=false&show_teaser=true">
+                    </iframe>
                 </p>
                 <p class="credits"><b>TBWA</b> C: Andreia Luísa A.D: António Belchior C.D: Marco Pacheco Director: Major Paco (Major West)</p>
             </div>
