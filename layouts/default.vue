@@ -44,32 +44,55 @@ body {
         margin: 0;
 }
 .title-section {
+    @media (min-device-width: 769px) {
+        position: fixed;
+        left: 16px;
+        max-width: 20%;
+        margin-right: 0;
+        height: auto;
+        text-align: left;
+    }
     font-family: 'Roboto Mono', monospace;
-    position: fixed;
-    left: 16px;
-    max-width: 20%;
+    margin-right: 40px;
+    text-align: right;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
     top: 225px;
 
     .title, .subtitle {
         padding-left: 16px;
     }
     h1.title {
+        @media (min-device-width: 769px) {
             font-size: 20px;
         }
+        font-size: 32px;
+    }
     h2.subtitle {
+        @media (min-device-width: 769px) {
             font-size: 18px;
             margin: 4px 0;
-            font-weight: regular;
-
         }
+        font-weight: regular;
+        font-size: 24px;
+        margin-top: 24px;
+    }
 }
 .project-wrapper {
+    @media (min-device-width: 769px) {
+        margin-top: 0;
+        overflow: auto;
+        margin-left: 100px;
+    }
+    padding: 0 16px;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    margin-left: 100px;
-    overflow: auto;
     font-weight: 300;
     position: relative;
+    margin-top: -300px;
 
     iframe, video {
         width: 100%;
@@ -97,16 +120,22 @@ body {
     }
 
     h3 {
+        @media (min-device-width: 769px) {
+            font-size: 16px;
+        }
+        font-size: 24px;
         margin: 0;
         font-weight: 400;
-        font-size: 16px;
         margin: 8px 0;
     }
 
     .credits {
+        @media (min-device-width: 769px) {
+            font-size: 12px;
+        }
+        font-size: 20px;
         font-weight: light;
         color: gray;
-        font-size: 12px;
         margin: 4px 0;
     }
 
@@ -122,7 +151,13 @@ body {
 
 }
 p {
+    @media (min-device-width: 769px) {
+        line-height: 16pt;
+        font-size: 16px;
+    }
+    font-size: 24px;
+    line-height: 24pt;
     margin: 32px 0;
-    line-height: 16pt;
+
 }
 </style>

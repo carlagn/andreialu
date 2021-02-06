@@ -52,10 +52,16 @@ export default Vue.extend({
         this.$store.commit("setSidebar", "");
         this.$emit("grid", this.$refs.grid); 
         this.mobile = window.screen.width <= 768;
-        this.$store.commit("setActivePage", "work");
+        this.setActivePage("work");
+    },
+    beforeDestroy() {
+        this.setActivePage("");
     },
     methods: {
-        ...mapMutations([ 'setSideBar', 'setActivePage' ])
+        ...mapMutations([ 'setSideBar', 'setActivePage' ]),
+        setActivePage(str) {
+            this.$store.commit("setActivePage", str)
+        }
     },
     computed: {
         sidebarClass () {

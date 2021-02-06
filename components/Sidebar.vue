@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar-wrapper" :class="{'active': getSidebarState}">
+    <div class="sidebar-wrapper" :class="{'active': getSidebarState, 'background': getActivePage === 'work'}">
         <div class="sidebar-box">
             <div class="logo-box">
                 <div
@@ -22,11 +22,6 @@
 import Vue from 'vue';
 import { mapMutations, mapGetters } from 'vuex';
 export default Vue.extend({
-  data() {
-      return {
-          active: "work"
-      }
-  },
   computed: {
       getCurrentRoute() {
           return this.$router.path;
@@ -35,8 +30,11 @@ export default Vue.extend({
           return this.$store.state.activePage;
       },
       getSidebarState() {
-          return this.$store.state.sidebar;
+          return  this.$store.state.sidebar;
       }
+  },
+  mounted() {
+      this.$store.commit("setActivePage", "");
   },
   methods: {
       ...mapMutations(["setSideBar", "setProjTitle", "setActivePage"]),
@@ -64,14 +62,15 @@ export default Vue.extend({
 .sidebar-wrapper {
     @media (min-device-width: 769px) {
         width: auto;
+        position: absolute;
         height: calc(100vh / 3);
     }
+    z-index: 10000;
+    position: relative;
     transition: 0.2s, 0.1s ease-in;
     transition-property: height, width;
     transition-delay: 0s, 0.3s;
     pointer-events: none;
-    position: fixed;
-    background-color: #f8f8ff;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     height: auto;
@@ -79,6 +78,15 @@ export default Vue.extend({
 
     &.active {
         height: 100vh;
+    }
+
+    &.background {
+        @media (min-device-width: 769px) {
+            height: calc(100vh / 3);
+        }
+        height: auto;
+        position: fixed;
+        background-color: #f8f8ff;
     }
 
     a {
@@ -154,12 +162,13 @@ export default Vue.extend({
     &.open-grid {
         @media (min-device-width: 769px) {
             width: 170px;
+            height: 160px;
         }
+        height: auto;
         transition: 0.2s, 0.1s ease-in;
         transition-property: height, width;
         width: 100%;
         transition-delay: 0.35s, 0.3s;
-        height: 160px;
         display: flex;
         align-items: flex-start;
         .intro-box, .link-box, .hotlinks{
@@ -172,6 +181,9 @@ export default Vue.extend({
             opacity: 0;
             transition-property: opacity;
             transition-delay: 0s;
+            > a {
+                pointer-events: none;
+            }
         }
     }
 

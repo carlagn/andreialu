@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002Fandreialu\u002F_nuxt\u002Fstatic\u002F1612637287",layout:"default",error:{statusCode:404,path:a,message:"This page could not be found"},state:{sidebar:b,title:b,activePage:"work"},serverRendered:false,routePath:a,config:{}}}("\u002Fcontacts",""));
