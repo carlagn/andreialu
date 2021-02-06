@@ -88,31 +88,51 @@ export default Vue.extend({
         }
     }
     .sidebar-box {
+        @media (min-device-width: 769px) {
+            padding: 0 32px 0 24px;
+            margin: 46px 0;
+        }
         width: auto;
-        margin: 46px 0;
-        padding: 0 32px 0 24px;
     }
 
     .logo-box {
+        @media (min-device-width: 769px) {
+            height: auto;
+            padding: 0;
+        }
         display: flex;
         pointer-events: auto;
         align-items: center;
+        height: 268px;
+        padding: 16px;
 
         img {
+            @media (min-device-width: 769px) {
+                max-width: 100px;
+            }
             margin-top: 0;
-            max-width: 100px;
+            max-width: 180px;
         }
 
         .logo {
             cursor: pointer;
             display: inline-block;
+            padding-bottom: 32px;
+            @media (min-device-width: 769px) {
+                padding-bottom: 0;
+            }
         }
 
         .menu {
-            padding-left: 16px;
+            @media (min-device-width: 769px) {
+                font-size: 14px;
+                margin-left: none;
+            }
+            font-size: 32px;
+            margin-left: auto;
             text-transform: uppercase;
+            padding-left: 16px;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
             letter-spacing: 2px;
             transition-property: opacity;
             transition-delay: 0.4s;
@@ -160,11 +180,15 @@ export default Vue.extend({
             margin-top: -25px;
             margin-bottom: 24px;
             text-align: left;
+            font-size: 12px;
             margin-left: 24px;
         }
+        text-align: center;
+        margin-top: -40px;
+        font-size: 18px;
+        margin-left: 32px;
         font-family: 'Roboto Mono', monospace;
         font-weight: bold;
-        font-size: 12px;
         display: block;
         text-decoration: underline;
     }

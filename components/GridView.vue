@@ -73,8 +73,10 @@ export default Vue.extend({
     @media (min-device-width: 769px) {
         flex-direction: column;
         height: 100vh;
+        padding-top: 0;
     }
     display: flex;
+    padding-top: 300px;
     flex-wrap: wrap;
     margin-left: 0;
     height: auto;
@@ -84,11 +86,13 @@ export default Vue.extend({
             width: 300px;
             height: calc(100vh / 3);
         }
-        width: 30vw;
-        height: calc(100vh / 3);
+        width: 50vw;
+        height: 500px;
 
         &.xv {
-            height: calc(200vh /3);
+            @media (min-device-width: 769px) {
+                height: calc(200vh /3);
+            }
         }
         &.xh {
             width: 600px;
@@ -100,7 +104,10 @@ export default Vue.extend({
             object-fit: cover;
         }
         &.empty {
-            display: flex;
+            @media (min-device-width: 769px) {
+                display: flex;
+            }
+            display: none;
             justify-content: center;
             align-items: center;
             font-family: 'Fraunces', serif;
