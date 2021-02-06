@@ -5,19 +5,22 @@
         <!-- Capa Pedras -->
         <nuxt-link to="/work/ProjectExample">
             <div class="grid-element xv">
-                <video autoplay muted loop><source src="~/assets/CAPAS/pedras.webm" /></video>
+                <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/pedras.webm" /></video>
+                <img class="grid-gif" src="~/assets/CAPAS/pedras.gif" />
             </div>
         </nuxt-link>
         <div class="grid-element empty">Hello :)</div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_BB.jpg" /></div>
         <div class="grid-element">
-            <video autoplay muted loop><source src="~/assets/CAPAS/chatpay.webm" /></video>
+            <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/chatpay.webm" /></video>
+            <img class="grid-gif" src="~/assets/CAPAS/chatpay.gif" />
         </div>
         <div class="grid-element"><img src="~/assets/CAPAS/600X600_OB.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_HE.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/600X600_WINONA1.jpg" /></div>
         <div class="grid-element">
-            <video autoplay muted loop><source src="~/assets/CAPAS/mb.webm" /></video>
+            <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/mb.webm" /></video>
+            <img class="grid-gif" src="~/assets/CAPAS/mb.gif" />
         </div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X600_PUBLICO.jpg" /></div>
         <div class="grid-element"><img src="~/assets/CAPAS/300X300_SMART.jpg" /></div>
@@ -25,7 +28,8 @@
         <div class="grid-element"><img src="~/assets/CAPAS/300X600_CAO.jpg" /></div>
         <nuxt-link to="/work/reprogramar-a-manha">
             <div class="grid-element">
-                <video autoplay muted loop><source src="~/assets/CAPAS/robot.webm" /></video>
+            <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/robot.webm" /></video>
+            <img class="grid-gif" src="~/assets/CAPAS/robot.gif" />
             </div>
         </nuxt-link>
         <div class="grid-element xv"><img src="~/assets/CAPAS/600X300_SANDEMAN.jpg" /></div>
@@ -61,9 +65,18 @@ export default Vue.extend({
         ...mapMutations([ 'setSideBar', 'setActivePage' ]),
         setActivePage(str) {
             this.$store.commit("setActivePage", str)
+        },
+        getCover(projName) {
+            if (this.isMobile){
+                var image = `<img src="~/assets/CAPAS/${projName}.gif" />`;
+                return image;
+            }
+            const videourl = require(`~/assets/CAPAS/${projName}.webm`);
+            var video = `<video class="grid-video" autoplay="true" muted="true" loop="true"><source src="${videourl}" /></video>`;
+            return video;
         }
     },
-    computed: {
+    computed: { 
         sidebarClass () {
             return this.$store.state.sidebar;
         },
@@ -104,7 +117,7 @@ export default Vue.extend({
             width: 600px;
         }
 
-        img, video {
+        img, .grid-video {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -118,6 +131,19 @@ export default Vue.extend({
             align-items: center;
             font-family: 'Fraunces', serif;
             font-weight: lighter;
+        }
+        .grid-video {
+            @media (min-device-width: 769px) {
+                display: block;
+            }
+            display: none;
+        }
+        .grid-gif {
+            @media (min-device-width: 769px) {
+                display: none;
+            }
+            display: block;
+
         }
     }
 }
