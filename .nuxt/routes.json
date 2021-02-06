@@ -3,35 +3,30 @@
     "name": "about",
     "path": "/about",
     "component": "/Users/carla/Projects/andreialu/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_e4841e72"
+    "chunkName": "pages/about"
   },
   {
     "name": "work-ProjectExample",
     "path": "/work/ProjectExample",
     "component": "/Users/carla/Projects/andreialu/pages/work/ProjectExample.vue",
-    "chunkName": "pages/work/ProjectExample",
-    "_name": "_7ce128ae"
+    "chunkName": "pages/work/ProjectExample"
   },
   {
     "name": "work-reprogramar-a-manha",
     "path": "/work/reprogramar-a-manha",
     "component": "/Users/carla/Projects/andreialu/pages/work/reprogramar-a-manha.vue",
-    "chunkName": "pages/work/reprogramar-a-manha",
-    "_name": "_e3c03698"
+    "chunkName": "pages/work/reprogramar-a-manha"
   },
   {
     "name": "work-style-guide",
     "path": "/work/style-guide",
     "component": "/Users/carla/Projects/andreialu/pages/work/style-guide.vue",
-    "chunkName": "pages/work/style-guide",
-    "_name": "_3c335518"
+    "chunkName": "pages/work/style-guide"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/carla/Projects/andreialu/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_a51468e8"
+    "chunkName": "pages/index"
   }
 ]

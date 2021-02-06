@@ -35,6 +35,8 @@ export default Vue.extend({
 .about {
     margin-left: 350px;
     padding: 32px;
+    max-width: 800px;
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }

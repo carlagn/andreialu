@@ -76,7 +76,7 @@ body {
             font-size: 18px;
             margin: 4px 0;
         }
-        font-weight: regular;
+        font-weight: normal;
         font-size: 24px;
         margin-top: 24px;
     }
@@ -86,7 +86,11 @@ body {
         margin-top: 0;
         overflow: auto;
         margin-left: 100px;
+        display: block;
     }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0 16px;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
@@ -112,7 +116,7 @@ body {
     .project-content {
         max-width: 800px;
         margin: 0 auto;
-        padding: 16px;
+        padding: 32px;
     }
 
     h1 {
@@ -153,11 +157,11 @@ body {
 p {
     @media (min-device-width: 769px) {
         line-height: 16pt;
+        margin: 32px 0;
         font-size: 16px;
     }
-    font-size: 24px;
-    line-height: 24pt;
-    margin: 32px 0;
-
+    font-size: 28px;
+    margin: 48px 0;
+    line-height: 28pt;
 }
 </style>
