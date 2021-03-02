@@ -1,16 +1,98 @@
 <template>
     <div class="about">
-        <p><b>Andreia nunca gostou de escrever na terceira pessoa.</b></p>
+        <p><b>Andreia never liked to write in the third person.</b></p>
         <p>
-            Posto isto… Olá.
-            <br>Sou Andreia para uns, Luísa para outros. Copywriter para uns, veterinária para outros. Depende da fase da vida em que me apanhaste, mas digamos que estou a gostar muito desta fase. Não que seja só uma fase.
+            <br>That being said, there is so much more I can say about me, but let's talk about the words - the only thing that matters here. I like words, always have, but it was not until late that I realized I could have gone straight for it. I got into medicine first. I studied and practised veterinary medicine for the love of animals, but the love for words eventually spoke louder. In between came the pharma industry. That's where I met the copywriters and thought: hey, I like that.
+
+
+             <p>Now I do what makes me happy, and the best part?
+             <br>My dog never needs to go to the doctor.
+
+
+
         </p>
         <p>
-            Falamos?
+            But enough about me, tell me about yourself.
             <br><a href="mailto:hello@andreia.lu">hello@andreia.lu</a>
         </p>
+
+        <p>
+          <b>AWARDS.</b>
+          <br><b>CCP</b> Gold - short story, Jovens Talentos Delta Q, 2020
+          <br><b>CCP</b> Shortlist - print, Jovens Talentos Delta Q, 2020
+          <br><b>Young Lions</b> Shortlist - film, 2018
+          <br><b>CCP</b> Silver - best radio campaign, Novo Banco, 2017
+          <br><b>Restart</b> Best student, 2016
+          <br><b>Colégio</b> Best poem about Timor, 1999 
+        </p>
+
+        <p>
+          <b>EXPERIENCE.</b>
+        <br><b>BBDO</b> Lisbon
+        <br>Copywriter, Nov. 2016 - present
+        <br>Clients: McDonald’s, Mercedes-Benz, smart, Água das Pedras, Super Bock, Sandeman, Novo Banco, Pingo Doce, Cafés Tofa, Buondi, Gallo, Barral</p>
+
+        <p><b>Wunderman</b> Lisbon
+        <br>Intern copywriter, Aug. 2016 - Nov. 2016
+        <br>Clients: Milaneza, Labello, Harmony, Nivea, Europcar, Opel, A Tabaqueira
+        </p>
+
+        <p><b>Ogilvy</b> Lisbon
+        <br>Freelance copywriter, Jul. 2016 
+        <br>Clients: Unitel, Germano de Sousa, Pedigree
+        <br>(this is where I realized: this is it.)
+        </p>
+
+        <p><b>Grand Union</b>  Lisbon
+        <br>Project Manager, May 2016 - Jul. 2016
+        <br>Clients: Leroy Merlin, EDP, Samsung
+        <br>(this is where I realized: I’ll just stop lying about my Excel expertise.)
+        </p>
+
+        <p><b>The Janssen Pharmaceutical Companies of Johnson & Johnson</b>
+        <br>Clinical Advisor Immunology, Jul. 2015-Dec.2015
+        <br>(this is where I realized: the grass is greener in the communication department.)
+        </p>
+
+        <p><b>The Janssen Pharmaceutical Companies of Johnson & Johnson</b>
+        <br>Marketing assistant, Apr. 2014 - May 2015
+        </p>
+
+        <p><b>Hospital Veterinário Principal & Clivipet Portugal</b>
+        <br>Veterinary surgeon, May 2012 - Apr. 2014
+        <br>(this is where I realized: this is not it.)
+        </p>
+
+        <p>
+          <b>EDUCATION.</b>
+        <p><b>Restart</b> Lisbon
+        <br>Criatividade publicitária, Oct. 2015 - May 2016
+        </p>
+
+        <p><b>Faculdade de Medicina Veterinária</b> Lisbon
+        <br>Masters in Veterinary Medicine, Sep. 2007 - Feb. 2012
+        </p>
+
+        <p><b>Szent István Egyetem</b> Budapest
+        <br>Erasmus programme, Sep. 2008 - Sep. 2009
+        </p>
+
+        <p><b>University of Cambridge</b> ESOL Examination
+        <br>CAE (certificate in advanced english), Jun. 2008 - no expiration
+        </p>
+
+        <p>
+          <b>OTHER SKILLS.</b>
+        <br>Having too many hobbies.
+        </p>
+
+
+
+
+
+
         <div class="hotlinks">
-            Encontra-me em:
+            
             <div class="link-box">
                 [lo][lo][lo]
             </div>

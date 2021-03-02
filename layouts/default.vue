@@ -105,8 +105,8 @@ body {
     .media {
         margin: 32px auto;
         display: block;
-        width: 100%;
-
+        max-height: 500px;
+        width: auto;
         &.portrait {
             width: 50%;
             height: auto;
@@ -164,4 +164,9 @@ p {
     margin: 48px 0;
     line-height: 28pt;
 }
+.lang{
+    b {
+    cursor: pointer;
+    }
+} 
 </style>
