@@ -23,6 +23,9 @@ export default{
         Sidebar
     },
     computed: {
+        getCurrentRoute() {
+            return this.$router.path;
+        },
         sidebarClass () {
             return this.$store.state.sidebar;
         }

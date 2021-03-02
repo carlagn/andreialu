@@ -15,7 +15,6 @@
             But enough about me, tell me about yourself.
             <br><a href="mailto:hello@andreia.lu">hello@andreia.lu</a>
         </p>
-
         <p>
           <b>AWARDS.</b>
           <br><b>CCP</b> Gold - short story, Jovens Talentos Delta Q, 2020
@@ -86,11 +85,6 @@
         <br>Having too many hobbies.
         </p>
 
-
-
-
-
-
         <div class="hotlinks">
             
             <div class="link-box">
@@ -116,10 +110,14 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .about {
     margin-left: 350px;
-    padding: 32px;
+    padding: 32px 32px 32px 200px;
     max-width: 800px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    @media (max-width: 769px) {
+        padding-left: 32px;
+        margin-top: 200px;
+    }
 }
 </style>

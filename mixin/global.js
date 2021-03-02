@@ -3,10 +3,6 @@ export default {
         routes(){
             return [
                 {
-                    name: "Home",
-                    path: "/"
-                },
-                {
                     name: "Project example",
                     path: "/work/ProjectExample"
                 },
