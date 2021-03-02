@@ -9,7 +9,7 @@
                     <img src="~/assets/logo.png" />
                     <span class="label">copywriter.</span>
                 </div>
-                <div class="menu">
+                <div v-if="getCurrentRoute === '/'" class="menu">
                     <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Work</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getActivePage === 'about'}">About</nuxt-link>
                 </div>
@@ -24,7 +24,7 @@ import { mapMutations, mapGetters } from 'vuex';
 export default Vue.extend({
   computed: {
       getCurrentRoute() {
-          return this.$router.path;
+          return this.$route.path;
       },
       getActivePage() {
           return this.$store.state.activePage;
@@ -63,6 +63,7 @@ export default Vue.extend({
     @media (min-device-width: 769px) {
         width: auto;
         position: absolute;
+        top: 0;
         height: calc(100vh / 3);
     }
     z-index: 10000;

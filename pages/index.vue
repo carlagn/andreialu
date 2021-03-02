@@ -19,10 +19,6 @@ export default Vue.extend({
 
 <style lang="scss">
 html {
-    @media (min-device-width: 769px) { 
-        overflow: hidden;
-    }
-    overflow: auto;
     body {
         background-color: #f8f8ff;
     }

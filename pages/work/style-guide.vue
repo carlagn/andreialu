@@ -21,7 +21,7 @@
             ></video>
         </div>
         <!-- adicionar SEMPRE este elemento no fim para obter uma paginação concisa. -->
-        <!-- <Pagination  /> -->
+        <Pagination  />
     </div>
 </template>
 
