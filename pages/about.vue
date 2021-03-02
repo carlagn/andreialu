@@ -120,7 +120,7 @@ export default Vue.extend({
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    @media (min-device-width: 769px) {
+    @media (max-width: 769px) {
         padding-left: 32px;
         margin-top: 200px;
     }
