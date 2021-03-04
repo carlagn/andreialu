@@ -64,7 +64,7 @@ export default Vue.extend({
         width: auto;
         position: absolute;
         top: 0;
-        height: calc(100vh / 3);
+        height: calc((100vh - 17px) / 3);
     }
     z-index: 10000;
     position: relative;
@@ -83,7 +83,7 @@ export default Vue.extend({
 
     &.background {
         @media (min-device-width: 769px) {
-            height: calc(100vh / 3);
+            height: calc((100vh - 17px) / 3);
         }
         height: auto;
         position: fixed;

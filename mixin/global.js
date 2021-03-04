@@ -2,86 +2,111 @@ export default {
     computed: {
         routes(){
             return [
+
                 {
-                    name: "Project example",
-                    path: "/work/ProjectExample"
-                },
-                {
-                    name: "Reprogramar a Manha",
-                    path: "/work/reprogramar-a-manha"
-                },
-                {
-                    name: "smart",
-                    path: "/work/smart"
+                    name: "Home",
+                    path: "/"
                 },
                 {
                     name: "Pedras",
                     path: "/work/pedras"
                 },
-                {
-                    name: "Tofa",
-                    path: "/work/tofa"
-                },
-                {
-                    name: "Conversa de chat",
-                    path: "/work/conversa-de-chat"
-                },
-                {
-                    name: "Um mundo sem cem",
-                    path: "/work/um-mundo-sem-cem"
-                },
-                {
-                    name: "Drive code",
-                    path: "/work/drive-code"
-                },
+                
+
                 {
                     name: "Acordar com gosto",
                     path: "/work/acordar-com-gosto"
                 },
-                {
-                    name: "Mais cabo verde",
-                    path: "/work/mais-cabo-verde"
-                },
-                {
-                    name: "Have a drink",
-                    path: "/work/have-a-drink"
-                },
-                {
-                    name: "Amor Rafeiro",
-                    path: "/work/amor-rafeiro"
-                },
-                {
-                    name: "Desafio da Poupança",
-                    path: "/work/desafio-da-poupanca"
-                },
+
+
                 {
                     name: "Winona",
                     path: "/work/winona"
                 },
+
+
                 {
-                    name: "Coisas de miúdos",
-                    path: "/work/coisas-de-miudos"
+                    name: "Reprogramar a Manha",
+                    path: "/work/reprogramar-a-manha"
                 },
+
+
                 {
                     name: "Mesas para todos os gosto",
                     path: "/work/mesas-para-todos-os-gostos"
                 },
+
+                {
+                    name: "Amor Rafeiro",
+                    path: "/work/amor-rafeiro"
+                },
+
+
                 {
                     name: "O segredo das relações duradouras",
                     path: "/work/o-segredo-das-relacoes"
                 },
+
+
+                {
+                    name: "Drive code",
+                    path: "/work/drive-code"
+                },
+
+
+                {
+                    name: "Desafio da Poupança",
+                    path: "/work/desafio-da-poupanca"
+                },
+
+                {
+                    name: "Have a drink",
+                    path: "/work/have-a-drink"
+                },
+
+
+                {
+                    name: "Um mundo sem cem",
+                    path: "/work/um-mundo-sem-cem"
+                },
+
+
+                {
+                    name: "Coisas de miúdos",
+                    path: "/work/coisas-de-miudos"
+                },
+
+
+                {
+                    name: "Conversa de chat",
+                    path: "/work/conversa-de-chat"
+                },
+
+
+                {
+                    name: "Tofa",
+                    path: "/work/tofa"
+                },
+
+                {
+                    name: "smart",
+                    path: "/work/smart"
+                },
+       
+                
+                {
+                    name: "Mais cabo verde",
+                    path: "/work/mais-cabo-verde"
+                },
+                
+                
                 {
                     name: "Seja o herói",
                     path: "/work/seja-o-heroi"
                 },
-
                 {
-                    name: "Style guide",
-                    path: "/work/style-guide"
-                },
-                {
-                    name: "Contactosssssss",
-                    path: "/contacts"
+                    name: "Home",
+                    path: "/"
                 }
             ]
         }

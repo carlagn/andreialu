@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/work/tofa", {data:[{}],fetch:[],mutations:[]});

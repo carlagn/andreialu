@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/work/seja-o-heroi", {data:[{}],fetch:[],mutations:[]});

@@ -1,41 +1,129 @@
 <template>
-        <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
-    <div class="grid-container" ref="grid">
-        <div class="grid-element empty"></div>
-        <!-- Capa Pedras -->
-        <nuxt-link to="/work/ProjectExample">
-            <div class="grid-element xv">
-                <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/pedras.webm" /></video>
-                <img class="grid-gif" src="~/assets/CAPAS/pedras.png" />
-            </div>
-        </nuxt-link>
-        <div class="grid-element empty">Hello :)</div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X300_BB.jpg" /></div>
-        <div class="grid-element">
-            <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/chatpay.webm" /></video>
-            <!-- <img class="grid-gif" src="~/assets/CAPAS/chatpay.gif" /> -->
-        </div>
-        <div class="grid-element"><img src="~/assets/CAPAS/600X600_OB.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X300_HE.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/600X600_WINONA1.jpg" /></div>
-        <div class="grid-element">
-            <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/mb.webm" /></video>
-            <!-- <img class="grid-gif" src="~/assets/CAPAS/mb.gif" /> -->
-        </div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X600_PUBLICO.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X300_SMART.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X300_TOFA.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/300X600_CAO.jpg" /></div>
-        <nuxt-link to="/work/reprogramar-a-manha">
+    <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
+        <div class="grid-container" ref="grid">
+            <div class="grid-element empty"></div>
+           
+            <!-- Capa Pedras -->
+            <nuxt-link to="/work/pedras">
+                <div class="grid-element xv empty">
+                    
+                </div>
+            
+            </nuxt-link>
+        
+            <div class="grid-element empty">Hello :)</div>
+
+            <nuxt-link to="/work/acordar-com-gosto">
             <div class="grid-element">
-            <video class="grid-video" autoplay="true" muted="true" loop="true"><source src="~/assets/CAPAS/robot.webm" /></video>
-            <!-- <img class="grid-gif" src="~/assets/CAPAS/robot.gif" /> -->
+             <img src="~/assets/CAPAS/mcmuffin.png" />
+             </div>
+            </nuxt-link>
+
+            <nuxt-link to="/work/winona">
+                <div class="grid-element">
+                    <img src="~/assets/CAPAS/winona_CAPA.png" />
+                </div>
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/reprogramar-a-manha">
+                <div class="grid-element empty">Hello :)</div>
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/mesas-para-todos-os-gostos">
+                <div class="grid-element">
+                    <img src="~/assets/CAPAS/mesas.png" />
+                </div>
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/amor-rafeiro">
+                <div class="grid-element">
+                    <img src="~/assets/CAPAS/AMOR_CAPA.png" />
+                </div>
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/o-segredo-das-relacoes">
+                <div class="grid-element">
+                    <img src="~/assets/CAPAS/CERAS.png" />
+                </div>
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/drive-code">
+                <div class="grid-element">
+                    <img src="~/assets/CAPAS/drive.png" />
+                </div>
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/desafio-da-poupanca">
+            <div class="grid-element empty">Hello :)</div>
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/have-a-drink">
+            <div class="grid-element xv">
+                <img src="~/assets/CAPAS/CAPA_SANDEMAN.jpg" />
             </div>
         </nuxt-link>
-        <div class="grid-element xv"><img src="~/assets/CAPAS/600X300_SANDEMAN.jpg" /></div>
-        <div class="grid-element"><img src="~/assets/CAPAS/600X600BE_BEAUTY.jpg" /></div>
-    </div>
-        </component>
+
+
+        <nuxt-link to="/work/um-mundo-sem-cem">
+            <div class="grid-element">
+                <img src="~/assets/CAPAS/pub.png" />
+            </div>
+        </nuxt-link>
+
+
+        <nuxt-link to="/work/coisas-de-miudos">
+            <div class="grid-element empty">Hello :)</div>
+        </nuxt-link>
+
+        <nuxt-link to="/work/conversa-de-chat">
+            <div class="grid-element">
+                <img src="~/assets/CAPAS/CAPA2.jpg" />
+            </div>
+        </nuxt-link>
+
+
+        <nuxt-link to="/work/tofa">
+            <div class="grid-element">
+                <img src="~/assets/CAPAS/capa_tofa.jpg" />
+            </div>
+        </nuxt-link>
+
+
+        <nuxt-link to="/work/smart">
+            <div class="grid-element">
+                <img src="~/assets/CAPAS/smarta_capa.jpg" />
+            </div>
+        </nuxt-link>
+
+
+        <nuxt-link to="/work/mais-cabo-verde">
+            <div class="grid-element">
+                <img src="~/assets/CAPAS/unitel.png" />
+            </div>
+        </nuxt-link>
+
+
+
+        <nuxt-link to="/work/seja-o-heroi">
+        <div class="grid-element">
+            <img src="~/assets/CAPAS/aspirina.png" />
+        </div>
+            </nuxt-link>
+
+
+
+
+
+
+        </div>
+    </component>
 </template>
 
 <script>
@@ -91,7 +179,7 @@ export default Vue.extend({
 .grid-container {
     @media (min-device-width: 769px) {
         flex-direction: column;
-        height: 100vh;
+        height: calc(100vh - 17px);
         padding-top: 0;
     }
     display: flex;
@@ -102,15 +190,15 @@ export default Vue.extend({
     flex-direction: row;
     .grid-element {
         @media (min-device-width: 769px) {
-            width: 300px;
-            height: calc(100vh / 3);
+            width: calc((100vh - 17px) / 3);
+            height: calc((100vh - 17px) / 3);
         }
         width: 50vw;
         height: 500px;
 
         &.xv {
             @media (min-device-width: 769px) {
-                height: calc(200vh /3);
+                height: calc((100vh - 17px) * 2 /3);
             }
         }
         &.xh {

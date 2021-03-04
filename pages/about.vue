@@ -2,7 +2,7 @@
     <div class="about">
         <p><b>Andreia never liked to write in the third person.</b></p>
         <p>
-            <br>That being said, there is so much more I can say about me, but let's talk about the words - the only thing that matters here. I like words, always have, but it was not until late that I realized I could have gone straight for it. I got into medicine first. I studied and practised veterinary medicine for the love of animals, but the love for words eventually spoke louder. In between came the pharma industry. That's where I met the copywriters and thought: hey, I like that.
+            <br>That being said, there is so much more I can say about me, but let's talk about the words - the thing that matters here. I like words, always have, but it was not until late that I realized I could have gone straight for it. I got into medicine first. I studied and practised veterinary medicine for the love of animals, but the love for words eventually spoke louder. In between came the pharma industry. That's where I met the copywriters and thought: hey, I like that.
 
 
              <p>Now I do what makes me happy, and the best part?
@@ -88,7 +88,7 @@
         <div class="hotlinks">
             
             <div class="link-box">
-                [lo][lo][lo]
+                [https://www.linkedin.com/in/andreia-lu%C3%ADsa-8a391b41/][https://www.instagram.com/andreia_lluisa/?hl=pt]
             </div>
         </div>
     </div>
