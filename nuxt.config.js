@@ -1,8 +1,5 @@
 export default {
   target: 'static',
-  router: {
-    base: '/andreialu/'
-  },
   css: ['~/assets/main.scss'],
   generate: {
     nojekyll: false
