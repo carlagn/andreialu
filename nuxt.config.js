@@ -4,6 +4,9 @@ export default {
     base: '/andreialu/'
   },
   css: ['~/assets/main.scss'],
+  generate: {
+    nojekyll: false
+  },
   head: {
     link: [
       {
