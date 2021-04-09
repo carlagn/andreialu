@@ -125,11 +125,17 @@ export default Vue.extend({
     font-weight: lighter;
     .link-box {
         a {
+            @media (min-device-width: 769px) {
+                line-height: 16pt;
+                font-size: 16px;
+            }
             display: inline-flex;
             align-items: center;
             text-decoration: none;
             color: black;
             padding-right: 16px;
+            font-size: 28px;
+            line-height: 28pt;
             img {
                 @media (min-device-width: 769px) {
                     max-width: 25px;

@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1618003355",layout:"default",error:null,state:{sidebar:a,title:a,activePage:"work"},serverRendered:true,routePath:"\u002Fwork\u002Fo-segredo-das-relacoes",config:{}}}(""));
