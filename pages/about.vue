@@ -29,7 +29,7 @@
           <b>EXPERIENCE.</b>
         <br><b>BBDO</b> Lisbon
         <br>Copywriter, Nov. 2016 - present
-        <br>Clients: McDonald’s, Mercedes-Benz, smart, Água das Pedras, Super Bock, Sandeman, Novo Banco, Pingo Doce, Cafés Tofa, Buondi, Gallo, Barral</p>
+        <br><span></span>Clients: McDonald’s, Mercedes-Benz, smart, Água das Pedras, Super Bock, Sandeman, Novo Banco, Pingo Doce, Cafés Tofa, Buondi, Gallo, Barral</p>
 
         <p><b>Wunderman</b> Lisbon
         <br>Intern copywriter, Aug. 2016 - Nov. 2016
@@ -114,16 +114,15 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .about {
-    margin-left: 350px;
-    padding: 32px 32px 32px 200px;
-    max-width: 800px;
-    margin: 0 auto;
+    @media (min-device-width: 769px) {
+        padding-left: 200px;
+        margin-left: 350px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    padding: 32px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    @media (max-width: 769px) {
-        padding-left: 32px;
-        margin-top: 200px;
-    }
     .link-box {
         a {
             display: inline-flex;
@@ -132,7 +131,10 @@ export default Vue.extend({
             color: black;
             padding-right: 16px;
             img {
-                max-width: 25px;
+                @media (min-device-width: 769px) {
+                    max-width: 25px;
+                }
+                max-width: 50px;
                 padding-right: 4px;
             }
         }
