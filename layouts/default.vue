@@ -163,7 +163,6 @@ p {
         margin: 32px 0;
         font-size: 16px;
     }
-    word-break: break-all;
     font-size: 28px;
     margin: 48px 0;
     line-height: 28pt;
