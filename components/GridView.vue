@@ -5,10 +5,11 @@
            
             <!-- Capa Pedras -->
             <nuxt-link to="/work/pedras">
-                <div class="grid-element xv empty">
-                    
+                <div class="grid-element xv">
+                    <video class="grid-video" autoplay="true" muted="true" loop="true">
+                        <source :src="require(`~/assets/CAPAS/pedras.webm`)" />
+                    </video>
                 </div>
-            
             </nuxt-link>
         
             <div class="grid-element empty">Hello :)</div>
@@ -27,7 +28,11 @@
 
 
             <nuxt-link to="/work/reprogramar-a-manha">
-                <div class="grid-element empty">Hello :)</div>
+                <div class="grid-element">
+                    <video class="grid-video" autoplay="true" muted="true" loop="true">
+                        <source :src="require(`~/assets/CAPAS/robot.webm`)" />
+                    </video>
+                </div>
             </nuxt-link>
 
 
@@ -60,7 +65,11 @@
 
 
             <nuxt-link to="/work/desafio-da-poupanca">
-            <div class="grid-element empty">Hello :)</div>
+                <div class="grid-element">
+                    <video class="grid-video" autoplay="true" muted="true" loop="true">
+                        <source :src="require(`~/assets/CAPAS/porcos.webm`)" />
+                    </video>
+                </div>
             </nuxt-link>
 
 
@@ -79,7 +88,11 @@
 
 
         <nuxt-link to="/work/coisas-de-miudos">
-            <div class="grid-element empty">Hello :)</div>
+            <div class="grid-element">
+                <video class="grid-video" autoplay="true" muted="true" loop="true">
+                    <source :src="require(`~/assets/CAPAS/kidz.webm`)" />
+                </video>
+            </div>
         </nuxt-link>
 
         <nuxt-link to="/work/conversa-de-chat">
@@ -155,10 +168,10 @@ export default Vue.extend({
             this.$store.commit("setActivePage", str)
         },
         getCover(projName) {
-            if (this.isMobile){
-                var image = `<img src="~/assets/CAPAS/${projName}.gif" />`;
-                return image;
-            }
+            // if (this.isMobile){
+            //     var image = `<img src="~/assets/CAPAS/${projName}.gif" />`;
+            //     return image;
+            // }
             const videourl = require(`~/assets/CAPAS/${projName}.webm`);
             var video = `<video class="grid-video" autoplay="true" muted="true" loop="true"><source src="${videourl}" /></video>`;
             return video;
