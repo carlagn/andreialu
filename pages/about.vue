@@ -88,7 +88,12 @@
         <div class="hotlinks">
             
             <div class="link-box">
-                [https://www.linkedin.com/in/andreia-lu%C3%ADsa-8a391b41/][https://www.instagram.com/andreia_lluisa/?hl=pt]
+                <a href="https://www.linkedin.com/in/andreia-lu%C3%ADsa-8a391b41/">
+                    <img src="~/assets/li-small.png" /> <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/andreia_lluisa/?hl=pt">
+                    <img src="~/assets/ig-small.png" /> <span>Instagram</span>
+                </a>
             </div>
         </div>
     </div>
@@ -118,6 +123,19 @@ export default Vue.extend({
     @media (max-width: 769px) {
         padding-left: 32px;
         margin-top: 200px;
+    }
+    .link-box {
+        a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            padding-right: 16px;
+            img {
+                max-width: 25px;
+                padding-right: 4px;
+            }
+        }
     }
 }
 </style>
