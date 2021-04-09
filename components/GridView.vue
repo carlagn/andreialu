@@ -6,18 +6,19 @@
             <!-- Capa Pedras -->
             <nuxt-link to="/work/pedras">
                 <div class="grid-element xv">
-                    <video class="grid-video" autoplay="true" muted="true" loop="true">
+                    <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
                         <source :src="require(`~/assets/CAPAS/pedras.webm`)" />
                     </video>
+                    <img v-else src="~/assets/CAPAS/pedras.gif" />
                 </div>
             </nuxt-link>
         
             <div class="grid-element empty">Hello :)</div>
 
             <nuxt-link to="/work/acordar-com-gosto">
-            <div class="grid-element">
-             <img src="~/assets/CAPAS/mcmuffin.png" />
-             </div>
+                <div class="grid-element">
+                    <img src="~/assets/CAPAS/mcmuffin.png" />
+                </div>
             </nuxt-link>
 
             <nuxt-link to="/work/winona">
@@ -29,9 +30,10 @@
 
             <nuxt-link to="/work/reprogramar-a-manha">
                 <div class="grid-element">
-                    <video class="grid-video" autoplay="true" muted="true" loop="true">
+                    <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
                         <source :src="require(`~/assets/CAPAS/robot.webm`)" />
                     </video>
+                    <img v-else src="~/assets/CAPAS/robot.gif" />
                 </div>
             </nuxt-link>
 
@@ -66,9 +68,10 @@
 
             <nuxt-link to="/work/desafio-da-poupanca">
                 <div class="grid-element">
-                    <video class="grid-video" autoplay="true" muted="true" loop="true">
+                    <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
                         <source :src="require(`~/assets/CAPAS/porcos.webm`)" />
                     </video>
+                    <img v-else src="~/assets/CAPAS/porcos.gif" />
                 </div>
             </nuxt-link>
 
@@ -89,9 +92,10 @@
 
         <nuxt-link to="/work/coisas-de-miudos">
             <div class="grid-element">
-                <video class="grid-video" autoplay="true" muted="true" loop="true">
+                <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
                     <source :src="require(`~/assets/CAPAS/kidz.webm`)" />
                 </video>
+                <img v-else src="~/assets/CAPAS/kidz.gif" />
             </div>
         </nuxt-link>
 
