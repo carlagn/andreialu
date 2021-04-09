@@ -110,6 +110,7 @@ body {
         display: block;
         max-height: 500px;
         width: auto;
+        max-width: 100%;
         &.portrait {
             width: 50%;
             height: auto;
