@@ -9,7 +9,7 @@
                     <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
                         <source :src="require(`~/assets/CAPAS/pedras.webm`)" />
                     </video>
-                    <img v-else src="~/assets/CAPAS/pedras.gif" />
+                    <img v-else src="~/assets/CAPAS/pedras_still.png" />
                 </div>
             </nuxt-link>
         
