@@ -164,6 +164,7 @@ p {
         font-size: 16px;
     }
     font-size: 28px;
+    text-align: justify;
     margin: 48px 0;
     line-height: 28pt;
 }
