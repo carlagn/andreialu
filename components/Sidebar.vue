@@ -11,7 +11,7 @@
                 </div>
                 <div class="menu" :class="{'vertical': getCurrentRoute !== '/'}">
                     <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Work</nuxt-link>
-                    <nuxt-link to="/about" :class="{'active': getActivePage === 'about'}">About</nuxt-link>
+                    <nuxt-link to="/about" :class="{'active': getCurrentRoute.includes('about')}">About</nuxt-link>
                 </div>
                 <div v-if="getCurrentRoute.includes('about')" class="lang-menu">
                     <p>
@@ -87,7 +87,7 @@ export default Vue.extend({
         height: 100vh;
     }
 
-    &.about {
+    &.about, &.about-pt {
         @media (min-width: 769px) {
             position: fixed;
         }

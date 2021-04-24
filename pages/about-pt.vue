@@ -29,7 +29,7 @@
         <br><span></span>Clientes: McDonald’s, Mercedes-Benz, smart, Água das Pedras, Super Bock, Sandeman, Novo Banco, Pingo Doce, Cafés Tofa, Buondi, Gallo, Barral</p>
 
         <p><b>Wunderman</b> Lisboa
-        <br>Redactora publicitária Estagiária, Ago. 2016 - Nov. 2016
+        <br>Redactora publicitária estagiária, Ago. 2016 - Nov. 2016
         <br>Clientes: Milaneza, Labello, Harmony, Nivea, Europcar, Opel, A Tabaqueira
         </p>
 
