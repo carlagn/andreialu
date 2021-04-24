@@ -37,6 +37,13 @@ export default{
         }
     },
     mounted() {
+        window.addEventListener('keydown', e => {
+            const idx = document.querySelector('.grid-wrapper').scrollLeft
+            if (e.key === 'ArrowRight')
+                document.querySelector('.grid-wrapper').scrollLeft = idx + 20
+            else if (e.key === 'ArrowLeft')
+                document.querySelector('.grid-wrapper').scrollLeft = idx - 20
+        })
     },
     methods: {
         ...mapMutations([ 'setSideBar', 'setActiveZoom']),

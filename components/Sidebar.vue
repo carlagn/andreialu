@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar-wrapper" :class="{'active': getSidebarState, 'background': getActivePage === 'work'}">
         <div class="sidebar-box">
-            <div class="logo-box">
+            <div class="logo-box" :class="{'vertical': getCurrentRoute !== '/'}">
                 <div
                     @click="backToTop()"
                     class="logo"
@@ -9,11 +9,11 @@
                     <img src="~/assets/logo.png" />
                     <span class="label">copywriter.</span>
                 </div>
-                <div v-if="getCurrentRoute === '/'" class="menu">
+                <div class="menu" :class="{'vertical': getCurrentRoute !== '/'}">
                     <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Work</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getActivePage === 'about'}">About</nuxt-link>
                 </div>
-                <div v-else-if="getCurrentRoute === '/about'" class="lang-menu">
+                <div v-if="getCurrentRoute === '/about'" class="lang-menu">
                     <p><span>PT</span></p>
                 </div>
             </div>
@@ -109,7 +109,9 @@ export default Vue.extend({
     .sidebar-box {
         @media (min-device-width: 769px) {
             padding: 0 32px 0 24px;
-            margin: 46px 0;
+            height: calc((100vh - 17px) / 3);
+            display: flex;
+            height: 100%;
         }
         width: auto;
     }
@@ -125,6 +127,15 @@ export default Vue.extend({
         position: relative;
         height: 268px;
         padding: 16px;
+
+        &.vertical {
+            flex-direction: column;
+            align-items: flex-start;
+
+            a {
+                pointer-events: auto;
+            }
+        }
 
         img {
             @media (min-device-width: 769px) {
@@ -149,8 +160,8 @@ export default Vue.extend({
             }
             display: none;
             position: absolute;
-            top: 100%;
-            padding-left: 4px;
+            top: 213px;
+            padding-left: 8px;
             width: 100%;
             text-align: center;
         }
@@ -177,6 +188,17 @@ export default Vue.extend({
                 color: black;
                 &.active {
                     text-decoration: underline;
+                }
+            }
+            &.vertical {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-left: 8px;
+                margin-left: 0;
+                a {
+                    margin: 8px 0;
                 }
             }
         }
@@ -207,6 +229,14 @@ export default Vue.extend({
             transition-delay: 0s;
             > a {
                 pointer-events: none;
+            }
+            &.vertical {
+                opacity: 1;
+                padding-left: 8px;
+                a {
+                    margin: 8px 0;
+                    pointer-events: auto;
+                }
             }
         }
     }
