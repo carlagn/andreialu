@@ -1,7 +1,8 @@
 export const state = () => ({
   sidebar: "",
   title: "",
-  activePage: "work"
+  activePage: "work",
+  activeZoom: ""
 })
 
 export const mutations = {
@@ -13,6 +14,9 @@ export const mutations = {
   },
   setActivePage(state, payload) {
     state.activePage = payload
+  },
+  setActiveZoom(state, payload) {
+    state.activeZoom = payload
   }
 }
 

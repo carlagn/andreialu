@@ -13,6 +13,9 @@
                     <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Work</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getActivePage === 'about'}">About</nuxt-link>
                 </div>
+                <div v-else-if="getCurrentRoute === '/about'" class="lang-menu">
+                    <p><span>PT</span></p>
+                </div>
             </div>
         </div>
     </div>
@@ -81,6 +84,13 @@ export default Vue.extend({
         height: 100vh;
     }
 
+    &.about {
+        @media (min-width: 769px) {
+            position: fixed;
+        }
+        position: absolute;
+    }
+
     &.background {
         @media (min-device-width: 769px) {
             height: calc((100vh - 17px) / 3);
@@ -112,6 +122,7 @@ export default Vue.extend({
         display: flex;
         pointer-events: auto;
         align-items: center;
+        position: relative;
         height: 268px;
         padding: 16px;
 
@@ -130,6 +141,18 @@ export default Vue.extend({
             @media (min-device-width: 769px) {
                 padding-bottom: 0;
             }
+        }
+
+        .lang-menu {
+            @media (min-width: 769px) {
+                display: block;
+            }
+            display: none;
+            position: absolute;
+            top: 100%;
+            padding-left: 4px;
+            width: 100%;
+            text-align: center;
         }
 
         .menu {

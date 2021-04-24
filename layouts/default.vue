@@ -7,6 +7,9 @@
         >
             <Nuxt :sidebar="sidebarClass"/>
         </transition>
+        <div v-if="activeZoom.length > 0" class="image-modal" @click="closeModal()">
+            <img :src="require(`@/assets/` + activeZoom + '')" >
+        </div>
     </div>
 </template>
 
@@ -24,18 +27,24 @@ export default{
     },
     computed: {
         getCurrentRoute() {
-            return this.$router.path;
+            return this.$route.path.slice(1);
         },
         sidebarClass () {
-            return this.$store.state.sidebar;
+            return `${this.$store.state.sidebar} ${this.getCurrentRoute}`;
+        },
+        activeZoom () {
+            return this.$store.state.activeZoom;
         }
     },
     mounted() {
     },
     methods: {
-        ...mapMutations([ 'setSideBar' ]),
+        ...mapMutations([ 'setSideBar', 'setActiveZoom']),
         checkIfMobile() {
             return document.querySelector('.grid-container').getBoundingClientRect() >= 768;
+        },
+        closeModal() {
+            this.$store.commit("setActiveZoom", "");
         }
     }
 }
@@ -115,6 +124,20 @@ body {
             width: 50%;
             height: auto;
         }
+
+        @media (min-device-width: 769px) {
+            &.zoom {
+                position: absolute;
+                z-index: 10000;
+                max-height: calc(100vh - 100px);
+                width: auto;
+                height: 100%;
+                margin: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 
     .project-content {
@@ -172,6 +195,22 @@ p {
 .lang{
     b {
     cursor: pointer;
+    }
+}
+.image-modal {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    left: 0;
+
+    img {
+        display: block;
+        height: calc(100% - 128px);
+        margin: 16px;
+        max-height: 100%;
+        margin: 64px auto;
     }
 } 
 </style>

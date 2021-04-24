@@ -19,9 +19,17 @@
                 class="media"
                 src="https://cdn-a.luerzersarchive.com/archive/submissions/tv_commercials/720/2018/317094.mp4?Expires=1609614723&Signature=GHeYQe3YeQ2j~cltAnM4nG17xQXDAz7EyRzXFZfea34bsdpO5R9RoWumey3Ldt1BDiS7ax5FhsLIatBJiLEMp6UyCl1z9fw~efQDP~awWLQ1SgtOaDC3HzHnZX3mqJkuwC1YXss0ri4Nq4IAmvRrJ2QwevR8s9gOgGR4G81IdHPBMNjs5P8vrDcz~QrmzZdOZ5AUulb1JT9yxNt4Bv-dDqMlJbiUTTzN1xlID9nsJUpGuTg7prWwvRmfG-OVOYgRODbDx0ShVpOVGe0iqd~Y5jwzVPBBPwCap76QEQpjcl4dYKjFKLBjOsibawaZ2MzbKRF-NdZ4h8SOqMm6iX7VOA__&Key-Pair-Id=APKAJXKTOLSPBG77KE6Q"
             ></video>
+            <p> Imagens:  (substituir o url no código pelo endereço da imagem (Exemplo: 'tofa/tofa06.png')</p>
+                <Img :source="'tofa/tofa06.png'" />
+            <p> Imagens com zoom:</p>
+                <Img
+                    :source="'tofa/tofa06.png'"
+                    :zoom="true"
+                />
+
         </div>
         <!-- adicionar SEMPRE este elemento no fim para obter uma paginação concisa. -->
-        <Pagination  />
+        <!-- <Pagination  /> -->
     </div>
 </template>
 
@@ -29,10 +37,12 @@
 import Vue from 'vue'
 import { mapMutations } from 'vuex'
 import Pagination from '../../components/Pagination.vue'
+import Img from '../../components/Img.vue'
 
 export default Vue.extend({
     components: {
-        Pagination
+        Pagination,
+        Img
     },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");

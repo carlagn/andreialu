@@ -20,14 +20,6 @@ export default Vue.extend({
             prevUrl: {}
         }
     },
-    props: {
-        next: {
-            type: Object
-        },
-        prev: {
-            type: Object
-        }
-    },
     created() {
         this.currentUrl = this.$route.name.split("-")[1];
         const currentIdx = this.routes.findIndex(e => e.path === this.$route.path);
