@@ -3,142 +3,88 @@
         <div class="grid-container" ref="grid">
             <div class="grid-element empty"></div>
            
-            <!-- Capa Pedras -->
             <nuxt-link to="/work/pedras">
-                <div class="grid-element xv">
-                    <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
-                        <source :src="require(`~/assets/CAPAS/pedras.webm`)" />
-                    </video>
-                    <img v-else src="~/assets/CAPAS/pedras_still.png" />
-                </div>
+                <Cover :source="'pedras.webm'" :animated="true" :mode="'portrait'" :alt="'pedras_still.png'"  />
             </nuxt-link>
         
             <div class="grid-element empty">Hello :)</div>
 
             <nuxt-link to="/work/acordar-com-gosto">
-                <div class="grid-element">
-                    <img src="~/assets/CAPAS/mcmuffin.png" />
-                </div>
+                <Cover :source="'mcmuffin.png'" />
             </nuxt-link>
 
             <nuxt-link to="/work/winona">
-                <div class="grid-element">
-                    <img src="~/assets/CAPAS/winona_CAPA.png" />
-                </div>
+                <Cover :source="'winona_CAPA.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/reprogramar-a-manha">
-                <div class="grid-element">
-                    <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
-                        <source :src="require(`~/assets/CAPAS/robot.webm`)" />
-                    </video>
-                    <img v-else src="~/assets/CAPAS/robot.gif" />
-                </div>
+                <Cover :source="'robot.webm'" :animated="true" :alt="'robot.gif'"  />
             </nuxt-link>
 
 
             <nuxt-link to="/work/mesas-para-todos-os-gostos">
-                <div class="grid-element">
-                    <img src="~/assets/CAPAS/mesas.png" />
-                </div>
+                <Cover :source="'mesas.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/amor-rafeiro">
-                <div class="grid-element">
-                    <img src="~/assets/CAPAS/AMOR_CAPA.png" />
-                </div>
+                <Cover :source="'AMOR_CAPA.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/o-segredo-das-relacoes">
-                <div class="grid-element">
-                    <img src="~/assets/CAPAS/CERAS.png" />
-                </div>
+                <Cover :source="'CERAS.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/drive-code">
-                <div class="grid-element">
-                    <img src="~/assets/CAPAS/drive.png" />
-                </div>
+                <Cover :source="'drive.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/desafio-da-poupanca">
-                <div class="grid-element">
-                    <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
-                        <source :src="require(`~/assets/CAPAS/porcos.webm`)" />
-                    </video>
-                    <img v-else src="~/assets/CAPAS/porcos.gif" />
-                </div>
+                <Cover :source="'porcos.webm'" :animated="true" :alt="'porcos.gif'"  />
             </nuxt-link>
 
 
             <nuxt-link to="/work/have-a-drink">
-            <div class="grid-element xv">
-                <img src="~/assets/CAPAS/CAPA_SANDEMAN.jpg" />
-            </div>
-        </nuxt-link>
-
-
-        <nuxt-link to="/work/um-mundo-sem-cem">
-            <div class="grid-element">
-                <img src="~/assets/CAPAS/pub.png" />
-            </div>
-        </nuxt-link>
-
-
-        <nuxt-link to="/work/coisas-de-miudos">
-            <div class="grid-element">
-                <video v-if="!isMobile" class="grid-video" autoplay="true" muted="true" loop="true">
-                    <source :src="require(`~/assets/CAPAS/kidz.webm`)" />
-                </video>
-                <img v-else src="~/assets/CAPAS/kidz.gif" />
-            </div>
-        </nuxt-link>
-
-        <nuxt-link to="/work/conversa-de-chat">
-            <div class="grid-element">
-                <img src="~/assets/CAPAS/CAPA2.jpg" />
-            </div>
-        </nuxt-link>
-
-
-        <nuxt-link to="/work/tofa">
-            <div class="grid-element">
-                <img src="~/assets/CAPAS/capa_tofa.jpg" />
-            </div>
-        </nuxt-link>
-
-
-        <nuxt-link to="/work/smart">
-            <div class="grid-element">
-                <img src="~/assets/CAPAS/smarta_capa.jpg" />
-            </div>
-        </nuxt-link>
-
-
-        <nuxt-link to="/work/mais-cabo-verde">
-            <div class="grid-element">
-                <img src="~/assets/CAPAS/unitel.png" />
-            </div>
-        </nuxt-link>
-
-
-
-        <nuxt-link to="/work/seja-o-heroi">
-        <div class="grid-element">
-            <img src="~/assets/CAPAS/aspirina.png" />
-        </div>
+                <Cover :source="'CAPA_SANDEMAN.jpg'" :mode="'portrait'" />
             </nuxt-link>
 
 
+            <nuxt-link to="/work/um-mundo-sem-cem">
+                <Cover :source="'pub.png'" />
+            </nuxt-link>
 
 
+            <nuxt-link to="/work/coisas-de-miudos">
+                <Cover :source="'kidz.webm'" :animated="true" :alt="'kidz.gif'"  />
+            </nuxt-link>
+
+            <nuxt-link to="/work/conversa-de-chat">
+                <Cover :source="'CAPA2.jpg'" />
+            </nuxt-link>
 
 
+            <nuxt-link to="/work/tofa">
+                <Cover :source="'capa_tofa.jpg'" />
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/smart">
+                <Cover :source="'smarta_capa.jpg'" />
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/mais-cabo-verde">
+                <Cover :source="'unitel.png'" />
+            </nuxt-link>
+
+
+            <nuxt-link to="/work/seja-o-heroi">
+                <Cover :source="'aspirina.png'" />
+            </nuxt-link>
         </div>
     </component>
 </template>
@@ -147,10 +93,12 @@
 import Vue from 'vue';
 import HorizontalScroll from 'vue-horizontal-scroll'
 import { mapMutations } from 'vuex'
+import Cover from './Cover'
 import 'vue-horizontal-scroll/dist/vue-horizontal-scroll.css'
 export default Vue.extend({
     components: {
-        HorizontalScroll
+        HorizontalScroll,
+        Cover
     },
     data() {
         return {
@@ -168,6 +116,12 @@ export default Vue.extend({
     },
     methods: {
         ...mapMutations([ 'setSideBar', 'setActivePage' ]),
+        isLoaded(str) {
+            return true
+        },
+        pushToLoaded(str) {
+            return "h"
+        },
         setActivePage(str) {
             this.$store.commit("setActivePage", str)
         },
@@ -212,20 +166,10 @@ export default Vue.extend({
         }
         width: 50vw;
         height: 500px;
-
         &.xv {
             @media (min-device-width: 769px) {
-                height: calc((100vh - 17px) * 2 /3);
+                height: calc((100vh - 17px) * 2 /3) !important;
             }
-        }
-        &.xh {
-            width: 600px;
-        }
-
-        img, .grid-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
         &.empty {
             @media (min-device-width: 769px) {
@@ -236,19 +180,6 @@ export default Vue.extend({
             align-items: center;
             font-family: 'Fraunces', serif;
             font-weight: lighter;
-        }
-        .grid-video {
-            @media (min-device-width: 769px) {
-                display: block;
-            }
-            display: none;
-        }
-        .grid-gif {
-            @media (min-device-width: 769px) {
-                display: none;
-            }
-            display: block;
-
         }
     }
 }
