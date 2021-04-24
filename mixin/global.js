@@ -26,7 +26,7 @@ export default {
 
 
                 {
-                    name: "Reprogramar a Manha",
+                    name: "Reprogramar a manhã",
                     path: "/work/reprogramar-a-manha"
                 },
 
@@ -55,7 +55,7 @@ export default {
 
 
                 {
-                    name: "Desafio da Poupança",
+                    name: "Desafio da poupança",
                     path: "/work/desafio-da-poupanca"
                 },
 
@@ -95,7 +95,7 @@ export default {
        
                 
                 {
-                    name: "Mais cabo verde",
+                    name: "Mais Cabo Verde",
                     path: "/work/mais-cabo-verde"
                 },
                 

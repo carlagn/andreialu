@@ -3,28 +3,29 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _ba208fb6 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _baa05378 = () => interopDefault(import('..\\pages\\work\\acordar-com-gosto.vue' /* webpackChunkName: "pages/work/acordar-com-gosto" */))
-const _551caf23 = () => interopDefault(import('..\\pages\\work\\amor-rafeiro.vue' /* webpackChunkName: "pages/work/amor-rafeiro" */))
-const _fccd4882 = () => interopDefault(import('..\\pages\\work\\coisas-de-miudos.vue' /* webpackChunkName: "pages/work/coisas-de-miudos" */))
-const _7051a5a2 = () => interopDefault(import('..\\pages\\work\\conversa-de-chat.vue' /* webpackChunkName: "pages/work/conversa-de-chat" */))
-const _955a6e28 = () => interopDefault(import('..\\pages\\work\\desafio-da-poupanca.vue' /* webpackChunkName: "pages/work/desafio-da-poupanca" */))
-const _1de056f9 = () => interopDefault(import('..\\pages\\work\\drive-code.vue' /* webpackChunkName: "pages/work/drive-code" */))
-const _220c78a0 = () => interopDefault(import('..\\pages\\work\\have-a-drink.vue' /* webpackChunkName: "pages/work/have-a-drink" */))
-const _646e6058 = () => interopDefault(import('..\\pages\\work\\mais-cabo-verde.vue' /* webpackChunkName: "pages/work/mais-cabo-verde" */))
-const _090b425c = () => interopDefault(import('..\\pages\\work\\mesas-para-todos-os-gostos.vue' /* webpackChunkName: "pages/work/mesas-para-todos-os-gostos" */))
-const _6236f05a = () => interopDefault(import('..\\pages\\work\\o-segredo-das-relacoes.vue' /* webpackChunkName: "pages/work/o-segredo-das-relacoes" */))
-const _022ce95e = () => interopDefault(import('..\\pages\\work\\pedras.vue' /* webpackChunkName: "pages/work/pedras" */))
-const _1c8b9dda = () => interopDefault(import('..\\pages\\work\\ProjectExample.vue' /* webpackChunkName: "pages/work/ProjectExample" */))
-const _56906923 = () => interopDefault(import('..\\pages\\work\\reprogramar-a-manha.vue' /* webpackChunkName: "pages/work/reprogramar-a-manha" */))
-const _77e13c14 = () => interopDefault(import('..\\pages\\work\\seja-o-heroi.vue' /* webpackChunkName: "pages/work/seja-o-heroi" */))
-const _2c970530 = () => interopDefault(import('..\\pages\\work\\smart.vue' /* webpackChunkName: "pages/work/smart" */))
-const _0b0ab887 = () => interopDefault(import('..\\pages\\work\\style-guide.vue' /* webpackChunkName: "pages/work/style-guide" */))
-const _a56a7476 = () => interopDefault(import('..\\pages\\work\\this-is-a-new-page.vue' /* webpackChunkName: "pages/work/this-is-a-new-page" */))
-const _cef17e42 = () => interopDefault(import('..\\pages\\work\\tofa.vue' /* webpackChunkName: "pages/work/tofa" */))
-const _16b05c51 = () => interopDefault(import('..\\pages\\work\\um-mundo-sem-cem.vue' /* webpackChunkName: "pages/work/um-mundo-sem-cem" */))
-const _f2e9b5a2 = () => interopDefault(import('..\\pages\\work\\winona.vue' /* webpackChunkName: "pages/work/winona" */))
-const _7ab0da2c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _53bb0a73 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _d8474164 = () => interopDefault(import('../pages/about-pt.vue' /* webpackChunkName: "pages/about-pt" */))
+const _3d16f5e9 = () => interopDefault(import('../pages/work/acordar-com-gosto.vue' /* webpackChunkName: "pages/work/acordar-com-gosto" */))
+const _072f9c5e = () => interopDefault(import('../pages/work/amor-rafeiro.vue' /* webpackChunkName: "pages/work/amor-rafeiro" */))
+const _2ca5990c = () => interopDefault(import('../pages/work/coisas-de-miudos.vue' /* webpackChunkName: "pages/work/coisas-de-miudos" */))
+const _2feb04ea = () => interopDefault(import('../pages/work/conversa-de-chat.vue' /* webpackChunkName: "pages/work/conversa-de-chat" */))
+const _52709351 = () => interopDefault(import('../pages/work/desafio-da-poupanca.vue' /* webpackChunkName: "pages/work/desafio-da-poupanca" */))
+const _38b356f4 = () => interopDefault(import('../pages/work/drive-code.vue' /* webpackChunkName: "pages/work/drive-code" */))
+const _bde69e2a = () => interopDefault(import('../pages/work/have-a-drink.vue' /* webpackChunkName: "pages/work/have-a-drink" */))
+const _0cf3253d = () => interopDefault(import('../pages/work/mais-cabo-verde.vue' /* webpackChunkName: "pages/work/mais-cabo-verde" */))
+const _7cfc08cd = () => interopDefault(import('../pages/work/mesas-para-todos-os-gostos.vue' /* webpackChunkName: "pages/work/mesas-para-todos-os-gostos" */))
+const _2ffacfd5 = () => interopDefault(import('../pages/work/o-segredo-das-relacoes.vue' /* webpackChunkName: "pages/work/o-segredo-das-relacoes" */))
+const _435d1ed9 = () => interopDefault(import('../pages/work/pedras.vue' /* webpackChunkName: "pages/work/pedras" */))
+const _d4cfaf56 = () => interopDefault(import('../pages/work/ProjectExample.vue' /* webpackChunkName: "pages/work/ProjectExample" */))
+const _18a398f0 = () => interopDefault(import('../pages/work/reprogramar-a-manha.vue' /* webpackChunkName: "pages/work/reprogramar-a-manha" */))
+const _76224f31 = () => interopDefault(import('../pages/work/seja-o-heroi.vue' /* webpackChunkName: "pages/work/seja-o-heroi" */))
+const _47c69756 = () => interopDefault(import('../pages/work/smart.vue' /* webpackChunkName: "pages/work/smart" */))
+const _4a97b7ec = () => interopDefault(import('../pages/work/style-guide.vue' /* webpackChunkName: "pages/work/style-guide" */))
+const _5fc79ac0 = () => interopDefault(import('../pages/work/this-is-a-new-page.vue' /* webpackChunkName: "pages/work/this-is-a-new-page" */))
+const _e4a6cdcc = () => interopDefault(import('../pages/work/tofa.vue' /* webpackChunkName: "pages/work/tofa" */))
+const _7ec4340c = () => interopDefault(import('../pages/work/um-mundo-sem-cem.vue' /* webpackChunkName: "pages/work/um-mundo-sem-cem" */))
+const _70894aac = () => interopDefault(import('../pages/work/winona.vue' /* webpackChunkName: "pages/work/winona" */))
+const _7372e538 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -44,91 +45,95 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _ba208fb6,
+    component: _53bb0a73,
     name: "about"
   }, {
+    path: "/about-pt",
+    component: _d8474164,
+    name: "about-pt"
+  }, {
     path: "/work/acordar-com-gosto",
-    component: _baa05378,
+    component: _3d16f5e9,
     name: "work-acordar-com-gosto"
   }, {
     path: "/work/amor-rafeiro",
-    component: _551caf23,
+    component: _072f9c5e,
     name: "work-amor-rafeiro"
   }, {
     path: "/work/coisas-de-miudos",
-    component: _fccd4882,
+    component: _2ca5990c,
     name: "work-coisas-de-miudos"
   }, {
     path: "/work/conversa-de-chat",
-    component: _7051a5a2,
+    component: _2feb04ea,
     name: "work-conversa-de-chat"
   }, {
     path: "/work/desafio-da-poupanca",
-    component: _955a6e28,
+    component: _52709351,
     name: "work-desafio-da-poupanca"
   }, {
     path: "/work/drive-code",
-    component: _1de056f9,
+    component: _38b356f4,
     name: "work-drive-code"
   }, {
     path: "/work/have-a-drink",
-    component: _220c78a0,
+    component: _bde69e2a,
     name: "work-have-a-drink"
   }, {
     path: "/work/mais-cabo-verde",
-    component: _646e6058,
+    component: _0cf3253d,
     name: "work-mais-cabo-verde"
   }, {
     path: "/work/mesas-para-todos-os-gostos",
-    component: _090b425c,
+    component: _7cfc08cd,
     name: "work-mesas-para-todos-os-gostos"
   }, {
     path: "/work/o-segredo-das-relacoes",
-    component: _6236f05a,
+    component: _2ffacfd5,
     name: "work-o-segredo-das-relacoes"
   }, {
     path: "/work/pedras",
-    component: _022ce95e,
+    component: _435d1ed9,
     name: "work-pedras"
   }, {
     path: "/work/ProjectExample",
-    component: _1c8b9dda,
+    component: _d4cfaf56,
     name: "work-ProjectExample"
   }, {
     path: "/work/reprogramar-a-manha",
-    component: _56906923,
+    component: _18a398f0,
     name: "work-reprogramar-a-manha"
   }, {
     path: "/work/seja-o-heroi",
-    component: _77e13c14,
+    component: _76224f31,
     name: "work-seja-o-heroi"
   }, {
     path: "/work/smart",
-    component: _2c970530,
+    component: _47c69756,
     name: "work-smart"
   }, {
     path: "/work/style-guide",
-    component: _0b0ab887,
+    component: _4a97b7ec,
     name: "work-style-guide"
   }, {
     path: "/work/this-is-a-new-page",
-    component: _a56a7476,
+    component: _5fc79ac0,
     name: "work-this-is-a-new-page"
   }, {
     path: "/work/tofa",
-    component: _cef17e42,
+    component: _e4a6cdcc,
     name: "work-tofa"
   }, {
     path: "/work/um-mundo-sem-cem",
-    component: _16b05c51,
+    component: _7ec4340c,
     name: "work-um-mundo-sem-cem"
   }, {
     path: "/work/winona",
-    component: _f2e9b5a2,
+    component: _70894aac,
     name: "work-winona"
   }, {
     path: "/",
-    component: _7ab0da2c,
+    component: _7372e538,
     name: "index"
   }],
 

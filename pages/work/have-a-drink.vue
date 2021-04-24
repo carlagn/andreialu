@@ -13,11 +13,10 @@
                
                <div>
                 <Img :source="'print/print-sb.png'" :zoom="true"/>
-                <Img :source="'print/print-pd.png'" />
-                <Img :source="'print/printc1a.png'" />
-                <Img :source="'print/printc1.png'" />
-                <Img :source="'print/printc1b.png'" />
-                <Img :source="'print/sandeman1c.png'" />
+                <Img :source="'print/print-pd.png'" :zoom="true"/>
+                <Img :source="'print/printc1a.png'" :zoom="true"/>
+                <Img :source="'print/printc1.png'" :zoom="true"/>
+                <Img :source="'print/printc1b.png'" :zoom="true"/>
              
                 </div>
                 <p class="credits"><b>BBDO</b> C: Andreia Luísa A.D: António Belchior, Hugo Carvalheiro C.D: Marco Pacheco, Hugo Carvalheiro</p>

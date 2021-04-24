@@ -2,7 +2,7 @@
     <div class="about">
         <p><b>Andreia never liked to write in the third person.</b></p>
         <p>
-            <br>That being said, there is so much more I can say about me, but let's talk about the words - the thing that matters here. I like words, always have, but it was not until late that I realized I could have gone straight for it. I got into medicine first. I studied and practised veterinary medicine for the love of animals, but the love for words eventually spoke louder. In between came the pharma industry. That's where I met the copywriters and thought: hey, I like that.
+            <br>That being said, there is so much more I can say about me, but let's talk about the words - the thing that matters here. I like words, always have, but it was not until late that I realized I could have gone straight for it. I got into medicine first, studied and practised veterinary medicine for the love of animals, but the love for words eventually spoke louder. In between came the pharma industry. That's where I met the copywriters and thought: hey, I like that.
 
 
              <p>Now I do what makes me happy, and the best part?
@@ -17,7 +17,7 @@
         </p>
         <p>
           <b>AWARDS.</b>
-          <br><b>CCP</b> Gold - short story, Jovens Talentos Delta Q, 2020
+          <br><b>CCP</b> Gold - <a href="https://assets.bondlayer.com/nr1dxae7lw/_assets/n7v0ky4zsdbnurtrmpneaa.pdf">short story</a>, Jovens Talentos Delta Q, 2020 
           <br><b>CCP</b> Shortlist - print, Jovens Talentos Delta Q, 2020
           <br><b>Young Lions</b> Shortlist - film, 2018
           <br><b>CCP</b> Silver - best radio campaign, Novo Banco, 2017
@@ -49,12 +49,9 @@
         </p>
 
         <p><b>The Janssen Pharmaceutical Companies of Johnson & Johnson</b>
+        <br>Marketing assistant, Apr. 2014 - May 2015
         <br>Clinical Advisor Immunology, Jul. 2015-Dec.2015
         <br>(this is where I realized: the grass is greener in the communication department.)
-        </p>
-
-        <p><b>The Janssen Pharmaceutical Companies of Johnson & Johnson</b>
-        <br>Marketing assistant, Apr. 2014 - May 2015
         </p>
 
         <p><b>Hospital Veterinário Principal & Clivipet Portugal</b>
@@ -64,7 +61,7 @@
 
         <p>
           <b>EDUCATION.</b>
-        <p><b>Restart</b> Lisbon
+        <br><b>Restart</b> Lisbon
         <br>Criatividade publicitária, Oct. 2015 - May 2016
         </p>
 
@@ -83,6 +80,10 @@
         <p>
           <b>OTHER SKILLS.</b>
         <br>Having too many hobbies.
+        </p>
+
+        <p>
+          <b>WARNING:</b> This is a ghost-free zone.
         </p>
 
         <div class="hotlinks">

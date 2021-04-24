@@ -9,8 +9,8 @@
                 <!-- <h3>This is a tagline</h3> -->
                 <p class="credits">Film campaign</p>
 
-                <p>How many tables do you know? Pingo Doce knows them all. 
-                 So it launched a new recipe book that suits all tables, great and small.</p>
+                <p>How many tables do you know? Pingo Doce knows them all, so it launched a recipe book for all tables, 
+                <br> great and small.</p>
                
                 <div v-if="lang === 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/1MhrkJoZK9s" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
                 

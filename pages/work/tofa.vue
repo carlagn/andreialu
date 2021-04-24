@@ -13,27 +13,27 @@
                 <p>Let's start with the storyline of the logo:</p>
                 
                  <div>
-                <Img :source="'tofa/tofa01.png'" />
+                <Img :source="'tofa/tofa01.png'" :zoom="true" />
 
                <p>A rebranding was needed and we wanted to keep it simple.<br> 
                But with a twist on the F word (not that one), inspired by the coffe plant.</p>
 
-                <Img :source="'tofa/tofa02.png'" />
+                <Img :source="'tofa/tofa02.png'" :zoom="true" />
 
-                <p>And a tasteful touch on the signature.</p>
+                <p>And a tasteful touch on the signature. O gosto que é nosso/ The taste that is ours.</p>
 
-                <Img :source="'tofa/tofa03.png'" />
+                <Img :source="'tofa/tofa03.png'" :zoom="true" />
 
                  <p>Would you like some sugar?</p>
 
-                <Img :source="'tofa/tofa04.png'" />
+                <Img :source="'tofa/tofa04.png'" :zoom="true" />
 
-                <Img :source="'tofa/tofa05.png'" />
+                <Img :source="'tofa/tofa05.png'" :zoom="true" />
                 <p>We decorated some iconic transports with the new identity, such as the cacilheiro or the tram, and distributed some coffee on board. What a lovely way to see the city.</p>
-                <Img :source="'tofa/tofa06.png'" />
-                <Img :source="'tofa/tofa_zoom.png'" />
+                <Img :source="'tofa/tofa06.png'" :zoom="true" />
+                <Img :source="'tofa/tofa_zoom.png'" :zoom="true" />
 
-                <Img :source="'tofa/tofa07.png'" />
+                <Img :source="'tofa/tofa07.png'" :zoom="true" />
             
                 </div>
                 

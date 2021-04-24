@@ -9,13 +9,13 @@
                 <!-- <h3>This is a tagline</h3> -->
                  <p class="credits">Print campaign</p>
 
-                <p>The National Olympic Committee of Cape Verde was present at the Rio 2016 Summer Olympic Games. Unitel t+ proudly showed it's support, honouring the achievements of the country's athletes throughout the history of the Olympic Games, using the flag as a symbol of the different sports in which they succeeded.
+                <p>The National Olympic Committee of Cape Verde was present at the Rio 2016 Summer Olympic Games. <br> Unitel t+ proudly showed support to the athletes, wearing the colors of the flag.
                  </p>
                
                <div>
-                <Img :source="'print/printb6.png'" />
-                <Img :source="'print/printb7.png'" />
-                <Img :source="'print/printb8.png'" />
+                <Img :source="'print/printb6.png'" :zoom="true" />
+                <Img :source="'print/printb7.png'" :zoom="true" />
+                <Img :source="'print/printb8.png'" :zoom="true" />
              
                 </div>
                 <p class="credits"><b>OGILVY</b> C: Andreia Luísa A.D: Alexandre Pina C.D: Jorge Coelho</p>

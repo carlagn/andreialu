@@ -8,22 +8,23 @@
             <div class="project-content">
                 <!-- <h3>This is a tagline</h3> -->
                 
-                <p>Green is the color of nature. It is also the color of Água das Pedras, which makes sense for a sparkling water that is 100% natural. In order to strenghten the signature "Deixa o melhor de ti vir ao de cima" we did an ascending movie, from the fountain to the bottle.</p>
+                <p>Green is the color of nature. It is also the color of Água das Pedras, a sparkling water that comes from nature. So, it's only natural that we filled this movie with green. And since the signature is "Deixa o melhor de ti vir ao de cima/ Let the best of you come up" we go up, up, up, from the fountain to the bottle.</p>
 
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/224472530?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
-                <p>But there are more colors to nature than green. Like yellow, pink or red, the colors of Pedras Sabores. We served a fresh cocktail in the shape of an ad with the claim "Descobre as outras cores da natureza".</p>
+                <p>But there are more colors to nature than green, like the colors of Pedras Sabores. We served this fresh cocktail with all the other colors of nature, and of Pedras.</p>
                 
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/219110949?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
-                <p>And because nature gives us Pedras, we decided to give back to nature at dardevolta.pt/a-natureza/</p>
+                <p>And because nature gives us Pedras, we decided to give back to nature <a href="https://www.dardevolta.pt/a-natureza/">here.</a></p>
                 
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/392483268?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
-                <p>Pedras & coffe, good combinations.</p>
+                <p>Pedras & Coffe, good combinations for social media.</p>
 
                 <div>
-                <Img :source="'pedras/pedrascafe.png'" />
+                <Img :source="'pedras/pedrascafe.png'" 
+                    :zoom="true"/>
             
                 </div>
                 

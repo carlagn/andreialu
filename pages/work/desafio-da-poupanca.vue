@@ -9,7 +9,7 @@
                 <!-- <h3>This is a tagline</h3> -->
                 <p class="credits">Film campaign</p>
 
-                <p>Piggy and Ziggy are the pigs that teach children how to save money. Besides naming the 2 little pigs, we made a Saving Challenge for the Junior Savings account. The pigs were the MC’s and the question was: ya gonna save or ya gonna watch? </p>
+                <p>Piggy and Ziggy are the pigs that teach children how to save money. Besides naming the 2 little pigs, we made a Saving Challenge for the Junior Savings account where the pigs were the MC’s.</p>
                
                 <div v-if="lang === 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/0zBT8H_DilI" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
                 

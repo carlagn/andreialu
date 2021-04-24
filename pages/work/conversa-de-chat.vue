@@ -9,7 +9,7 @@
                 <!-- <h3>This is a tagline</h3> -->
                 <p class="credits">Silver for best radio campaign @CCP</p>
 
-                <p>Novo Banco was the first portuguese bank to launch an app that made money transfers possible by chat. An app that made sending money, as easy as sending emojis. We named it: Chat Pay. We also decided to go inside live chats and narrate the conversations, in order to show people how the new app works.</p>
+                <p>Novo Banco was the first Portuguese bank to launch an app that made sending money, as easy as sending emojis. We named it: Chat Pay. We also decided to go inside live chats to narrate the process.</p>
                
                     <h3>Radios</h3>
                    <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1188413743&color=%231c1c30&auto_play=false&hide_related=false&show_teaser=true"></iframe>

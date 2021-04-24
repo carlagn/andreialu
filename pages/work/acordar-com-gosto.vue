@@ -9,8 +9,8 @@
                 <!-- <h3>This is a tagline</h3> -->
                  <p class="credits">Print and outdoor campaign</p>
 
-                <p>Wake up with the McDonald's breakfast, a breakfast as fresh as you in the morning. <br> If you're a morning person.
-                 </p>
+                <p>Wake up with the McDonald's breakfast, a meal that comes as fresh as you are in the morning. 
+                    <br>If you're a morning person that is.</p>
                
                <div>
                 

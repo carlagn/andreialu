@@ -11,20 +11,17 @@
                 <p class="credits">Featured on Digital Done Right</p>
 
                 <p>Remember when Elon Musk sent a Tesla Roadster into space?</p>
-                <Img :source="'smart/tesla-post.png'" />
+                <Img :source="'smart/tesla-post.png'" :zoom="true" />
 
                 <p>We reacted fast.</p>
-                <Img :source="'smart/smart1_.png'" />
+                <Img :source="'smart/smart1_.png'" :zoom="true" />
 
                 <p>We also did some prints.</p>
                 <div>
-                <Img :source="'smart/smart4.jpg'" />
-                <Img :source="'smart/smart5.jpg'" />
-                <Img :source="'smart/smart7.jpg'" />
-                <Img :source="'smart/smart3.jpg'" />
+                <Img :source="'smart/smart4.jpg'" :zoom="true" />
+                <Img :source="'smart/smart5.jpg'" :zoom="true" />
+                <Img :source="'smart/smart7.jpg'" :zoom="true" />
                 
-                <p>And welcomed you into Lisbon.</p>
-                <Img :source="'smart/direcional_ambientado.png'" />
                 </div>
 
                 <p class="credits"><b>BBDO</b> C: Andreia Luísa A.D: António Belchior C.D: Marco Pacheco</p>

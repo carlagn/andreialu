@@ -14,7 +14,7 @@
         </video>
         <img v-else :src="`~/assets/CAPAS/${imgAlt}`" />
     </div>
-    <div v-else class="grid-element" :class="{'loaded': isLoaded(imgSrc)}">
+    <div v-else class="grid-element" :class="{'loaded': isLoaded(imgSrc), 'xv': mode === 'portrait'}">
         <img @load="pushToLoaded(imgSrc)" :src="require(`~/assets/CAPAS/${imgSrc}`)" />
     </div>
 </template>

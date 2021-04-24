@@ -9,15 +9,13 @@
                 <!-- <h3>This is a tagline</h3> -->
                  <p class="credits">Print campaign</p>
 
-                <p>Press campaign for an exclusive book collection of Público newspaper, one of the most influential daily newspapers in Portugal. Each book covered one of 6 topics: design, photography, fashion, cinema, architecture and art. Inside each book, one could read about 100 ideas that changed the world, by topic.
-
-                 <br> And the insight was: what if there was a world without 100 ideas that changed it?
+                <p>There was this exclusive book collection of Público newspaper about 100 ideas that changed the world, by topic: art, photography and fashion. But what if there was a world without 100 ideas that changed it?
                  </p>
                
                <div>
-                <img class="media" src="~/assets/print/printb1.png" />
-                <img class="media" src="~/assets/print/printb2.png" />
-                <img class="media" src="~/assets/print/printb3.png" />
+                <Img :source="'print/printb1.png'" :zoom="true" />
+                <Img :source="'print/printb2.png'" :zoom="true" />
+                <Img :source="'print/printb3.png'" :zoom="true" />
 
                 
     
@@ -34,10 +32,12 @@
 import Vue from 'vue';
 import { mapMutations } from 'vuex'
 import Pagination from '../../components/Pagination.vue';
+import Img from '../../components/Img.vue';
 
 export default Vue.extend({
     components: {
-        Pagination
+        Pagination,
+        Img
     },
     data() {
         return {

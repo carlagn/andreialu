@@ -13,8 +13,11 @@
                     <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Work</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getActivePage === 'about'}">About</nuxt-link>
                 </div>
-                <div v-if="getCurrentRoute === '/about'" class="lang-menu">
-                    <p><span>PT</span></p>
+                <div v-if="getCurrentRoute.includes('about')" class="lang-menu">
+                    <p>
+                        <nuxt-link v-if="getCurrentRoute === '/about'" to="/about-pt"><span>PT</span></nuxt-link>
+                        <nuxt-link v-else-if="getCurrentRoute === '/about-pt'" to="/about"><span>EN</span></nuxt-link>
+                    </p>
                 </div>
             </div>
         </div>
@@ -164,6 +167,10 @@ export default Vue.extend({
             padding-left: 8px;
             width: 100%;
             text-align: center;
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
 
         .menu {

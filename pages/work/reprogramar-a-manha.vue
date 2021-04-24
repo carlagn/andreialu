@@ -8,13 +8,13 @@
             <div class="project-content">
                 <!-- <h3>This is a tagline</h3> -->
                 <p class="credits">Featured on LüRZER'S ARCHIVE & DAVID REVIEWS</p>
-                <p class="lang"><b @click="setLang('en')">EN</b> / <b @click="setLang('pt')">PT</b>
+                <p class="lang"><b @click="setLang('en')">PT</b> / <b @click="setLang('pt')">EN</b>
                 </p>
                 
-                <p>McDonald’s “The Robots” is like “Groundhog Day”– only this time with robots. A robotic family gets stuck in a time loop, doing the same morning routines over and over again, not being able to break out of the circle until they go for a McDonald’s breakfast to reprogram their morning.</p>
+                <p>Remember “Groundhog Day”? We did it robots. Nothing like a McDonald’s breakfast to reboot your morning.</p>
                 <div v-if="lang !== 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266584215?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
                 <div v-else style="padding:56.25% 0 0 0;position:relative;">
-                <iframe src="https://www.youtube.com/embed/16g1yV89nvA"  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
+                <iframe src="https://www.youtube.com/embed/kTtGROW0prk"  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
                 
                 <p>We had this breakfast served with some radios on the side. Sunny side up.</p>

@@ -9,24 +9,22 @@
                 <!-- <h3>This is a tagline</h3> -->
                 <p class="credits">Film and radio campaigns</p>
 
-                <h3>Ler leva-nos mais longe.</h3>
-                <p>A child’s imagination has no limits. To show that, and to sell a collection of juvenile books, we decided to invite Fernanda Serrano to interview a group of interviewees with a very fertile imagination.</p>
+                   <h3>Ler leva-nos mais longe/ Reading takes us farther.</h3>
+                A child’s imagination has no limits. To show that, and to sell a collection of juvenile books, we invited Fernanda Serrano to interview a group of interviewees with a very fertile imagination.</p>
 
-               
                 <div v-if="lang === 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/3-_jkS2acOY" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
                 <div v-if="lang === 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/T5CL-0npVWg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
-                <h3>Bando do Bosque</h3>
-                <p>Bando do Bosque is a bunch of plush friends that anyone who shops at Pingo Doce can take home. They also have an adventure book. And are adorable. We invited them to go to the radio and tell the children about this brand new collection.
-                </p>
+            
 
-                <div>
-                <Img :source="'print/bb.jpg'" />
-                </div>
+                <p><h3>Bando do Bosque</h3> Bando do Bosque is a bunch of plush friends that anyone who shops at Pingo Doce can take home. They also have an adventure book. And are adorable. We invited them to go to the radio and tell the children about this brand new collection.
+                </p>
 
                     <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1188412042&color=%23272823&auto_play=false&hide_related=false&show_teaser=true">
                     </iframe>
+
+
                 
                 <p class="credits"><b>BBDO</b> C: Andreia Luísa C.D: Marco Pacheco</p>
             </div>

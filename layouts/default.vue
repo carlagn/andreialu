@@ -7,14 +7,13 @@
         >
             <Nuxt :sidebar="sidebarClass"/>
         </transition>
-        <div v-if="activeZoom.length > 0" class="image-modal" @click="closeModal()">
-            <img :src="require(`@/assets/` + activeZoom + '')" >
-        </div>
+        <Modal />
     </div>
 </template>
 
 <script>
 import Sidebar from '../components/Sidebar.vue'
+import Modal from '../components/Modal.vue'
 import { mapMutations } from 'vuex'
 
 export default{
@@ -23,7 +22,8 @@ export default{
         mode: 'out-in'
     },
     components: {
-        Sidebar
+        Sidebar,
+        Modal
     },
     computed: {
         getCurrentRoute() {

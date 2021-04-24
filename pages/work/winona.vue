@@ -9,29 +9,27 @@
                 <!-- <h3>This is a tagline</h3> -->
                  <p class="credits">Zine, editorial</p>
 
-                <p>We miss DIY, so me and 2 friends decided to drink and draw a zine about wines. A very productive excuse to go for a drink. Nothing fancy. No fine tastings, nor fear of stains.Thus Winona was born!</p>
-
-                <p>Besides drinking - pardon... tasting - and getting to know small Portuguese producers and their incredible wines, we interviewed, we recommended some of the best taverns and “vinhos da casa” in Lisbon, we paired wine with music and we even partied with Pour Decisions on the terrace of galeria Zé dos Bois. 
+                <p>Me, Marta and Patrícia miss DIY, so we decided to drink and draw a zine about wines. A very productive excuse to go for a drink. Besides tasting incredible wines, we interviewed small Portuguese producers, recommended some of the best taverns and “vinhos da casa” in Lisbon, paired wine with music and even hosted a party at Galeria Zé dos Bois. 
                 <Img :source="'winona/winona_poster.png'" :zoom="true" />
                 <br>The first issue was red and all about red wine.</p>
 
-                <Img :source="'winona/winona_foto.png'" />
+                <Img :source="'winona/winona_foto.png'" :zoom="true"/>
         
                <div>
-                <Img :source="'winona/winona1.png'" />
-                <Img :source="'winona/winona2.png'" />
-                <Img :source="'winona/winona3.png'" />
-                <Img :source="'winona/winona4.png'" />
-                <Img :source="'winona/winona5.png'" />
-                <Img :source="'winona/winona6.png'" />
-                <Img :source="'winona/winona7.png'" />
-                <Img :source="'winona/winona8.png'" />
+                <Img :source="'winona/winona1.png'" :zoom="true"/>
+                <Img :source="'winona/winona2.png'" :zoom="true"/>
+                <Img :source="'winona/winona3.png'" :zoom="true"/>
+                <Img :source="'winona/winona4.png'" :zoom="true"/>
+                <Img :source="'winona/winona5.png'" :zoom="true"/>
+                <Img :source="'winona/winona6.png'" :zoom="true"/>
+                <Img :source="'winona/winona7.png'" :zoom="true"/>
+                <Img :source="'winona/winona8.png'" :zoom="true"/>
              
                 </div>
 
                 <p> The next issue will be sparkling and it's already in the barrels. Cheers!</p>
 
-                <p class="credits"><b>Personal project</b> Words: Andreia Luísa Design: Marta Santos Wine expertise: Patrícia Pombo & Pour Decisions </p>
+                <p class="credits"><b>Personal project</b> Words & photography: Andreia Luísa Design: Marta Santos Wine expertise: Patrícia Pombo & Pour Decisions </p>
             </div>
         </div>
         <Pagination  />

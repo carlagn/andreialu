@@ -9,7 +9,7 @@
                 <!-- <h3>This is a tagline</h3> -->
                 <p class="credits">Radio campaign</p>
 
-                <p>Not all heroes wear capes, some give you aspirin when you need it the most. <br>This are some radios calling out for all those heroes out there.</p>
+                <p>Not all heroes wear capes, some give you aspirin when you need it the most. <br>These are some radios calling out for all those heroes out there.</p>
                
                     <h3>Radios</h3>
                    <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1217169517&color=%23272823&auto_play=false&hide_related=false&show_teaser=true"></iframe>
