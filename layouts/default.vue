@@ -79,7 +79,7 @@ body {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    top: 225px;
+    top: 240px;
 
     .title, .subtitle {
         padding-left: 16px;
