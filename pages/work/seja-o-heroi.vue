@@ -14,11 +14,11 @@
                     <h3>Radios</h3>
                    <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1217169517&color=%23272823&auto_play=false&hide_related=false&show_teaser=true"></iframe>
 
-                </p>
                 <p class="credits"><b>BBDO</b> C: Andreia Luísa C.D: Marco Pacheco, Rui Silva </p>
             </div>
         </div>
         <Pagination  />
+        <footer></footer>
     </div>
 </template>
 <script>

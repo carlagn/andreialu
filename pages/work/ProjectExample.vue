@@ -15,6 +15,7 @@
             </div>
         </div>
         <Pagination :next="{title: 'next', url: '/work/hello'}" :prev="{title: 'prev', url: '/work/world'}" />
+        <footer></footer>
     </div>
 </template>
 

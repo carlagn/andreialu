@@ -15,17 +15,14 @@
                
                 <div v-if="lang === 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/3-_jkS2acOY" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
-                <p </p>
-
                 <div v-if="lang === 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/T5CL-0npVWg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
-                <p </p>
                 <h3>Bando do Bosque</h3>
                 <p>Bando do Bosque is a bunch of plush friends that anyone who shops at Pingo Doce can take home. They also have an adventure book. And are adorable. We invited them to go to the radio and tell the children about this brand new collection.
                 </p>
 
                 <div>
-                <img class="media" src="~/assets/print/bb.jpg" />
+                <Img :source="'print/bb.jpg'" />
                 </div>
 
                     <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1188412042&color=%23272823&auto_play=false&hide_related=false&show_teaser=true">
@@ -35,16 +32,19 @@
             </div>
         </div>
         <Pagination  />
+        <footer></footer>
     </div>
 </template>
 <script>
 import Vue from 'vue';
 import { mapMutations } from 'vuex'
 import Pagination from '../../components/Pagination.vue';
+import Img from '../../components/Img.vue';
 
 export default Vue.extend({
     components: {
-        Pagination
+        Pagination,
+        Img
     },
     data() {
         return {

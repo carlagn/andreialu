@@ -17,15 +17,16 @@
                 <iframe src="https://www.youtube.com/embed/16g1yV89nvA"  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
                 
-                <p>We had this breakfast served with some radios on the side. Sunny side up.
+                <p>We had this breakfast served with some radios on the side. Sunny side up.</p>
                     <h3>Radios</h3>
                     <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1188396859&color=%231c1c30&auto_play=false&hide_related=false&show_teaser=true">
                     </iframe>
-                </p>
+                
                 <p class="credits"><b>TBWA</b> C: Andreia Luísa A.D: António Belchior C.D: Marco Pacheco e Rui Silva Director: Paco Cruz</p>
             </div>
         </div>
         <Pagination  />
+        <footer></footer>
     </div>
 </template>
 <script>

@@ -18,6 +18,7 @@
             </div>
         </div>
         <Pagination  />
+        <footer></footer>
     </div>
 </template>
 <script>

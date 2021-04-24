@@ -23,7 +23,7 @@
                 <p>Pedras & coffe, good combinations.</p>
 
                 <div>
-                <img class="media" src="~/assets/pedras/pedrascafe.png" />
+                <Img :source="'pedras/pedrascafe.png'" />
             
                 </div>
                 
@@ -33,16 +33,19 @@
             </div>
         </div>
         <Pagination  />
+        <footer></footer>
     </div>
 </template>
 <script>
 import Vue from 'vue';
 import { mapMutations } from 'vuex'
 import Pagination from '../../components/Pagination.vue';
+import Img from '../../components/Img.vue';
 
 export default Vue.extend({
     components: {
-        Pagination
+        Pagination,
+        Img
     },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");

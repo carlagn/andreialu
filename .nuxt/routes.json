@@ -3,132 +3,154 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_ba208fb6"
   },
   {
     "name": "work-acordar-com-gosto",
     "path": "/work/acordar-com-gosto",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\acordar-com-gosto.vue",
-    "chunkName": "pages/work/acordar-com-gosto"
+    "chunkName": "pages/work/acordar-com-gosto",
+    "_name": "_baa05378"
   },
   {
     "name": "work-amor-rafeiro",
     "path": "/work/amor-rafeiro",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\amor-rafeiro.vue",
-    "chunkName": "pages/work/amor-rafeiro"
+    "chunkName": "pages/work/amor-rafeiro",
+    "_name": "_551caf23"
   },
   {
     "name": "work-coisas-de-miudos",
     "path": "/work/coisas-de-miudos",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\coisas-de-miudos.vue",
-    "chunkName": "pages/work/coisas-de-miudos"
+    "chunkName": "pages/work/coisas-de-miudos",
+    "_name": "_fccd4882"
   },
   {
     "name": "work-conversa-de-chat",
     "path": "/work/conversa-de-chat",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\conversa-de-chat.vue",
-    "chunkName": "pages/work/conversa-de-chat"
+    "chunkName": "pages/work/conversa-de-chat",
+    "_name": "_7051a5a2"
   },
   {
     "name": "work-desafio-da-poupanca",
     "path": "/work/desafio-da-poupanca",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\desafio-da-poupanca.vue",
-    "chunkName": "pages/work/desafio-da-poupanca"
+    "chunkName": "pages/work/desafio-da-poupanca",
+    "_name": "_955a6e28"
   },
   {
     "name": "work-drive-code",
     "path": "/work/drive-code",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\drive-code.vue",
-    "chunkName": "pages/work/drive-code"
+    "chunkName": "pages/work/drive-code",
+    "_name": "_1de056f9"
   },
   {
     "name": "work-have-a-drink",
     "path": "/work/have-a-drink",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\have-a-drink.vue",
-    "chunkName": "pages/work/have-a-drink"
+    "chunkName": "pages/work/have-a-drink",
+    "_name": "_220c78a0"
   },
   {
     "name": "work-mais-cabo-verde",
     "path": "/work/mais-cabo-verde",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\mais-cabo-verde.vue",
-    "chunkName": "pages/work/mais-cabo-verde"
+    "chunkName": "pages/work/mais-cabo-verde",
+    "_name": "_646e6058"
   },
   {
     "name": "work-mesas-para-todos-os-gostos",
     "path": "/work/mesas-para-todos-os-gostos",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\mesas-para-todos-os-gostos.vue",
-    "chunkName": "pages/work/mesas-para-todos-os-gostos"
+    "chunkName": "pages/work/mesas-para-todos-os-gostos",
+    "_name": "_090b425c"
   },
   {
     "name": "work-o-segredo-das-relacoes",
     "path": "/work/o-segredo-das-relacoes",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\o-segredo-das-relacoes.vue",
-    "chunkName": "pages/work/o-segredo-das-relacoes"
+    "chunkName": "pages/work/o-segredo-das-relacoes",
+    "_name": "_6236f05a"
   },
   {
     "name": "work-pedras",
     "path": "/work/pedras",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\pedras.vue",
-    "chunkName": "pages/work/pedras"
+    "chunkName": "pages/work/pedras",
+    "_name": "_022ce95e"
   },
   {
     "name": "work-ProjectExample",
     "path": "/work/ProjectExample",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\ProjectExample.vue",
-    "chunkName": "pages/work/ProjectExample"
+    "chunkName": "pages/work/ProjectExample",
+    "_name": "_1c8b9dda"
   },
   {
     "name": "work-reprogramar-a-manha",
     "path": "/work/reprogramar-a-manha",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\reprogramar-a-manha.vue",
-    "chunkName": "pages/work/reprogramar-a-manha"
+    "chunkName": "pages/work/reprogramar-a-manha",
+    "_name": "_56906923"
   },
   {
     "name": "work-seja-o-heroi",
     "path": "/work/seja-o-heroi",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\seja-o-heroi.vue",
-    "chunkName": "pages/work/seja-o-heroi"
+    "chunkName": "pages/work/seja-o-heroi",
+    "_name": "_77e13c14"
   },
   {
     "name": "work-smart",
     "path": "/work/smart",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\smart.vue",
-    "chunkName": "pages/work/smart"
+    "chunkName": "pages/work/smart",
+    "_name": "_2c970530"
   },
   {
     "name": "work-style-guide",
     "path": "/work/style-guide",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\style-guide.vue",
-    "chunkName": "pages/work/style-guide"
+    "chunkName": "pages/work/style-guide",
+    "_name": "_0b0ab887"
   },
   {
     "name": "work-this-is-a-new-page",
     "path": "/work/this-is-a-new-page",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\this-is-a-new-page.vue",
-    "chunkName": "pages/work/this-is-a-new-page"
+    "chunkName": "pages/work/this-is-a-new-page",
+    "_name": "_a56a7476"
   },
   {
     "name": "work-tofa",
     "path": "/work/tofa",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\tofa.vue",
-    "chunkName": "pages/work/tofa"
+    "chunkName": "pages/work/tofa",
+    "_name": "_cef17e42"
   },
   {
     "name": "work-um-mundo-sem-cem",
     "path": "/work/um-mundo-sem-cem",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\um-mundo-sem-cem.vue",
-    "chunkName": "pages/work/um-mundo-sem-cem"
+    "chunkName": "pages/work/um-mundo-sem-cem",
+    "_name": "_16b05c51"
   },
   {
     "name": "work-winona",
     "path": "/work/winona",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\work\\\\winona.vue",
-    "chunkName": "pages/work/winona"
+    "chunkName": "pages/work/winona",
+    "_name": "_f2e9b5a2"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\carla\\\\Documents\\\\proj\\\\andreialu\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_7ab0da2c"
   }
 ]

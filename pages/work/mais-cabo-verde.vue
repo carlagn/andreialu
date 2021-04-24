@@ -13,25 +13,28 @@
                  </p>
                
                <div>
-                <img class="media" src="~/assets/print/printb6.png" />
-                <img class="media" src="~/assets/print/printb7.png" />
-                <img class="media" src="~/assets/print/printb8.png" />
+                <Img :source="'print/printb6.png'" />
+                <Img :source="'print/printb7.png'" />
+                <Img :source="'print/printb8.png'" />
              
                 </div>
                 <p class="credits"><b>OGILVY</b> C: Andreia Luísa A.D: Alexandre Pina C.D: Jorge Coelho</p>
             </div>
         </div>
         <Pagination  />
+        <footer></footer>
     </div>
 </template>
 <script>
 import Vue from 'vue';
 import { mapMutations } from 'vuex'
 import Pagination from '../../components/Pagination.vue';
+import Img from '../../components/Img.vue';
 
 export default Vue.extend({
     components: {
-        Pagination
+        Pagination,
+        Img
     },
     data() {
         return {

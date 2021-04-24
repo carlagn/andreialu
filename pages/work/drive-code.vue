@@ -15,26 +15,29 @@
                
                <div>
 
-                <img class="media" src="~/assets/print/printc6.png" />
-                <img class="media" src="~/assets/print/printc7.png" />
-                <img class="media" src="~/assets/print/printc8.png" />
-                <img class="media" src="~/assets/print/printc9.png" />
+                <Img :source="'print/printc6.png'" />
+                <Img :source="'print/printc7.png'" />
+                <Img :source="'print/printc8.png'" />
+                <Img :source="'print/printc9.png'" />
             
                 </div>
                 <p class="credits"><b>BBDO</b> C: Andreia Luísa A.D: António Belchior C.D: Marco Pacheco</p>
             </div>
         </div>
         <Pagination  />
+        <footer></footer>
     </div>
 </template>
 <script>
 import Vue from 'vue';
 import { mapMutations } from 'vuex'
 import Pagination from '../../components/Pagination.vue';
+import Img from '../../components/Img.vue';
 
 export default Vue.extend({
     components: {
-        Pagination
+        Pagination,
+        Img
     },
     data() {
         return {

@@ -18,10 +18,10 @@ import Sidebar from '../components/Sidebar.vue'
 import { mapMutations } from 'vuex'
 
 export default{
-  transition: {
-    name: 'test',
-    mode: 'out-in'
-  },
+    transition: {
+        name: 'test',
+        mode: 'out-in'
+    },
     components: {
         Sidebar
     },
@@ -213,4 +213,7 @@ p {
         margin: 64px auto;
     }
 } 
+footer {
+    height: 68px;
+}
 </style>
