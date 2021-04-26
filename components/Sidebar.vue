@@ -183,6 +183,9 @@ export default Vue.extend({
             padding-left: 8px;
             text-align: center;
             a {
+                @media (min-device-width: 550px) {
+                    font-size: inherit;
+                }
                 color: black;
                 text-decoration: none;
                 font-size: 40px;
