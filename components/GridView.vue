@@ -4,86 +4,86 @@
             <div class="grid-element empty"></div>
            
             <nuxt-link to="/work/pedras">
-                <Cover :source="'pedras.webm'" :animated="true" :mode="'portrait'" :alt="'pedras_still.png'"  />
+                <Cover :isMobile="isMobile" :source="'pedras.webm'" :animated="true" :mode="'portrait'" :alt="'pedras_still.png'"  />
             </nuxt-link>
         
             <div class="grid-element empty">Hello :)</div>
 
             <nuxt-link to="/work/acordar-com-gosto">
-                <Cover :source="'mcmuffin.png'" />
+                <Cover :isMobile="isMobile" :source="'mcmuffin.png'" />
             </nuxt-link>
 
             <nuxt-link to="/work/winona">
-                <Cover :source="'winona_CAPA.png'" />
+                <Cover :isMobile="isMobile" :source="'winona_CAPA.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/reprogramar-a-manha">
-                <Cover :source="'robot.webm'" :animated="true" :alt="'robot.gif'"  />
+                <Cover :isMobile="isMobile" :source="'robot.webm'" :animated="true" :alt="'robot.gif'"  />
             </nuxt-link>
 
 
             <nuxt-link to="/work/mesas-para-todos-os-gostos">
-                <Cover :source="'mesas.png'" />
+                <Cover :isMobile="isMobile" :source="'mesas.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/amor-rafeiro">
-                <Cover :source="'AMOR_CAPA.png'" />
+                <Cover :isMobile="isMobile" :source="'AMOR_CAPA.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/o-segredo-das-relacoes">
-                <Cover :source="'CERAS.png'" />
+                <Cover :isMobile="isMobile" :source="'CERAS.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/drive-code">
-                <Cover :source="'drive.png'" />
+                <Cover :isMobile="isMobile" :source="'drive.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/desafio-da-poupanca">
-                <Cover :source="'porcos.webm'" :animated="true" :alt="'porcos.gif'"  />
+                <Cover :isMobile="isMobile" :source="'porcos.webm'" :animated="true" :alt="'porcos.gif'"  />
             </nuxt-link>
 
 
             <nuxt-link to="/work/have-a-drink">
-                <Cover :source="'CAPA_SANDEMAN.jpg'" :mode="'portrait'" />
+                <Cover :isMobile="isMobile" :source="'CAPA_SANDEMAN.jpg'" :mode="'portrait'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/um-mundo-sem-cem">
-                <Cover :source="'pub.png'" />
+                <Cover :isMobile="isMobile" :source="'pub.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/coisas-de-miudos">
-                <Cover :source="'kidz.webm'" :animated="true" :alt="'kidz.gif'"  />
+                <Cover :isMobile="isMobile" :source="'kidz.webm'" :animated="true" :alt="'kidz.gif'"  />
             </nuxt-link>
 
             <nuxt-link to="/work/conversa-de-chat">
-                <Cover :source="'CAPA2.jpg'" />
+                <Cover :isMobile="isMobile" :source="'CAPA2.jpg'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/tofa">
-                <Cover :source="'capa_tofa.jpg'" />
+                <Cover :isMobile="isMobile" :source="'capa_tofa.jpg'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/smart">
-                <Cover :source="'smarta_capa.jpg'" />
+                <Cover :isMobile="isMobile" :source="'smarta_capa.jpg'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/mais-cabo-verde">
-                <Cover :source="'unitel.png'" />
+                <Cover :isMobile="isMobile" :source="'unitel.png'" />
             </nuxt-link>
 
 
             <nuxt-link to="/work/seja-o-heroi">
-                <Cover :source="'aspirina.png'" />
+                <Cover :isMobile="isMobile" :source="'aspirina.png'" />
             </nuxt-link>
         </div>
     </component>
@@ -116,23 +116,8 @@ export default Vue.extend({
     },
     methods: {
         ...mapMutations([ 'setSideBar', 'setActivePage' ]),
-        isLoaded(str) {
-            return true
-        },
-        pushToLoaded(str) {
-            return "h"
-        },
         setActivePage(str) {
             this.$store.commit("setActivePage", str)
-        },
-        getCover(projName) {
-            // if (this.isMobile){
-            //     var image = `<img src="~/assets/CAPAS/${projName}.gif" />`;
-            //     return image;
-            // }
-            const videourl = require(`~/assets/CAPAS/${projName}.webm`);
-            var video = `<video class="grid-video" autoplay="true" muted="true" loop="true"><source src="${videourl}" /></video>`;
-            return video;
         }
     },
     computed: { 

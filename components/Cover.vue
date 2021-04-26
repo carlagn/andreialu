@@ -12,7 +12,7 @@
         >
             <source :src="require(`~/assets/CAPAS/${imgSrc}`)" />
         </video>
-        <img v-else :src="`~/assets/CAPAS/${imgAlt}`" />
+        <img v-else :src="require(`~/assets/CAPAS/${imgAlt}`)" />
     </div>
     <div v-else class="grid-element" :class="{'loaded': isLoaded(imgSrc), 'xv': mode === 'portrait'}">
         <img @load="pushToLoaded(imgSrc)" :src="require(`~/assets/CAPAS/${imgSrc}`)" />
@@ -35,6 +35,9 @@ export default {
         },
         mode: {
             type: String
+        },
+        isMobile: {
+            type: Boolean
         }
     },
     data() {
@@ -48,7 +51,7 @@ export default {
         },
         imgAlt() {
             return this.alt
-        },
+        }
     },
     methods: {
         isLoaded(str) {

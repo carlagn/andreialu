@@ -88,10 +88,18 @@ export default Vue.extend({
     }
 
     &.about, &.about-pt {
-        @media (min-width: 769px) {
+        @media (min-device-width: 769px) {
             position: fixed;
         }
         position: absolute;
+        top: 0;
+
+        .sidebar-box {
+            @media (min-device-width: 769px) {
+                width: auto;
+            }
+            width: 100%;
+        }
     }
 
     &.background {
@@ -132,8 +140,10 @@ export default Vue.extend({
         padding: 16px;
 
         &.vertical {
-            flex-direction: column;
-            align-items: flex-start;
+            @media (min-device-width: 769px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
             a {
                 pointer-events: auto;
@@ -158,18 +168,24 @@ export default Vue.extend({
         }
 
         .lang-menu {
-            @media (min-width: 769px) {
+            @media (min-device-width: 769px) {
                 display: block;
+                width: 100%;
+                right: unset;
+                top: 213px;
+                transform: none;
             }
-            display: none;
+            right: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
             position: absolute;
-            top: 213px;
             padding-left: 8px;
-            width: 100%;
             text-align: center;
             a {
                 color: black;
                 text-decoration: none;
+                font-size: 40px;
             }
         }
 
@@ -198,14 +214,20 @@ export default Vue.extend({
                 }
             }
             &.vertical {
+                @media (min-device-width: 769px) {
+                    flex-direction: column;
+                }
                 display: flex;
-                flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
                 padding-left: 8px;
                 margin-left: 0;
                 a {
+                    @media (min-device-width: 769px) {
+                        padding: 0;
+                    }
                     margin: 8px 0;
+                    padding-right: 16px;
                 }
             }
         }
