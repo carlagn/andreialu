@@ -2,7 +2,7 @@
     <div
         v-if="animated"
         class="grid-element"
-        :class="{'loaded': isLoaded(imgSrc), 'xv': mode === 'portrait'}">
+        :class="{'loaded': isLoaded(imgSrc) || isLoaded(imgAlt), 'xv': mode === 'portrait'}">
         <video
             v-if="!isMobile" class="grid-video"
             autoplay="true"
@@ -12,7 +12,7 @@
         >
             <source :src="require(`~/assets/CAPAS/${imgSrc}`)" />
         </video>
-        <img v-else :src="require(`~/assets/CAPAS/${imgAlt}`)" />
+        <img v-else @load="pushToLoaded(imgAlt)" :src="require(`~/assets/CAPAS/${imgAlt}`)" />
     </div>
     <div v-else class="grid-element" :class="{'loaded': isLoaded(imgSrc), 'xv': mode === 'portrait'}">
         <img @load="pushToLoaded(imgSrc)" :src="require(`~/assets/CAPAS/${imgSrc}`)" />
