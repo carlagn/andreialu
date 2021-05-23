@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar-wrapper" :class="{'active': getSidebarState, 'background': getActivePage === 'work'}">
         <div class="sidebar-box">
-            <div class="logo-box" :class="{'vertical': getCurrentRoute !== '/'}">
+            <div class="logo-box" :class="{'vertical': isVertical}">
                 <div
                     @click="backToTop()"
                     class="logo"
@@ -9,8 +9,9 @@
                     <img src="~/assets/logo.png" />
                     <span class="label">copywriter.</span>
                 </div>
-                <div class="menu" :class="{'vertical': getCurrentRoute !== '/'}">
-                    <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Work</nuxt-link>
+                <div class="menu" :class="{'vertical': isVertical}">
+                    <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Side-A</nuxt-link>
+                    <nuxt-link to="/personal" :class="{'active': getActivePage === 'personal'}">Side-B</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getCurrentRoute.includes('about')}">About</nuxt-link>
                 </div>
                 <div v-if="getCurrentRoute.includes('about')" class="lang-menu">
@@ -29,6 +30,9 @@ import Vue from 'vue';
 import { mapMutations, mapGetters } from 'vuex';
 export default Vue.extend({
   computed: {
+      isVertical() {
+          return this.getCurrentRoute !== '/' && this.getCurrentRoute !== '/personal'
+      },
       getCurrentRoute() {
           return this.$route.path;
       },

@@ -109,7 +109,7 @@ export default Vue.extend({
         this.$store.commit("setSidebar", "");
         this.$emit("grid", this.$refs.grid); 
         this.mobile = window.screen.width <= 768;
-        this.setActivePage("work");
+        this.setActivePage("personal");
     },
     beforeDestroy() {
         this.setActivePage("");

@@ -28,7 +28,7 @@
                 />
 
         </div>
-        <!-- adicionar SEMPRE este elemento no fim para obter uma paginação concisa. Sem as setas à volta. -->
+        <!-- adicionar SEMPRE este elemento no fim para obter uma paginação concisa. -->
         <!-- <Pagination  /> -->
         <footer></footer>
     </div>
