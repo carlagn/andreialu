@@ -2,7 +2,7 @@
     <div
         v-if="animated"
         class="grid-element"
-        :class="{'loaded': isLoaded(imgSrc) || isLoaded(imgAlt), 'xv': mode === 'portrait'}">
+        :class="{'loaded': isLoaded(imgSrc) || isLoaded(imgAlt), 'xv': mode === 'portrait', 'xl': mode === 'big'}">
         <video
             v-if="!isMobile" class="grid-video"
             autoplay="true"
@@ -14,7 +14,7 @@
         </video>
         <img v-else @load="pushToLoaded(imgAlt)" :src="require(`~/assets/CAPAS/${imgAlt}`)" />
     </div>
-    <div v-else class="grid-element" :class="{'loaded': isLoaded(imgSrc), 'xv': mode === 'portrait'}">
+    <div v-else class="grid-element" :class="{'loaded': isLoaded(imgSrc), 'xv': mode === 'portrait', 'xl': mode === 'big'}">
         <img @load="pushToLoaded(imgSrc)" :src="require(`~/assets/CAPAS/${imgSrc}`)" />
     </div>
 </template>
@@ -23,8 +23,7 @@
 export default {
     props: {
         source: {
-            type: String,
-            require: true
+            type: String
         },
         alt: {
             type: String
@@ -70,6 +69,10 @@ export default {
             opacity: 1;
         }
         @media (min-device-width: 769px) {
+            &.xl {
+                height: calc((100vh - 17px) * 2 /3);
+                width: calc((100vh - 17px) * 2 /3);
+            }
             &.xv {
                 height: calc((100vh - 17px) * 2 /3);
             }
@@ -89,16 +92,6 @@ export default {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-        &.empty {
-            @media (min-device-width: 769px) {
-                display: flex;
-            }
-            display: none;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Fraunces', serif;
-            font-weight: lighter;
         }
         .grid-video {
             @media (min-device-width: 769px) {

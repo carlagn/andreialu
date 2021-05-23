@@ -1,13 +1,13 @@
 <template>
     <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
         <div class="grid-container" ref="grid">
-            <div class="grid-element empty"></div>
+            <div class="grid-element-empty"></div>
            
             <nuxt-link to="/work/pedras">
                 <Cover :isMobile="isMobile" :source="'pedras.webm'" :animated="true" :mode="'portrait'" :alt="'pedras_still.png'"  />
             </nuxt-link>
         
-            <div class="grid-element empty"></div>
+            <div class="grid-element-empty"></div>
 
             <nuxt-link to="/work/acordar-com-gosto">
                 <Cover :isMobile="isMobile" :source="'mcmuffin.png'" />
@@ -17,20 +17,26 @@
                 <Cover :isMobile="isMobile" :source="'winona_CAPA.png'" />
             </nuxt-link>
 
+            <div class="grid-big">
+                <nuxt-link to="/work/reprogramar-a-manha">
+                    <Cover
+                        :isMobile="isMobile"
+                        :source="'robot.webm'"
+                        :animated="true"
+                        :alt="'robot.gif'"
+                        :mode="'big'"
+                    />
+                </nuxt-link>
+                <div>
+                    <nuxt-link to="/work/mesas-para-todos-os-gostos">
+                        <Cover :isMobile="isMobile" :source="'mesas.png'" />
+                    </nuxt-link>
 
-            <nuxt-link to="/work/reprogramar-a-manha">
-                <Cover :isMobile="isMobile" :source="'robot.webm'" :animated="true" :alt="'robot.gif'"  />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/mesas-para-todos-os-gostos">
-                <Cover :isMobile="isMobile" :source="'mesas.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/amor-rafeiro">
-                <Cover :isMobile="isMobile" :source="'AMOR_CAPA.png'" />
-            </nuxt-link>
+                    <nuxt-link to="/work/amor-rafeiro">
+                        <Cover :isMobile="isMobile" :source="'AMOR_CAPA.png'" />
+                    </nuxt-link>
+                </div>
+            </div>
 
 
             <nuxt-link to="/work/o-segredo-das-relacoes">
@@ -144,28 +150,26 @@ export default Vue.extend({
     margin-left: 0;
     height: auto;
     flex-direction: row;
-    .grid-element {
-        @media (min-device-width: 769px) {
-            width: calc((100vh - 17px) / 3);
-            height: calc((100vh - 17px) / 3);
-        }
-        width: 50vw;
-        height: 500px;
-        &.xv {
-            @media (min-device-width: 769px) {
-                height: calc((100vh - 17px) * 2 /3) !important;
-            }
-        }
-        &.empty {
-            @media (min-device-width: 769px) {
-                display: flex;
-            }
-            display: none;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Fraunces', serif;
-            font-weight: lighter;
-        }
+}
+
+.grid-element-empty {
+    @media (min-device-width: 769px) {
+        display: flex;
+        width: calc((100vh - 17px) / 3);
+        height: calc((100vh - 17px) / 3);
+    }
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-weight: lighter;
+}
+
+.grid-big {
+    display: flex;
+    flex-direction: column;
+    > div {
+        display: flex;
     }
 }
 </style>
