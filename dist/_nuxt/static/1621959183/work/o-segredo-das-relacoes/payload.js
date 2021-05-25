@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/o-segredo-das-relacoes", {data:[{}],fetch:{},mutations:[]});

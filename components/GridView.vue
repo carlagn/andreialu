@@ -3,22 +3,22 @@
         <div class="grid-container" ref="grid">
             <div class="grid-element-empty"></div>
            
-            <nuxt-link to="/work/pedras">
+            <nuxt-link to="/side-a/pedras">
                 <Cover :isMobile="isMobile" :source="'pedras.webm'" :animated="true" :mode="'portrait'" :alt="'pedras_still.png'"  />
             </nuxt-link>
         
             <div class="grid-element-empty"></div>
 
-            <nuxt-link to="/work/o-segredo-das-relacoes">
+            <nuxt-link to="/side-a/o-segredo-das-relacoes">
                 <Cover :isMobile="isMobile" :source="'CERAS.png'" />
             </nuxt-link>
 
-            <nuxt-link to="/work/tofa">
+            <nuxt-link to="/side-a/tofa">
                 <Cover :isMobile="isMobile" :source="'capa_tofa.jpg'" />
             </nuxt-link>
 
             <div v-if="!isMobile" class="grid-big">
-                <nuxt-link to="/work/reprogramar-a-manha">
+                <nuxt-link to="/side-a/reprogramar-a-manha">
                     <Cover
                         :isMobile="isMobile"
                         :source="'robot.webm'"
@@ -28,16 +28,16 @@
                     />
                 </nuxt-link>
                 <div>
-                    <nuxt-link to="/work/mesas-para-todos-os-gostos">
+                    <nuxt-link to="/side-a/mesas-para-todos-os-gostos">
                         <Cover :isMobile="isMobile" :source="'mesas.png'" />
                     </nuxt-link>
 
-                    <nuxt-link to="/work/smart">
+                    <nuxt-link to="/side-a/smart">
                     <Cover :isMobile="isMobile" :source="'smarta_capa.jpg'" />
                     </nuxt-link>
                 </div>
             </div>
-            <nuxt-link v-if="isMobile" to="/work/reprogramar-a-manha">
+            <nuxt-link v-if="isMobile" to="/side-a/reprogramar-a-manha">
                 <Cover
                     :isMobile="isMobile"
                     :source="'robot.webm'"
@@ -45,30 +45,30 @@
                     :alt="'robot.gif'"
                 />
             </nuxt-link>
-            <nuxt-link v-if="isMobile" to="/work/mesas-para-todos-os-gostos">
+            <nuxt-link v-if="isMobile" to="/side-a/mesas-para-todos-os-gostos">
                 <Cover :isMobile="isMobile" :source="'mesas.png'" />
             </nuxt-link>
 
-            <nuxt-link v-if="isMobile" to="/work/smart">
+            <nuxt-link v-if="isMobile" to="/side-a/smart">
                 <Cover :isMobile="isMobile" :source="'smarta_capa.jpg'" />
             </nuxt-link>
 
 
-            <nuxt-link to="/work/desafio-da-poupanca">
+            <nuxt-link to="/side-a/desafio-da-poupanca">
                 <Cover :isMobile="isMobile" :source="'porcos.webm'" :animated="true" :alt="'porcos.gif'"  />
             </nuxt-link>
 
 
-            <nuxt-link to="/work/print">
+            <nuxt-link to="/side-a/print">
                 <Cover :isMobile="isMobile" :source="'CAPA_SANDEMAN.jpg'" :mode="'portrait'" />
             </nuxt-link>
 
-            <nuxt-link to="/work/conversa-de-chat">
+            <nuxt-link to="/side-a/conversa-de-chat">
                 <Cover :isMobile="isMobile" :source="'CAPA2.jpg'" />
             </nuxt-link>
 
 
-            <nuxt-link to="/work/coisas-de-miudos">
+            <nuxt-link to="/side-a/coisas-de-miudos">
                 <Cover :isMobile="isMobile" :source="'kidz.webm'" :animated="true" :alt="'kidz.gif'"  />
             </nuxt-link>
 
@@ -96,7 +96,7 @@ export default Vue.extend({
         this.$store.commit("setSidebar", "");
         this.$emit("grid", this.$refs.grid); 
         this.mobile = window.screen.width <= 768;
-        this.setActivePage("work");
+        this.setActivePage("side-a");
     },
     beforeDestroy() {
         this.setActivePage("");

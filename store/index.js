@@ -1,7 +1,7 @@
 export const state = () => ({
   sidebar: "",
   title: "",
-  activePage: "work",
+  activePage: "side-a",
   activeZoom: ""
 })
 

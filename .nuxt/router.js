@@ -7,6 +7,17 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _e4841e72 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
 const _6b4de87a = () => interopDefault(import('../pages/about-pt.vue' /* webpackChunkName: "pages/about-pt" */))
 const _226fb3b6 = () => interopDefault(import('../pages/side-b/index.vue' /* webpackChunkName: "pages/side-b/index" */))
+const _95862998 = () => interopDefault(import('../pages/side-a/coisas-de-miudos.vue' /* webpackChunkName: "pages/side-a/coisas-de-miudos" */))
+const _090a86b8 = () => interopDefault(import('../pages/side-a/conversa-de-chat.vue' /* webpackChunkName: "pages/side-a/conversa-de-chat" */))
+const _07f3ed52 = () => interopDefault(import('../pages/side-a/desafio-da-poupanca.vue' /* webpackChunkName: "pages/side-a/desafio-da-poupanca" */))
+const _0bbce007 = () => interopDefault(import('../pages/side-a/mesas-para-todos-os-gostos.vue' /* webpackChunkName: "pages/side-a/mesas-para-todos-os-gostos" */))
+const _502757e2 = () => interopDefault(import('../pages/side-a/o-segredo-das-relacoes.vue' /* webpackChunkName: "pages/side-a/o-segredo-das-relacoes" */))
+const _337b51da = () => interopDefault(import('../pages/side-a/pedras.vue' /* webpackChunkName: "pages/side-a/pedras" */))
+const _1ee997bf = () => interopDefault(import('../pages/side-a/print.vue' /* webpackChunkName: "pages/side-a/print" */))
+const _c578ace4 = () => interopDefault(import('../pages/side-a/reprogramar-a-manha.vue' /* webpackChunkName: "pages/side-a/reprogramar-a-manha" */))
+const _33f28cdb = () => interopDefault(import('../pages/side-a/smart.vue' /* webpackChunkName: "pages/side-a/smart" */))
+const _bda2d81c = () => interopDefault(import('../pages/side-a/style-guide.vue' /* webpackChunkName: "pages/side-a/style-guide" */))
+const _39d2d058 = () => interopDefault(import('../pages/side-a/tofa.vue' /* webpackChunkName: "pages/side-a/tofa" */))
 const _48062337 = () => interopDefault(import('../pages/side-b/amor-rafeiro.vue' /* webpackChunkName: "pages/side-b/amor-rafeiro" */))
 const _a18ea8d0 = () => interopDefault(import('../pages/side-b/bimba.vue' /* webpackChunkName: "pages/side-b/bimba" */))
 const _5f1ecbc4 = () => interopDefault(import('../pages/side-b/cowboy.vue' /* webpackChunkName: "pages/side-b/cowboy" */))
@@ -18,17 +29,6 @@ const _68fa2adc = () => interopDefault(import('../pages/side-b/noite-oraculo.vue
 const _08a992e6 = () => interopDefault(import('../pages/side-b/skate.vue' /* webpackChunkName: "pages/side-b/skate" */))
 const _1c4f1c1a = () => interopDefault(import('../pages/side-b/style-guide.vue' /* webpackChunkName: "pages/side-b/style-guide" */))
 const _72523843 = () => interopDefault(import('../pages/side-b/winona.vue' /* webpackChunkName: "pages/side-b/winona" */))
-const _163e1c64 = () => interopDefault(import('../pages/work/coisas-de-miudos.vue' /* webpackChunkName: "pages/work/coisas-de-miudos" */))
-const _3b1ec33e = () => interopDefault(import('../pages/work/conversa-de-chat.vue' /* webpackChunkName: "pages/work/conversa-de-chat" */))
-const _263b7706 = () => interopDefault(import('../pages/work/desafio-da-poupanca.vue' /* webpackChunkName: "pages/work/desafio-da-poupanca" */))
-const _07b623be = () => interopDefault(import('../pages/work/mesas-para-todos-os-gostos.vue' /* webpackChunkName: "pages/work/mesas-para-todos-os-gostos" */))
-const _04737f29 = () => interopDefault(import('../pages/work/o-segredo-das-relacoes.vue' /* webpackChunkName: "pages/work/o-segredo-das-relacoes" */))
-const _aeb213a6 = () => interopDefault(import('../pages/work/pedras.vue' /* webpackChunkName: "pages/work/pedras" */))
-const _ef70a536 = () => interopDefault(import('../pages/work/print.vue' /* webpackChunkName: "pages/work/print" */))
-const _e3c03698 = () => interopDefault(import('../pages/work/reprogramar-a-manha.vue' /* webpackChunkName: "pages/work/reprogramar-a-manha" */))
-const _c55ebafe = () => interopDefault(import('../pages/work/smart.vue' /* webpackChunkName: "pages/work/smart" */))
-const _3c335518 = () => interopDefault(import('../pages/work/style-guide.vue' /* webpackChunkName: "pages/work/style-guide" */))
-const _b7279524 = () => interopDefault(import('../pages/work/tofa.vue' /* webpackChunkName: "pages/work/tofa" */))
 const _a51468e8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -54,6 +54,50 @@ export const routerOptions = {
     path: "/side-b",
     component: _226fb3b6,
     name: "side-b"
+  }, {
+    path: "/side-a/coisas-de-miudos",
+    component: _95862998,
+    name: "side-a-coisas-de-miudos"
+  }, {
+    path: "/side-a/conversa-de-chat",
+    component: _090a86b8,
+    name: "side-a-conversa-de-chat"
+  }, {
+    path: "/side-a/desafio-da-poupanca",
+    component: _07f3ed52,
+    name: "side-a-desafio-da-poupanca"
+  }, {
+    path: "/side-a/mesas-para-todos-os-gostos",
+    component: _0bbce007,
+    name: "side-a-mesas-para-todos-os-gostos"
+  }, {
+    path: "/side-a/o-segredo-das-relacoes",
+    component: _502757e2,
+    name: "side-a-o-segredo-das-relacoes"
+  }, {
+    path: "/side-a/pedras",
+    component: _337b51da,
+    name: "side-a-pedras"
+  }, {
+    path: "/side-a/print",
+    component: _1ee997bf,
+    name: "side-a-print"
+  }, {
+    path: "/side-a/reprogramar-a-manha",
+    component: _c578ace4,
+    name: "side-a-reprogramar-a-manha"
+  }, {
+    path: "/side-a/smart",
+    component: _33f28cdb,
+    name: "side-a-smart"
+  }, {
+    path: "/side-a/style-guide",
+    component: _bda2d81c,
+    name: "side-a-style-guide"
+  }, {
+    path: "/side-a/tofa",
+    component: _39d2d058,
+    name: "side-a-tofa"
   }, {
     path: "/side-b/amor-rafeiro",
     component: _48062337,
@@ -98,50 +142,6 @@ export const routerOptions = {
     path: "/side-b/winona",
     component: _72523843,
     name: "side-b-winona"
-  }, {
-    path: "/work/coisas-de-miudos",
-    component: _163e1c64,
-    name: "work-coisas-de-miudos"
-  }, {
-    path: "/work/conversa-de-chat",
-    component: _3b1ec33e,
-    name: "work-conversa-de-chat"
-  }, {
-    path: "/work/desafio-da-poupanca",
-    component: _263b7706,
-    name: "work-desafio-da-poupanca"
-  }, {
-    path: "/work/mesas-para-todos-os-gostos",
-    component: _07b623be,
-    name: "work-mesas-para-todos-os-gostos"
-  }, {
-    path: "/work/o-segredo-das-relacoes",
-    component: _04737f29,
-    name: "work-o-segredo-das-relacoes"
-  }, {
-    path: "/work/pedras",
-    component: _aeb213a6,
-    name: "work-pedras"
-  }, {
-    path: "/work/print",
-    component: _ef70a536,
-    name: "work-print"
-  }, {
-    path: "/work/reprogramar-a-manha",
-    component: _e3c03698,
-    name: "work-reprogramar-a-manha"
-  }, {
-    path: "/work/smart",
-    component: _c55ebafe,
-    name: "work-smart"
-  }, {
-    path: "/work/style-guide",
-    component: _3c335518,
-    name: "work-style-guide"
-  }, {
-    path: "/work/tofa",
-    component: _b7279524,
-    name: "work-tofa"
   }, {
     path: "/",
     component: _a51468e8,

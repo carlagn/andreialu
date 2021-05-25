@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <nuxt-link v-if="!isMobile" to="/side-b/fotopoema" class="cover-link">
+            <nuxt-link v-if="isMobile" to="/side-b/fotopoema" class="cover-link">
                 <Cover
                     :isMobile="isMobile"
                     :source="'FOTOPOEMA.png'"

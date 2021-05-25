@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar-wrapper" :class="{'active': getSidebarState, 'background': getActivePage === 'work' || getActivePage === 'side-b'}">
+    <div class="sidebar-wrapper" :class="{'active': getSidebarState, 'background': getActivePage === 'side-a' || getActivePage === 'side-b'}">
         <div class="sidebar-box">
             <div class="logo-box" :class="{'vertical': isVertical}">
                 <div
@@ -10,7 +10,7 @@
                     <span class="label">copywriter.</span>
                 </div>
                 <div class="menu" :class="{'vertical': isVertical}">
-                    <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Side-A</nuxt-link>
+                    <nuxt-link to="/" :class="{'active': getActivePage === 'side-a'}">Side-A</nuxt-link>
                     <nuxt-link to="/side-b" :class="{'active': getActivePage === 'side-b'}">Side-B</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getCurrentRoute.includes('about')}">About</nuxt-link>
                 </div>

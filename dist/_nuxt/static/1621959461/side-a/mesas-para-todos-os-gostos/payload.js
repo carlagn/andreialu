@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/side-a/mesas-para-todos-os-gostos", {data:[{}],fetch:{},mutations:[]});

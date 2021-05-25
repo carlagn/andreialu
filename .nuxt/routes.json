@@ -21,6 +21,83 @@
     "_name": "_226fb3b6"
   },
   {
+    "name": "side-a-coisas-de-miudos",
+    "path": "/side-a/coisas-de-miudos",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/coisas-de-miudos.vue",
+    "chunkName": "pages/side-a/coisas-de-miudos",
+    "_name": "_95862998"
+  },
+  {
+    "name": "side-a-conversa-de-chat",
+    "path": "/side-a/conversa-de-chat",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/conversa-de-chat.vue",
+    "chunkName": "pages/side-a/conversa-de-chat",
+    "_name": "_090a86b8"
+  },
+  {
+    "name": "side-a-desafio-da-poupanca",
+    "path": "/side-a/desafio-da-poupanca",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/desafio-da-poupanca.vue",
+    "chunkName": "pages/side-a/desafio-da-poupanca",
+    "_name": "_07f3ed52"
+  },
+  {
+    "name": "side-a-mesas-para-todos-os-gostos",
+    "path": "/side-a/mesas-para-todos-os-gostos",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/mesas-para-todos-os-gostos.vue",
+    "chunkName": "pages/side-a/mesas-para-todos-os-gostos",
+    "_name": "_0bbce007"
+  },
+  {
+    "name": "side-a-o-segredo-das-relacoes",
+    "path": "/side-a/o-segredo-das-relacoes",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/o-segredo-das-relacoes.vue",
+    "chunkName": "pages/side-a/o-segredo-das-relacoes",
+    "_name": "_502757e2"
+  },
+  {
+    "name": "side-a-pedras",
+    "path": "/side-a/pedras",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/pedras.vue",
+    "chunkName": "pages/side-a/pedras",
+    "_name": "_337b51da"
+  },
+  {
+    "name": "side-a-print",
+    "path": "/side-a/print",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/print.vue",
+    "chunkName": "pages/side-a/print",
+    "_name": "_1ee997bf"
+  },
+  {
+    "name": "side-a-reprogramar-a-manha",
+    "path": "/side-a/reprogramar-a-manha",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/reprogramar-a-manha.vue",
+    "chunkName": "pages/side-a/reprogramar-a-manha",
+    "_name": "_c578ace4"
+  },
+  {
+    "name": "side-a-smart",
+    "path": "/side-a/smart",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/smart.vue",
+    "chunkName": "pages/side-a/smart",
+    "_name": "_33f28cdb"
+  },
+  {
+    "name": "side-a-style-guide",
+    "path": "/side-a/style-guide",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/style-guide.vue",
+    "chunkName": "pages/side-a/style-guide",
+    "_name": "_bda2d81c"
+  },
+  {
+    "name": "side-a-tofa",
+    "path": "/side-a/tofa",
+    "component": "/Users/carla/Projects/andreialu/pages/side-a/tofa.vue",
+    "chunkName": "pages/side-a/tofa",
+    "_name": "_39d2d058"
+  },
+  {
     "name": "side-b-amor-rafeiro",
     "path": "/side-b/amor-rafeiro",
     "component": "/Users/carla/Projects/andreialu/pages/side-b/amor-rafeiro.vue",
@@ -96,83 +173,6 @@
     "component": "/Users/carla/Projects/andreialu/pages/side-b/winona.vue",
     "chunkName": "pages/side-b/winona",
     "_name": "_72523843"
-  },
-  {
-    "name": "work-coisas-de-miudos",
-    "path": "/work/coisas-de-miudos",
-    "component": "/Users/carla/Projects/andreialu/pages/work/coisas-de-miudos.vue",
-    "chunkName": "pages/work/coisas-de-miudos",
-    "_name": "_163e1c64"
-  },
-  {
-    "name": "work-conversa-de-chat",
-    "path": "/work/conversa-de-chat",
-    "component": "/Users/carla/Projects/andreialu/pages/work/conversa-de-chat.vue",
-    "chunkName": "pages/work/conversa-de-chat",
-    "_name": "_3b1ec33e"
-  },
-  {
-    "name": "work-desafio-da-poupanca",
-    "path": "/work/desafio-da-poupanca",
-    "component": "/Users/carla/Projects/andreialu/pages/work/desafio-da-poupanca.vue",
-    "chunkName": "pages/work/desafio-da-poupanca",
-    "_name": "_263b7706"
-  },
-  {
-    "name": "work-mesas-para-todos-os-gostos",
-    "path": "/work/mesas-para-todos-os-gostos",
-    "component": "/Users/carla/Projects/andreialu/pages/work/mesas-para-todos-os-gostos.vue",
-    "chunkName": "pages/work/mesas-para-todos-os-gostos",
-    "_name": "_07b623be"
-  },
-  {
-    "name": "work-o-segredo-das-relacoes",
-    "path": "/work/o-segredo-das-relacoes",
-    "component": "/Users/carla/Projects/andreialu/pages/work/o-segredo-das-relacoes.vue",
-    "chunkName": "pages/work/o-segredo-das-relacoes",
-    "_name": "_04737f29"
-  },
-  {
-    "name": "work-pedras",
-    "path": "/work/pedras",
-    "component": "/Users/carla/Projects/andreialu/pages/work/pedras.vue",
-    "chunkName": "pages/work/pedras",
-    "_name": "_aeb213a6"
-  },
-  {
-    "name": "work-print",
-    "path": "/work/print",
-    "component": "/Users/carla/Projects/andreialu/pages/work/print.vue",
-    "chunkName": "pages/work/print",
-    "_name": "_ef70a536"
-  },
-  {
-    "name": "work-reprogramar-a-manha",
-    "path": "/work/reprogramar-a-manha",
-    "component": "/Users/carla/Projects/andreialu/pages/work/reprogramar-a-manha.vue",
-    "chunkName": "pages/work/reprogramar-a-manha",
-    "_name": "_e3c03698"
-  },
-  {
-    "name": "work-smart",
-    "path": "/work/smart",
-    "component": "/Users/carla/Projects/andreialu/pages/work/smart.vue",
-    "chunkName": "pages/work/smart",
-    "_name": "_c55ebafe"
-  },
-  {
-    "name": "work-style-guide",
-    "path": "/work/style-guide",
-    "component": "/Users/carla/Projects/andreialu/pages/work/style-guide.vue",
-    "chunkName": "pages/work/style-guide",
-    "_name": "_3c335518"
-  },
-  {
-    "name": "work-tofa",
-    "path": "/work/tofa",
-    "component": "/Users/carla/Projects/andreialu/pages/work/tofa.vue",
-    "chunkName": "pages/work/tofa",
-    "_name": "_b7279524"
   },
   {
     "name": "index",

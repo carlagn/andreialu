@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/reprogramar-a-manha", {data:[{}],fetch:{},mutations:[]});

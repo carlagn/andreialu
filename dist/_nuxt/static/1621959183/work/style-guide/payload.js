@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/style-guide", {data:[{}],fetch:{},mutations:[]});

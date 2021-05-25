@@ -9,58 +9,58 @@ export default {
                 },
                 {
                     name: "Pedras",
-                    path: "/work/pedras"
+                    path: "/side-a/pedras"
                 },
                 
 
                 {
                     name: "O Segredo das Relações Duradouras",
-                    path: "/work/o-segredo-das-relacoes"
+                    path: "/side-a/o-segredo-das-relacoes"
                 },
 
 
                 {
                     name: "Tofa",
-                    path: "/work/tofa"
+                    path: "/side-a/tofa"
                 },
 
 
                 {
                     name: "Reprogramar a Manhã",
-                    path: "/work/reprogramar-a-manha"
+                    path: "/side-a/reprogramar-a-manha"
                 },
 
 
                 {
                     name: "Mesas para Todos os Gostos",
-                    path: "/work/mesas-para-todos-os-gostos"
+                    path: "/side-a/mesas-para-todos-os-gostos"
                 },
 
                 {
                     name: "smart",
-                    path: "/work/smart"
+                    path: "/side-a/smart"
                 },
 
 
                 {
                     name: "Desafio da Poupança",
-                    path: "/work/desafio-da-poupanca"
+                    path: "/side-a/desafio-da-poupanca"
                 },
 
                 {
                     name: "Print",
-                    path: "/work/print"
+                    path: "/side-a/print"
                 },
 
                  {
                     name: "Conversa de Chat",
-                    path: "/work/conversa-de-chat"
+                    path: "/side-a/conversa-de-chat"
                 },
 
 
                 {
                     name: "Coisas de Miúdos",
-                    path: "/work/coisas-de-miudos"
+                    path: "/side-a/coisas-de-miudos"
                 },
        
                 

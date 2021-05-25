@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/pedras", {data:[{}],fetch:{},mutations:[]});

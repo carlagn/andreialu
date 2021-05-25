@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/side-a/coisas-de-miudos", {data:[{}],fetch:{},mutations:[]});
