@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/desafio-da-poupanca", {data:[{}],fetch:[],mutations:[]});

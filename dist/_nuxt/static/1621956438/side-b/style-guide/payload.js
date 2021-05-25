@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/side-b/style-guide", {data:[{}],fetch:[],mutations:[]});

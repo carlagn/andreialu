@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/side-b/horror-de-licor", {data:[{}],fetch:[],mutations:[]});

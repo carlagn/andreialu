@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/side-b/fotopoema", {data:[{}],fetch:[],mutations:[]});

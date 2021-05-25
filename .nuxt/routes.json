@@ -2,197 +2,197 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/about.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/about.vue",
     "chunkName": "pages/about",
-    "_name": "_53bb0a73"
+    "_name": "_e4841e72"
   },
   {
     "name": "about-pt",
     "path": "/about-pt",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/about-pt.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/about-pt.vue",
     "chunkName": "pages/about-pt",
-    "_name": "_d8474164"
+    "_name": "_6b4de87a"
   },
   {
     "name": "side-b",
     "path": "/side-b",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/index.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/index.vue",
     "chunkName": "pages/side-b/index",
-    "_name": "_aa51da0e"
+    "_name": "_226fb3b6"
   },
   {
     "name": "side-b-amor-rafeiro",
     "path": "/side-b/amor-rafeiro",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/amor-rafeiro.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/amor-rafeiro.vue",
     "chunkName": "pages/side-b/amor-rafeiro",
-    "_name": "_1c0edfe3"
+    "_name": "_48062337"
   },
   {
     "name": "side-b-bimba",
     "path": "/side-b/bimba",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/bimba.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/bimba.vue",
     "chunkName": "pages/side-b/bimba",
-    "_name": "_6b47986c"
+    "_name": "_a18ea8d0"
   },
   {
     "name": "side-b-cowboy",
     "path": "/side-b/cowboy",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/cowboy.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/cowboy.vue",
     "chunkName": "pages/side-b/cowboy",
-    "_name": "_d381706c"
+    "_name": "_5f1ecbc4"
   },
   {
     "name": "side-b-fotopoema",
     "path": "/side-b/fotopoema",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/fotopoema.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/fotopoema.vue",
     "chunkName": "pages/side-b/fotopoema",
-    "_name": "_9608b706"
+    "_name": "_b2d17cae"
   },
   {
     "name": "side-b-hello",
     "path": "/side-b/hello",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/hello.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/hello.vue",
     "chunkName": "pages/side-b/hello",
-    "_name": "_224d02f9"
+    "_name": "_663e1625"
   },
   {
     "name": "side-b-horror-de-licor",
     "path": "/side-b/horror-de-licor",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/horror-de-licor.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/horror-de-licor.vue",
     "chunkName": "pages/side-b/horror-de-licor",
-    "_name": "_b09d1872"
+    "_name": "_02f57ff3"
   },
   {
     "name": "side-b-neon",
     "path": "/side-b/neon",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/neon.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/neon.vue",
     "chunkName": "pages/side-b/neon",
-    "_name": "_01e3a2ff"
+    "_name": "_672d7a53"
   },
   {
     "name": "side-b-noite-oraculo",
     "path": "/side-b/noite-oraculo",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/noite-oraculo.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/noite-oraculo.vue",
     "chunkName": "pages/side-b/noite-oraculo",
-    "_name": "_7891c366"
+    "_name": "_68fa2adc"
   },
   {
     "name": "side-b-skate",
     "path": "/side-b/skate",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/skate.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/skate.vue",
     "chunkName": "pages/side-b/skate",
-    "_name": "_908bb93e"
+    "_name": "_08a992e6"
   },
   {
     "name": "side-b-style-guide",
     "path": "/side-b/style-guide",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/style-guide.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/style-guide.vue",
     "chunkName": "pages/side-b/style-guide",
-    "_name": "_0ea12072"
+    "_name": "_1c4f1c1a"
   },
   {
     "name": "side-b-winona",
     "path": "/side-b/winona",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/side-b/winona.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/side-b/winona.vue",
     "chunkName": "pages/side-b/winona",
-    "_name": "_3820e5ef"
+    "_name": "_72523843"
   },
   {
     "name": "work-coisas-de-miudos",
     "path": "/work/coisas-de-miudos",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/coisas-de-miudos.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/coisas-de-miudos.vue",
     "chunkName": "pages/work/coisas-de-miudos",
-    "_name": "_2ca5990c"
+    "_name": "_163e1c64"
   },
   {
     "name": "work-conversa-de-chat",
     "path": "/work/conversa-de-chat",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/conversa-de-chat.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/conversa-de-chat.vue",
     "chunkName": "pages/work/conversa-de-chat",
-    "_name": "_2feb04ea"
+    "_name": "_3b1ec33e"
   },
   {
     "name": "work-desafio-da-poupanca",
     "path": "/work/desafio-da-poupanca",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/desafio-da-poupanca.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/desafio-da-poupanca.vue",
     "chunkName": "pages/work/desafio-da-poupanca",
-    "_name": "_52709351"
+    "_name": "_263b7706"
   },
   {
     "name": "work-mesas-para-todos-os-gostos",
     "path": "/work/mesas-para-todos-os-gostos",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/mesas-para-todos-os-gostos.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/mesas-para-todos-os-gostos.vue",
     "chunkName": "pages/work/mesas-para-todos-os-gostos",
-    "_name": "_7cfc08cd"
+    "_name": "_07b623be"
   },
   {
     "name": "work-o-segredo-das-relacoes",
     "path": "/work/o-segredo-das-relacoes",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/o-segredo-das-relacoes.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/o-segredo-das-relacoes.vue",
     "chunkName": "pages/work/o-segredo-das-relacoes",
-    "_name": "_2ffacfd5"
+    "_name": "_04737f29"
   },
   {
     "name": "work-pedras",
     "path": "/work/pedras",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/pedras.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/pedras.vue",
     "chunkName": "pages/work/pedras",
-    "_name": "_435d1ed9"
+    "_name": "_aeb213a6"
   },
   {
     "name": "work-print",
     "path": "/work/print",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/print.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/print.vue",
     "chunkName": "pages/work/print",
-    "_name": "_71d8818e"
+    "_name": "_ef70a536"
   },
   {
     "name": "work-ProjectExample",
     "path": "/work/ProjectExample",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/ProjectExample.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/ProjectExample.vue",
     "chunkName": "pages/work/ProjectExample",
-    "_name": "_d4cfaf56"
+    "_name": "_7ce128ae"
   },
   {
     "name": "work-reprogramar-a-manha",
     "path": "/work/reprogramar-a-manha",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/reprogramar-a-manha.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/reprogramar-a-manha.vue",
     "chunkName": "pages/work/reprogramar-a-manha",
-    "_name": "_18a398f0"
+    "_name": "_e3c03698"
   },
   {
     "name": "work-smart",
     "path": "/work/smart",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/smart.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/smart.vue",
     "chunkName": "pages/work/smart",
-    "_name": "_47c69756"
+    "_name": "_c55ebafe"
   },
   {
     "name": "work-style-guide",
     "path": "/work/style-guide",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/style-guide.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/style-guide.vue",
     "chunkName": "pages/work/style-guide",
-    "_name": "_4a97b7ec"
+    "_name": "_3c335518"
   },
   {
     "name": "work-this-is-a-new-page",
     "path": "/work/this-is-a-new-page",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/this-is-a-new-page.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/this-is-a-new-page.vue",
     "chunkName": "pages/work/this-is-a-new-page",
-    "_name": "_5fc79ac0"
+    "_name": "_6d051414"
   },
   {
     "name": "work-tofa",
     "path": "/work/tofa",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/work/tofa.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/work/tofa.vue",
     "chunkName": "pages/work/tofa",
-    "_name": "_e4a6cdcc"
+    "_name": "_b7279524"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/andreiasilva/Desktop/andreialu/pages/index.vue",
+    "component": "/Users/carla/Projects/andreialu/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_7372e538"
+    "_name": "_a51468e8"
   }
 ]

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/side-b", {data:[{}],fetch:[],mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/work/conversa-de-chat", {data:[{}],fetch:{},mutations:[]});
