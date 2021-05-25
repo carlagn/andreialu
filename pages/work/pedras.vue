@@ -8,11 +8,11 @@
             <div class="project-content">
                 <!-- <h3>This is a tagline</h3> -->
                 
-                <p>Green is the color of nature. It is also the color of Água das Pedras, a sparkling water that comes from nature. So, it's only natural that we filled this movie with green. And since the signature is "Deixa o melhor de ti vir ao de cima/ Let the best of you come up" we go up, up, up, from the fountain to the bottle.</p>
+                <p>Green is the color of nature. It is also the color of Água das Pedras, a sparkling water that comes from nature. So it's only natural that we filled this movie with green.</p>
 
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/224472530?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 
-                <p>But there are more colors to nature than green, like the colors of Pedras Sabores. We served this fresh cocktail with all the other colors of nature, and of Pedras.</p>
+                <p>But there are more colors to nature than green, like the colors of Pedras Sabores.</p>
                 
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/219110949?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
 

@@ -14,72 +14,8 @@ export default {
                 
 
                 {
-                    name: "Acordar com gosto",
-                    path: "/work/acordar-com-gosto"
-                },
-
-
-                {
-                    name: "Winona",
-                    path: "/work/winona"
-                },
-
-
-                {
-                    name: "Reprogramar a manhã",
-                    path: "/work/reprogramar-a-manha"
-                },
-
-
-                {
-                    name: "Mesas para todos os gosto",
-                    path: "/work/mesas-para-todos-os-gostos"
-                },
-
-                {
-                    name: "Amor Rafeiro",
-                    path: "/work/amor-rafeiro"
-                },
-
-
-                {
-                    name: "O segredo das relações duradouras",
+                    name: "O Segredo das Relações Duradouras",
                     path: "/work/o-segredo-das-relacoes"
-                },
-
-
-                {
-                    name: "Drive code",
-                    path: "/work/drive-code"
-                },
-
-
-                {
-                    name: "Desafio da poupança",
-                    path: "/work/desafio-da-poupanca"
-                },
-
-                {
-                    name: "Have a drink",
-                    path: "/work/have-a-drink"
-                },
-
-
-                {
-                    name: "Um mundo sem cem",
-                    path: "/work/um-mundo-sem-cem"
-                },
-
-
-                {
-                    name: "Coisas de miúdos",
-                    path: "/work/coisas-de-miudos"
-                },
-
-
-                {
-                    name: "Conversa de chat",
-                    path: "/work/conversa-de-chat"
                 },
 
 
@@ -88,26 +24,110 @@ export default {
                     path: "/work/tofa"
                 },
 
+
+                {
+                    name: "Reprogramar a Manhã",
+                    path: "/work/reprogramar-a-manha"
+                },
+
+
+                {
+                    name: "Mesas para Todos os Gostos",
+                    path: "/work/mesas-para-todos-os-gostos"
+                },
+
                 {
                     name: "smart",
                     path: "/work/smart"
                 },
+
+
+                {
+                    name: "Desafio da Poupança",
+                    path: "/work/desafio-da-poupanca"
+                },
+
+                {
+                    name: "Print",
+                    path: "/work/print"
+                },
+
+                 {
+                    name: "Conversa de Chat",
+                    path: "/work/conversa-de-chat"
+                },
+
+
+                {
+                    name: "Coisas de Miúdos",
+                    path: "/work/coisas-de-miudos"
+                },
        
                 
                 {
-                    name: "Mais Cabo Verde",
-                    path: "/work/mais-cabo-verde"
+                    name: "Home",
+                    path: "/"
                 },
-                
-                
+
                 {
-                    name: "Seja o herói",
-                    path: "/work/seja-o-heroi"
+                    name: "Side-B",
+                    path: "/side-b"
                 },
+
+                {
+                    name: "Skate",
+                    path: "/side-b/skate"
+                },
+
+                {
+                    name: "Hello",
+                    path: "/side-b/hello"
+                },
+
+                {
+                    name: "Bimba",
+                    path: "/side-b/bimba"
+                },
+
+                {
+                    name: "Fotopoema",
+                    path: "/side-b/fotopoema"
+                },
+
+                {
+                    name: "Noite Oráculo",
+                    path: "/side-b/noite-oraculo"
+                },
+
+                {
+                    name: "Winona",
+                    path: "/side-b/winona"
+                },
+
+                {
+                    name: "Um Horror de Licor",
+                    path: "/side-b/horror-de-licor"
+                },
+
+                {
+                    name: "Cowboy",
+                    path: "/side-b/cowboy"
+                },
+
+                {
+                    name: "Neon",
+                    path: "/side-b/neon"
+                },
+
+                {
+                    name: "Amor Rafeiro",
+                    path: "/side-b/amor-rafeiro"
+                },
+
                 {
                     name: "Home",
                     path: "/"
-                }
+                },
             ]
         }
     }

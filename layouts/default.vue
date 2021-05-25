@@ -58,6 +58,9 @@ export default{
 </script>
 
 <style lang="scss">
+.cover-link {
+    width: min-content;
+}
 body {
         background-color: #f8f8ff;
         margin: 0;

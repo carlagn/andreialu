@@ -11,7 +11,7 @@
                 </div>
                 <div class="menu" :class="{'vertical': isVertical}">
                     <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Side-A</nuxt-link>
-                    <nuxt-link to="/personal" :class="{'active': getActivePage === 'personal'}">Side-B</nuxt-link>
+                    <nuxt-link to="/side-b" :class="{'active': getActivePage === 'personal'}">Side-B</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getCurrentRoute.includes('about')}">About</nuxt-link>
                 </div>
                 <div v-if="getCurrentRoute.includes('about')" class="lang-menu">
@@ -31,7 +31,7 @@ import { mapMutations, mapGetters } from 'vuex';
 export default Vue.extend({
   computed: {
       isVertical() {
-          return this.getCurrentRoute !== '/' && this.getCurrentRoute !== '/personal'
+          return this.getCurrentRoute !== '/' && this.getCurrentRoute !== '/side-b'
       },
       getCurrentRoute() {
           return this.$route.path;
@@ -176,7 +176,7 @@ export default Vue.extend({
                 display: block;
                 width: 100%;
                 right: unset;
-                top: 213px;
+                top: 240px;
                 transform: none;
             }
             right: 32px;

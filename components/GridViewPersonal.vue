@@ -1,90 +1,60 @@
 <template>
     <component :is="isMobile ? 'div' : 'HorizontalScroll'" class="grid-wrapper" :class="sidebarClass">
         <div class="grid-container" ref="grid">
-            <div class="grid-element empty"></div>
+            <div class="grid-element-empty"></div>
            
-            <nuxt-link to="/work/pedras">
-                <Cover :isMobile="isMobile" :source="'pedras.webm'" :animated="true" :mode="'portrait'" :alt="'pedras_still.png'"  />
+            <nuxt-link to="/side-b/skate" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'LONG.png'" :mode="'portrait'"/>
             </nuxt-link>
         
-            <div class="grid-element empty"></div>
+            <div class="grid-element-empty"></div>
 
-            <nuxt-link to="/work/acordar-com-gosto">
-                <Cover :isMobile="isMobile" :source="'mcmuffin.png'" />
+            <nuxt-link to="/side-b/hello" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'HELLO.png'" />
             </nuxt-link>
 
-            <nuxt-link to="/work/winona">
-                <Cover :isMobile="isMobile" :source="'winona_CAPA.png'" />
+            <nuxt-link to="/side-b/bimba" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'BAMBI.png'" />
             </nuxt-link>
 
+            <div class="grid-big">
+                <nuxt-link to="/side-b/fotopoema" class="cover-link">
+                    <Cover
+                        :isMobile="isMobile"
+                        :source="'FOTOPOEMA.png'"
+                        :mode="'big'"
+                    />
+                </nuxt-link>
+                <div>
+                    <nuxt-link to="/side-b/noite-oraculo" class="cover-link">
+                        <Cover :isMobile="isMobile" :source="'NO.png'" />
+                    </nuxt-link>
 
-            <nuxt-link to="/work/reprogramar-a-manha">
-                <Cover :isMobile="isMobile" :source="'robot.webm'" :animated="true" :alt="'robot.gif'"  />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/mesas-para-todos-os-gostos">
-                <Cover :isMobile="isMobile" :source="'mesas.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/amor-rafeiro">
-                <Cover :isMobile="isMobile" :source="'AMOR_CAPA.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/o-segredo-das-relacoes">
-                <Cover :isMobile="isMobile" :source="'CERAS.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/drive-code">
-                <Cover :isMobile="isMobile" :source="'drive.png'" />
-            </nuxt-link>
+                    <nuxt-link to="/side-b/winona" class="cover-link">
+                    <Cover :isMobile="isMobile" :source="'winona_CAPA.png'" />
+                    </nuxt-link>
+                </div>
+            </div>
 
 
-            <nuxt-link to="/work/desafio-da-poupanca">
-                <Cover :isMobile="isMobile" :source="'porcos.webm'" :animated="true" :alt="'porcos.gif'"  />
+            <nuxt-link to="/side-b/horror-de-licor" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'HORROR.png'" />
             </nuxt-link>
 
 
-            <nuxt-link to="/work/have-a-drink">
-                <Cover :isMobile="isMobile" :source="'CAPA_SANDEMAN.jpg'" :mode="'portrait'" />
+            <nuxt-link to="/side-b/cowboy" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'LONG_COWBOY.png'" :mode="'portrait'" />
+            </nuxt-link>
+
+            <nuxt-link to="/side-b/neon" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'NEON.png'" />
             </nuxt-link>
 
 
-            <nuxt-link to="/work/um-mundo-sem-cem">
-                <Cover :isMobile="isMobile" :source="'pub.png'" />
+            <nuxt-link to="/side-b/amor-rafeiro" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'AMOR_CAPA.png'"   />
             </nuxt-link>
 
-
-            <nuxt-link to="/work/coisas-de-miudos">
-                <Cover :isMobile="isMobile" :source="'kidz.webm'" :animated="true" :alt="'kidz.gif'"  />
-            </nuxt-link>
-
-            <nuxt-link to="/work/conversa-de-chat">
-                <Cover :isMobile="isMobile" :source="'CAPA2.jpg'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/tofa">
-                <Cover :isMobile="isMobile" :source="'capa_tofa.jpg'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/smart">
-                <Cover :isMobile="isMobile" :source="'smarta_capa.jpg'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/mais-cabo-verde">
-                <Cover :isMobile="isMobile" :source="'unitel.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/seja-o-heroi">
-                <Cover :isMobile="isMobile" :source="'aspirina.png'" />
-            </nuxt-link>
         </div>
     </component>
 </template>
@@ -135,7 +105,7 @@ export default Vue.extend({
 .grid-container {
     @media (min-device-width: 769px) {
         flex-direction: column;
-        height: calc(100vh - 17px);
+        height: 100vh;
         padding-top: 0;
     }
     display: flex;
@@ -143,29 +113,28 @@ export default Vue.extend({
     flex-wrap: wrap;
     margin-left: 0;
     height: auto;
+    width: min-content;
     flex-direction: row;
-    .grid-element {
-        @media (min-device-width: 769px) {
-            width: calc((100vh - 17px) / 3);
-            height: calc((100vh - 17px) / 3);
-        }
-        width: 50vw;
-        height: 500px;
-        &.xv {
-            @media (min-device-width: 769px) {
-                height: calc((100vh - 17px) * 2 /3) !important;
-            }
-        }
-        &.empty {
-            @media (min-device-width: 769px) {
-                display: flex;
-            }
-            display: none;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Fraunces', serif;
-            font-weight: lighter;
-        }
+}
+
+.grid-element-empty {
+    @media (min-device-width: 769px) {
+        display: flex;
+        width: calc((100vh - 17px) / 3);
+        height: calc((100vh - 17px) / 3);
+    }
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-weight: lighter;
+}
+
+.grid-big {
+    display: flex;
+    flex-direction: column;
+    > div {
+        display: flex;
     }
 }
 </style>

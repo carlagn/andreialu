@@ -11,7 +11,7 @@
                 <p class="lang"><b @click="setLang('en')">PT</b> / <b @click="setLang('pt')">EN</b>
                 </p>
                 
-                <p>Remember “Groundhog Day”? We did it robots. Nothing like a McDonald’s breakfast to reboot your morning.</p>
+                <p>Remember “Groundhog Day”? We did it with robots. Nothing like a McDonald’s breakfast to reboot your morning.</p>
                 <div v-if="lang !== 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266584215?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
                 <div v-else style="padding:56.25% 0 0 0;position:relative;">
                 <iframe src="https://www.youtube.com/embed/kTtGROW0prk"  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
@@ -21,6 +21,18 @@
                     <h3>Radios</h3>
                     <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1188396859&color=%231c1c30&auto_play=false&hide_related=false&show_teaser=true">
                     </iframe>
+
+                    <p class="credits">Print and outdoor campaign</p>
+
+                <p>We also did some MUPIs.
+               
+               <div>
+                
+                <Img :source="'print/printc3.png'" />
+                <Img :source="'print/printc4.png'" />
+                <Img :source="'print/printc5.png'" />
+            
+                </div>
                 
                 <p class="credits"><b>TBWA</b> C: Andreia Luísa A.D: António Belchior C.D: Marco Pacheco e Rui Silva Director: Paco Cruz</p>
             </div>
@@ -33,10 +45,12 @@
 import Vue from 'vue';
 import { mapMutations } from 'vuex'
 import Pagination from '../../components/Pagination.vue';
+import Img from '../../components/Img.vue';
 
 export default Vue.extend({
     components: {
-        Pagination
+        Pagination,
+        Img
     },
     data() {
         return {

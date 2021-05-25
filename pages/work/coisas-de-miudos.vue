@@ -9,7 +9,7 @@
                 <!-- <h3>This is a tagline</h3> -->
                 <p class="credits">Film and radio campaigns</p>
 
-                   <h3>Ler leva-nos mais longe/ Reading takes us farther.</h3>
+                   <h3>Reading takes us further.</h3>
                 A child’s imagination has no limits. To show that, and to sell a collection of juvenile books, we invited Fernanda Serrano to interview a group of interviewees with a very fertile imagination.</p>
 
                 <div v-if="lang === 'en'" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/3-_jkS2acOY" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>

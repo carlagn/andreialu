@@ -9,12 +9,12 @@
         
             <div class="grid-element-empty"></div>
 
-            <nuxt-link to="/work/acordar-com-gosto">
-                <Cover :isMobile="isMobile" :source="'mcmuffin.png'" />
+            <nuxt-link to="/work/o-segredo-das-relacoes">
+                <Cover :isMobile="isMobile" :source="'CERAS.png'" />
             </nuxt-link>
 
-            <nuxt-link to="/work/winona">
-                <Cover :isMobile="isMobile" :source="'winona_CAPA.png'" />
+            <nuxt-link to="/work/tofa">
+                <Cover :isMobile="isMobile" :source="'capa_tofa.jpg'" />
             </nuxt-link>
 
             <div class="grid-big">
@@ -32,21 +32,11 @@
                         <Cover :isMobile="isMobile" :source="'mesas.png'" />
                     </nuxt-link>
 
-                    <nuxt-link to="/work/amor-rafeiro">
-                        <Cover :isMobile="isMobile" :source="'AMOR_CAPA.png'" />
+                    <nuxt-link to="/work/smart">
+                    <Cover :isMobile="isMobile" :source="'smarta_capa.jpg'" />
                     </nuxt-link>
                 </div>
             </div>
-
-
-            <nuxt-link to="/work/o-segredo-das-relacoes">
-                <Cover :isMobile="isMobile" :source="'CERAS.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/drive-code">
-                <Cover :isMobile="isMobile" :source="'drive.png'" />
-            </nuxt-link>
 
 
             <nuxt-link to="/work/desafio-da-poupanca">
@@ -54,18 +44,8 @@
             </nuxt-link>
 
 
-            <nuxt-link to="/work/have-a-drink">
+            <nuxt-link to="/work/print">
                 <Cover :isMobile="isMobile" :source="'CAPA_SANDEMAN.jpg'" :mode="'portrait'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/um-mundo-sem-cem">
-                <Cover :isMobile="isMobile" :source="'pub.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/coisas-de-miudos">
-                <Cover :isMobile="isMobile" :source="'kidz.webm'" :animated="true" :alt="'kidz.gif'"  />
             </nuxt-link>
 
             <nuxt-link to="/work/conversa-de-chat">
@@ -73,24 +53,10 @@
             </nuxt-link>
 
 
-            <nuxt-link to="/work/tofa">
-                <Cover :isMobile="isMobile" :source="'capa_tofa.jpg'" />
+            <nuxt-link to="/work/coisas-de-miudos">
+                <Cover :isMobile="isMobile" :source="'kidz.webm'" :animated="true" :alt="'kidz.gif'"  />
             </nuxt-link>
 
-
-            <nuxt-link to="/work/smart">
-                <Cover :isMobile="isMobile" :source="'smarta_capa.jpg'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/mais-cabo-verde">
-                <Cover :isMobile="isMobile" :source="'unitel.png'" />
-            </nuxt-link>
-
-
-            <nuxt-link to="/work/seja-o-heroi">
-                <Cover :isMobile="isMobile" :source="'aspirina.png'" />
-            </nuxt-link>
         </div>
     </component>
 </template>
@@ -141,7 +107,7 @@ export default Vue.extend({
 .grid-container {
     @media (min-device-width: 769px) {
         flex-direction: column;
-        height: calc(100vh - 17px);
+        height: 100vh;
         padding-top: 0;
     }
     display: flex;
@@ -149,6 +115,7 @@ export default Vue.extend({
     flex-wrap: wrap;
     margin-left: 0;
     height: auto;
+    width: min-content;
     flex-direction: row;
 }
 
