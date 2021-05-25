@@ -147,13 +147,6 @@
     "_name": "_ef70a536"
   },
   {
-    "name": "work-ProjectExample",
-    "path": "/work/ProjectExample",
-    "component": "/Users/carla/Projects/andreialu/pages/work/ProjectExample.vue",
-    "chunkName": "pages/work/ProjectExample",
-    "_name": "_7ce128ae"
-  },
-  {
     "name": "work-reprogramar-a-manha",
     "path": "/work/reprogramar-a-manha",
     "component": "/Users/carla/Projects/andreialu/pages/work/reprogramar-a-manha.vue",
@@ -173,13 +166,6 @@
     "component": "/Users/carla/Projects/andreialu/pages/work/style-guide.vue",
     "chunkName": "pages/work/style-guide",
     "_name": "_3c335518"
-  },
-  {
-    "name": "work-this-is-a-new-page",
-    "path": "/work/this-is-a-new-page",
-    "component": "/Users/carla/Projects/andreialu/pages/work/this-is-a-new-page.vue",
-    "chunkName": "pages/work/this-is-a-new-page",
-    "_name": "_6d051414"
   },
   {
     "name": "work-tofa",

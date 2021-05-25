@@ -79,7 +79,7 @@
 
         <p>
           <b>OTHER SKILLS.</b>
-        <br>Having too many hobbies.
+        <br>Having <nuxt-link to="/side-b">too many hobbies.</nuxt-link>
         </p>
 
         <p>

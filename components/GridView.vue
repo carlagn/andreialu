@@ -17,7 +17,7 @@
                 <Cover :isMobile="isMobile" :source="'capa_tofa.jpg'" />
             </nuxt-link>
 
-            <div class="grid-big">
+            <div v-if="!isMobile" class="grid-big">
                 <nuxt-link to="/work/reprogramar-a-manha">
                     <Cover
                         :isMobile="isMobile"
@@ -37,6 +37,21 @@
                     </nuxt-link>
                 </div>
             </div>
+            <nuxt-link v-if="isMobile" to="/work/reprogramar-a-manha">
+                <Cover
+                    :isMobile="isMobile"
+                    :source="'robot.webm'"
+                    :animated="true"
+                    :alt="'robot.gif'"
+                />
+            </nuxt-link>
+            <nuxt-link v-if="isMobile" to="/work/mesas-para-todos-os-gostos">
+                <Cover :isMobile="isMobile" :source="'mesas.png'" />
+            </nuxt-link>
+
+            <nuxt-link v-if="isMobile" to="/work/smart">
+                <Cover :isMobile="isMobile" :source="'smarta_capa.jpg'" />
+            </nuxt-link>
 
 
             <nuxt-link to="/work/desafio-da-poupanca">
@@ -115,7 +130,7 @@ export default Vue.extend({
     flex-wrap: wrap;
     margin-left: 0;
     height: auto;
-    width: min-content;
+    width: 100%;
     flex-direction: row;
 }
 

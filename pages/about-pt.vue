@@ -76,7 +76,7 @@
 
         <p>
           <b>OUTRAS "SKILLS".</b>
-        <br>Ter demasiados passatempos.
+        <br>Ter <nuxt-link to="/side-b">demasiados passatempos.</nuxt-link>
         </p>
 
         <p>

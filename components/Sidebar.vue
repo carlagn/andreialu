@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar-wrapper" :class="{'active': getSidebarState, 'background': getActivePage === 'work'}">
+    <div class="sidebar-wrapper" :class="{'active': getSidebarState, 'background': getActivePage === 'work' || getActivePage === 'side-b'}">
         <div class="sidebar-box">
             <div class="logo-box" :class="{'vertical': isVertical}">
                 <div
@@ -11,7 +11,7 @@
                 </div>
                 <div class="menu" :class="{'vertical': isVertical}">
                     <nuxt-link to="/" :class="{'active': getActivePage === 'work'}">Side-A</nuxt-link>
-                    <nuxt-link to="/side-b" :class="{'active': getActivePage === 'personal'}">Side-B</nuxt-link>
+                    <nuxt-link to="/side-b" :class="{'active': getActivePage === 'side-b'}">Side-B</nuxt-link>
                     <nuxt-link to="/about" :class="{'active': getCurrentRoute.includes('about')}">About</nuxt-link>
                 </div>
                 <div v-if="getCurrentRoute.includes('about')" class="lang-menu">

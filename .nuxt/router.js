@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
@@ -24,20 +25,13 @@ const _07b623be = () => interopDefault(import('../pages/work/mesas-para-todos-os
 const _04737f29 = () => interopDefault(import('../pages/work/o-segredo-das-relacoes.vue' /* webpackChunkName: "pages/work/o-segredo-das-relacoes" */))
 const _aeb213a6 = () => interopDefault(import('../pages/work/pedras.vue' /* webpackChunkName: "pages/work/pedras" */))
 const _ef70a536 = () => interopDefault(import('../pages/work/print.vue' /* webpackChunkName: "pages/work/print" */))
-const _7ce128ae = () => interopDefault(import('../pages/work/ProjectExample.vue' /* webpackChunkName: "pages/work/ProjectExample" */))
 const _e3c03698 = () => interopDefault(import('../pages/work/reprogramar-a-manha.vue' /* webpackChunkName: "pages/work/reprogramar-a-manha" */))
 const _c55ebafe = () => interopDefault(import('../pages/work/smart.vue' /* webpackChunkName: "pages/work/smart" */))
 const _3c335518 = () => interopDefault(import('../pages/work/style-guide.vue' /* webpackChunkName: "pages/work/style-guide" */))
-const _6d051414 = () => interopDefault(import('../pages/work/this-is-a-new-page.vue' /* webpackChunkName: "pages/work/this-is-a-new-page" */))
 const _b7279524 = () => interopDefault(import('../pages/work/tofa.vue' /* webpackChunkName: "pages/work/tofa" */))
 const _a51468e8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
-// TODO: remove in Nuxt 3
 const emptyFn = () => {}
-const originalPush = Router.prototype.push
-Router.prototype.push = function push (location, onComplete = emptyFn, onAbort) {
-  return originalPush.call(this, location, onComplete, onAbort)
-}
 
 Vue.use(Router)
 
@@ -133,10 +127,6 @@ export const routerOptions = {
     component: _ef70a536,
     name: "work-print"
   }, {
-    path: "/work/ProjectExample",
-    component: _7ce128ae,
-    name: "work-ProjectExample"
-  }, {
     path: "/work/reprogramar-a-manha",
     component: _e3c03698,
     name: "work-reprogramar-a-manha"
@@ -148,10 +138,6 @@ export const routerOptions = {
     path: "/work/style-guide",
     component: _3c335518,
     name: "work-style-guide"
-  }, {
-    path: "/work/this-is-a-new-page",
-    component: _6d051414,
-    name: "work-this-is-a-new-page"
   }, {
     path: "/work/tofa",
     component: _b7279524,
@@ -165,14 +151,20 @@ export const routerOptions = {
   fallback: false
 }
 
-export function createRouter () {
-  const router = new Router(routerOptions)
-  const resolve = router.resolve.bind(router)
+export function createRouter (ssrContext, config) {
+  const base = (config._app && config._app.basePath) || routerOptions.base
+  const router = new Router({ ...routerOptions, base  })
 
-  // encodeURI(decodeURI()) ~> support both encoded and non-encoded urls
+  // TODO: remove in Nuxt 3
+  const originalPush = router.push
+  router.push = function push (location, onComplete = emptyFn, onAbort) {
+    return originalPush.call(this, location, onComplete, onAbort)
+  }
+
+  const resolve = router.resolve.bind(router)
   router.resolve = (to, current, append) => {
     if (typeof to === 'string') {
-      to = encodeURI(decodeURI(to))
+      to = normalizeURL(to)
     }
     return resolve(to, current, append)
   }

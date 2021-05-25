@@ -17,7 +17,7 @@
                 <Cover :isMobile="isMobile" :source="'BAMBI.png'" />
             </nuxt-link>
 
-            <div class="grid-big">
+            <div v-if="!isMobile" class="grid-big">
                 <nuxt-link to="/side-b/fotopoema" class="cover-link">
                     <Cover
                         :isMobile="isMobile"
@@ -35,6 +35,22 @@
                     </nuxt-link>
                 </div>
             </div>
+
+            <nuxt-link to="/side-b/fotopoema" class="cover-link">
+                <Cover
+                    :isMobile="isMobile"
+                    :source="'FOTOPOEMA.png'"
+                    :mode="'big'"
+                />
+            </nuxt-link>
+
+            <nuxt-link v-if="isMobile" to="/side-b/noite-oraculo" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'NO.png'" />
+            </nuxt-link>
+
+            <nuxt-link v-if="isMobile" to="/side-b/winona" class="cover-link">
+                <Cover :isMobile="isMobile" :source="'winona_CAPA.png'" />
+            </nuxt-link>
 
 
             <nuxt-link to="/side-b/horror-de-licor" class="cover-link">
@@ -79,7 +95,7 @@ export default Vue.extend({
         this.$store.commit("setSidebar", "");
         this.$emit("grid", this.$refs.grid); 
         this.mobile = window.screen.width <= 768;
-        this.setActivePage("personal");
+        this.setActivePage("side-b");
     },
     beforeDestroy() {
         this.setActivePage("");
@@ -113,7 +129,7 @@ export default Vue.extend({
     flex-wrap: wrap;
     margin-left: 0;
     height: auto;
-    width: min-content;
+    width: 100%;
     flex-direction: row;
 }
 
