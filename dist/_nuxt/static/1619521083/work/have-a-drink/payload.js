@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/have-a-drink", {data:[{}],fetch:[],mutations:[]});

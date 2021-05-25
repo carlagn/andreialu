@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/side-b/noite-oraculo", {data:[{}],fetch:[],mutations:[]});

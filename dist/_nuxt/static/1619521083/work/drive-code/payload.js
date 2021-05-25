@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/drive-code", {data:[{}],fetch:[],mutations:[]});

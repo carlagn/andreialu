@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/mais-cabo-verde", {data:[{}],fetch:[],mutations:[]});

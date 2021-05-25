@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/um-mundo-sem-cem", {data:[{}],fetch:[],mutations:[]});
