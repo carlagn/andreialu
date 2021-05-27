@@ -21,9 +21,9 @@
                 <nuxt-link to="/side-a/reprogramar-a-manha">
                     <Cover
                         :isMobile="isMobile"
-                        :source="'robot.webm'"
+                        :source="'acordarcedo.webm'"
                         :animated="true"
-                        :alt="'robot.gif'"
+                        :alt="'acordarcedo.gif'"
                         :mode="'big'"
                     />
                 </nuxt-link>
