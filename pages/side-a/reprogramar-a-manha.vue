@@ -52,6 +52,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-A - Reprogramar a manhã'
+      }
+    },
     data() {
         return {
                     lang: "en"

@@ -13,6 +13,11 @@ export default Vue.extend({
         sidebar: {
             type: String
         }
+    },
+    head() {
+      return {
+        title: 'Andreia Luísa - Side-B'
+      }
     }
 })
 </script>

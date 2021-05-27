@@ -46,6 +46,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-B - Horror de licor'
+      }
+    },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");
     },

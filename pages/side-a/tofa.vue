@@ -55,6 +55,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-A - Tofa'
+      }
+    },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");
     },

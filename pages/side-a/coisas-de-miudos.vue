@@ -18,8 +18,7 @@
 
             
 
-                <p><h3>Bando do Bosque</h3> Bando do Bosque is a bunch of plush friends that anyone who shops at Pingo Doce can take home. They also have an adventure book. And are adorable. We invited them to go to the radio and tell the children about this brand new collection.
-                </p>
+                <p><h3>Bando do Bosque</h3> Bando do Bosque is a bunch of plush friends that anyone who shops at Pingo Doce can take home. They also have an adventure book. And are adorable. We invited them to go to the radio and tell the children about this brand new collection.</p>
 
                     <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1188412042&color=%23272823&auto_play=false&hide_related=false&show_teaser=true">
                     </iframe>
@@ -43,6 +42,11 @@ export default Vue.extend({
     components: {
         Pagination,
         Img
+    },
+    head() {
+      return {
+        title: 'Side-A - Coisas de miúdos'
+      }
     },
     data() {
         return {

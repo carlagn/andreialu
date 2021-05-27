@@ -105,6 +105,11 @@ export default Vue.extend({
     mounted() {
         this.$store.commit("setActivePage", "about")
     },
+    head() {
+      return {
+        title: 'Andreia Luísa - Sobre'
+      }
+    },
     methods: {
         ...mapMutations(["setActivePage"])
     }

@@ -50,6 +50,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-B - Sk8'
+      }
+    },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");
     },

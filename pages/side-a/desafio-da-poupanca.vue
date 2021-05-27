@@ -29,6 +29,11 @@ export default Vue.extend({
     components: {
         Pagination
     },
+    head() {
+      return {
+        title: 'Side-A - Desafio da poupança'
+      }
+    },
     data() {
         return {
                     lang: "en"

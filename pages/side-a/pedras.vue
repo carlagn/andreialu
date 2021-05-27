@@ -48,6 +48,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-A - Pedras'
+      }
+    },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");
     },

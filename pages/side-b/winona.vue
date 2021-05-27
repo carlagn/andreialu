@@ -46,6 +46,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-B - Winona'
+      }
+    },
     data() {
         return {
                     lang: "en"

@@ -57,6 +57,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-B - Amor rafeiro'
+      }
+    },
     data() {
         return {
                     lang: "en"

@@ -30,6 +30,11 @@ export default Vue.extend({
     components: {
         Pagination
     },
+    head() {
+      return {
+        title: 'Side-A - Conversa de chat'
+      }
+    },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");
     },

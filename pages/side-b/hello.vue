@@ -42,6 +42,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-B - Hello :)'
+      }
+    },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");
     },

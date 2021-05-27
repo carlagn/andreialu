@@ -30,6 +30,11 @@ export default Vue.extend({
     components: {
         Pagination
     },
+    head() {
+      return {
+        title: 'Side-A - O segredo das relações'
+      }
+    },
     data() {
         return {
                     lang: "en"

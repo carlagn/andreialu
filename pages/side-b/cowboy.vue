@@ -54,6 +54,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-B - Cowboy'
+      }
+    },
     mounted() {
         this.$store.commit("setSidebar", "open-grid");
     },

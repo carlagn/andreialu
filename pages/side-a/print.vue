@@ -59,6 +59,11 @@ export default Vue.extend({
         Pagination,
         Img
     },
+    head() {
+      return {
+        title: 'Side-A - Multiclient'
+      }
+    },
     data() {
         return {
                     lang: "en"

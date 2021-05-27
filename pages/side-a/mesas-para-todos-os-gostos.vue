@@ -30,6 +30,11 @@ export default Vue.extend({
     components: {
         Pagination
     },
+    head() {
+      return {
+        title: 'Side-A - Mesas para todos os gostos'
+      }
+    },
     data() {
         return {
                     lang: "en"
