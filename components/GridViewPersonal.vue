@@ -121,14 +121,15 @@ export default Vue.extend({
     @media (min-device-width: 769px) {
         flex-direction: column;
         height: 100vh;
+        width: max-content;
         padding-top: 0;
     }
+    width: 100%;
     display: flex;
     padding-top: 300px;
     flex-wrap: wrap;
     margin-left: 0;
     height: auto;
-    width: 100%;
     flex-direction: row;
 }
 

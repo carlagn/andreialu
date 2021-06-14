@@ -40,9 +40,9 @@
             <nuxt-link v-if="isMobile" to="/side-a/reprogramar-a-manha">
                 <Cover
                     :isMobile="isMobile"
-                    :source="'robot.webm'"
+                    :source="'acordarcedo.webm'"
                     :animated="true"
-                    :alt="'robot.gif'"
+                    :alt="'acordarcedo.gif'"
                 />
             </nuxt-link>
             <nuxt-link v-if="isMobile" to="/side-a/mesas-para-todos-os-gostos">
@@ -123,6 +123,7 @@ export default Vue.extend({
     @media (min-device-width: 769px) {
         flex-direction: column;
         height: 100vh;
+        width: max-content;
         padding-top: 0;
     }
     display: flex;
