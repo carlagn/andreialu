@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/side-b/bimba", {data:[{}],fetch:{},mutations:[]});

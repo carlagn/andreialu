@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/side-a/reprogramar-a-manha", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/side-a/desafio-da-poupanca", {data:[{}],fetch:{},mutations:[]});
